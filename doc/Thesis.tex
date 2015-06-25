@@ -1,0 +1,148 @@
+%% LyX 2.0.3 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[CJKchapter,noabcount]{CAS}
+\usepackage[utf8]{inputenc}
+\setcounter{secnumdepth}{3}
+\synctex=-1
+\usepackage{color}
+\usepackage{bm}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{makeidx}
+\makeindex
+\PassOptionsToPackage{normalem}{ulem}
+\usepackage{ulem}
+\usepackage{nomencl}
+%\usepackage[numbers,sort&compress]{natbib} 
+\usepackage{hypernat} 
+% the following is useful when we have the old nomencl.sty package
+\providecommand{\printnomenclature}{\printglossary}
+\providecommand{\makenomenclature}{\makeglossary}
+\makenomenclature
+\usepackage[unicode=true,pdfusetitle,bookmarks=true,bookmarksnumbered=true,bookmarksopen=true,bookmarksopenlevel=2,
+ breaklinks=false,pdfborder={0 0 0},backref=false,colorlinks=false] {hyperref}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\providecommand{\LyX}{\texorpdfstring%
+  {L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
+  {LyX}}
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{tikz}
+\usepackage{pgfplots}
+\def\oc{\ensuremath{^\circ\hspace{-0.09em}\mathrm{C}}}
+%\usepackage{CJKfntef}format=hang 
+%\captionsetup[figure]{justification=centering,singlelinecheck=false}
+%\captionsetup[figure]{format=hang}
+%\usepackage{xstring}
+%\raggedbottom
+
+\@ifundefined{showcaptionsetup}{}{%
+ \PassOptionsToPackage{caption=false}{subfig}}
+\usepackage{subfig}
+\makeatother
+
+\begin{document}
+
+\confidential{}
+
+
+\title{台阵配置对内核弱震相提取的影响}
+
+
+%\subtitle{——基于Xe\LaTeX{}、\LyX{}与JabRef}
+
+
+\author{龙鑫}
+
+
+\thesistype{硕士学位论文}
+
+
+\tutor{艾印双\quad{}研究员}
+
+
+%\tutorinstitute{中国科学院地质与地球物理研究所}
+
+
+\institute{中国科学院地质与地球物理研究所}
+
+
+\degree{理学硕士}
+
+
+\major{固体地球物理学}
+
+
+\date{2016年6月}
+
+
+\etitle{\uline{The effect of seismic array configuration on extracting weak seismic phases associated with inner core}}
+
+
+%\esubtitle{\uline{---Case studies of elevated soil warming}}
+
+
+\eauthor{Long Xin}
+
+
+\etutor{Ai Yinshuang}
+
+
+\emajor{Solid Geophysics}
+
+
+\edegree{Master}
+
+
+\emajortype{Science}
+
+
+\einstitute{Institute of Geology and Geophysics\\
+ Chinese Academy of Sciences }
+
+
+\edate{June, 2016}
+
+\maketitle
+
+\Declaration{关于学位论文使用权声明}
+
+\frontmatter
+
+\begin{abstract}
+从实际的稠密台阵中抽取各种几何形态和台间距不同的子台阵，运用PWS等标准台阵叠加技术，比较不同类型的子台阵对与内核相关的一系列弱震相(如前临界PKiKP、PKIIKP和PKJKP等)提取的效果；然后通过理论模拟各种不同台阵的情形，进行叠加，将理论模拟的最佳结果和使用实际资料叠加的结果进行比较。若能找到最优的配置方法，则对今后以关测与内核相关的弱相位为目的的地震台阵布设具有一定的指导作用。
+\end{abstract}
+
+\keywords{台阵;叠加;PWS;弱震相;内核}
+
+\begin{eabstract}
+ I collect global data set from short period IMS arrays, from which waveform quality of each station is relatively high and records last several decades for their nuclear detection purpose, and Hi-net which is extremely dense. I attempt to use those data and apply array stacking technique like PWS to detect and identify the inner core relevant weak phases. I also plan to figure out a best array configuration for the signal extraction, which is mainly affected by geometrical distribution of stations and slowness of a given phase using real data and theoretical stimulation, and consider to determine a proper array size that would be sufficient to provide a good SNR for the phase extraction. The result of this research would be a guidance for future devise of seismic array aimed to study the inner core properties using weak inner core phases.
+\end{eabstract}
+
+\ekeywords{Array;Stack;PWS;Weak Phases;Inner Core}
+
+\tableofcontents{}
+
+\mainmatter
+
+%\include{introduction}
+
+%\include{theory}
+
+\include{observation}
+
+%\include{forward}
+\backmatter
+
+\bibliographystyle{apalike}
+\bibliography{innercore,noise,array,method}
+
+\end{document}

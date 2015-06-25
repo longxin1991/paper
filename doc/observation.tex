@@ -1,0 +1,170 @@
+\chapter{数据及观测}
+
+
+\section{全球PKiKP观测}
+
+
+\newpage
+
+\section{PKiKP尾波}
+
+
+到目前为止的地震学观测表明，内核并不是一个均匀的球体，PKP和PKIKP走时的观测~\citep{Creager1992}和
+自由振荡的观测~\citep{Tromp1993}都支持其内部存在各向异性; 由赤道向路径的PKIKP和PKP走时观测也表明内核
+存在东西半球的地震波速差异~\citep{Tanaka1997}，即内核存在1-Degree尺度的不均匀性。同时内核也被认为存在
+强烈的衰减，但目前的研究主要考虑的是内核粘弹性造成的真实衰减，由于内核不均匀的尺度仍不确定，散射衰减对
+经过内核的体波总体衰减的贡献也不清楚。之前的研究~\citep{Vidale2000}认为PKiKP的尾波来自外层内核不均匀体
+的散射，且散射体的尺度约为2km。后续区域性的~\citep{Poupinet2004}和全球范围的PKiKP尾波研究~\citep{Koper2004}均观测到了持续200s左右的PKiKP尾波，且认为尾波来自于内核的散射。
+
+这里结合全球范围内近十年的数据，对全球范围内观测到的PKiKP尾波进行分析。PKiKP的尾波的可能来源并不唯一，除了内核成因，其也可能来自地幔和地壳的散射。之前的研究通过对比PcP,ScP和PKiKP的尾波的差异来排除尾波地幔成因~\citep{Koper2004}，然而即使是小震中距，PcP和PKiKP的路径在地幔中仍有较大的差异，尤其是在下地幔附近，因此为了确定尾波的来源还需要其他区的参照。下面采用的方法是
+(1)同一事件不同区域台阵接收到的信号;(2)同一个台阵的PcP,ScP和PKiKP尾波的比较;(3)台阵接收到的发生在同一区域的不同地震的PKiKP波形的比较。
+
+\subsection{Northern America}
+
+2014/06/23 在ALEUTIAN群岛的事件(51.95N 178.58E,Depth 106,MB 6.0)，产生的PKiKP相位
+同时被位于北美的BCAR，IMAR，BMAR，YKA，NVAR和PDAR等多个IMS台阵接收到，PKiKP采样
+位于阿拉斯加附近下方的ICB。图\ref{alas}显示了地震与IMS台阵的位置，以及PKiKP内核反射点的投影。
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[height=6cm,width=10cm]{fig/chap3/ALAS.eps}
+	\caption{2014/06/23 22:29:51发生在ALEUTIAN群岛的事件(51.95N 178.58E,Depth 106,MB%  
+6.0)和IMS台阵的位置。黑色三角形表示IMS台阵ILAR，BCAR，IMAR，BMAR，YKA，NVAR和PDAR，红色五角星表示地震%
+位置，圆圈表示在ICB反射点的投影，其中绿色表示观测到有PKiKP, 黄色表示未观测到PKiKP的台阵ILAR对应%
+的反射点。}
+	\label{alas}
+\end{figure}
+
+分别对NVAR台阵每道数据进行1-2HZ和2-3HZ频带范围的滤波，可以看出PKiKP的尾波和PKiKP主相位的能量均集中在
+1-2HZ内，在2-3HZ范围内滤波后PKiKP被滤掉，每道的振幅为1-2HZ数十分之一(图\ref{nvar_sec}),且紧随着
+PKiKP后面的尾波部分的振幅接近前后的噪声级别。在1175s左右似乎存在一个突然出现的能量，而且在提高滤波频率后，
+振幅变得更加清晰，这是否是某个特殊的相位还有待确认。
+
+\begin{figure}
+\hfill{}
+\subfloat[1-2HZ]{%
+\centering
+\includegraphics[width=6.5cm,height=8.5cm]{fig/chap3/nvar_sec1.eps}
+}
+\hfill{}
+\subfloat[2-3HZ]{%
+\centering
+\includegraphics[width=6.5cm,height=8.5cm]{fig/chap3/nvar_sec2.eps}
+}
+\hfill{}
+\caption{NVAR台阵记录的ALEUTIAN群岛事件的PKiKP尾波(a)经过1-2HZ滤波的结果(b)经过2-3HZ滤波的结果。}
+\label{nvar_sec}
+\end{figure}
+
+
+与之前的研究不同，对于这个事件，NVAR台阵上观测到的PKiKP尾波的持续时间不到100s，而且在PKiKP后续50s内，
+存在连续的峰值，振幅可以与PKiKP主相位相当。对PcP，ScP和PKiKP分别进行波包叠加的结果如图\ref{nvar_env}，可以看出三者的尾波形态存在明显的差异。PcP的尾波在PcP最大振幅后直接衰减，ScP和PKiKP在主相位后立刻出现一个很大的振幅，但其后ScP尾波逐渐衰减到噪声级别，而PKiKP尾波振幅仍然持续到后80s左右。这说明，PKiKP的尾波与PcP和ScP的可能来源于不同的深部结构。
+
+\begin{figure}
+	\centering
+	\includegraphics[width=10cm,height=7cm]{fig/chap3/nvar_env.eps}
+	\caption{PcP,ScP,PKiKP的尾波波包对比，每道均按照理论的慢度进行叠加，最后再按主相位最大波包振幅%
+归一化。}
+	\label{nvar_env}
+\end{figure}
+
+在这些能观测到清晰PKiKP相位的IMS台阵中，只有在NVAR发现了明显的尾波，且尾波紧随PKiKP主相位，其线性叠加
+和PWS叠加的结果见图\ref{nvar_mul}；其他台阵上均没有发现类似的现象，PKiKP均较为清晰，且没有续至相位，
+见图\ref{others}，这很大程度上排除了后续的尾波来自于震源一侧，例如在震源侧反射的深度相位
+；对于没有观测到PKiKP相位的台阵ILAR，在PKiKP理论到时后也没有大于噪声级别的振幅。在叠加
+的PDAR台阵的PKiKP波形中，大约在主PKiKP相位后5s出现一个续至相位的振幅，这与叠加的NVAR台阵波形一致。由于
+PDAR和NVAR相距较近，且相对与事件的震中距都在45\textdegree左右，这个相位可能是来源与地壳，但NVAR后续
+的应该来自于更深的地方。在震中距为60\textdegree的TXAR台阵，既没有观测到直达的PKiKP相位也没有观测到任何
+尾波存在的迹象。值得注意的是NVAR,PDAR和TXAR有较为接近的方位角，分别为81.4\textdegree,71.2\textdegree和79.6\textdegree。
+
+\begin{figure}
+	\centering
+	\includegraphics[width=12cm,height=6cm]{fig/chap3/nvar_mul.eps}
+	\caption{NVAR台阵对2014/06/13事件的PKiKP及其尾波的叠加结果，均根据理论慢度进行叠加。上部为波包%
+叠加(与图\ref{nvar_env}中的相同)，中为相加权叠加(PWS),下为线性叠加，均能看到清晰的PKiKP和其后续的尾波。}
+	\label{nvar_mul}
+\end{figure}
+
+
+\begin{figure}[tbph]
+\centering
+\subfloat[IMAR]{%
+\centering
+\includegraphics[width=6cm,height=4cm]{fig/chap3/imar_mul.eps}
+}
+\hspace{2em}
+\subfloat[BCAR]{%
+\centering
+\includegraphics[width=6cm,height=4cm]{fig/chap3/bcar_mul.eps}
+}\\
+\subfloat[YKA]{%
+\centering
+\includegraphics[width=6cm,height=4cm]{fig/chap3/yka_mul.eps}
+}
+\hspace{2em}
+\subfloat[PDAR]{%
+\centering
+\includegraphics[width=6cm,height=4cm]{fig/chap3/pdar_mul.eps}
+}
+\caption{IMAR,BCAR,YKA,PDAR台阵观测到的PKiKP相位，上为波包叠加，中为PWS叠加，下为线性叠加。%
+震中距分别为，19.7\textdegree，23.5\textdegree，36.0\textdegree，47.7\textdegree。}
+\label{others}
+\end{figure}
+
+令人感到疑惑的是，一小时前在该事件发生处附近的另一个事件(21:11:40,51.95N 178.45E)
+深度103km,震级与后者相同，但NVAR并没有记录到与该事件类似的PKiKP尾波(图\ref{nvar_mul2})。
+
+\begin{figure}
+	\centering
+	\includegraphics[width=12cm,height=6cm]{fig/chap3/nvar_mul2.eps}
+	\caption{NVAR台阵对2014/06/23前一个事件的PKiKP及其尾波的叠加结果，均根据理论慢度进行叠加。%
+上部为波包叠加，中为相加权叠加(PWS),下为线性叠加，可以看见明显的PKiKP，但没有明显的尾波。}
+	\label{nvar_mul2}
+\end{figure}
+
+\subsection{Australia}
+
+本文的尾波分析在澳大利亚一共用到了三个小口径台阵的数据，分别是WRA、ASAR和PSAR，它们在之前的研究中也被用到，这里增加了一个螺旋形的PSAR台阵。在这些台阵上观测到的PKiKP尾波和之前研究的有相同的特征(\ref{asar_mul})，包括长的持续时间和平滑的衰减，但并不没有之前研究所提到那么高频，进行1-2HZ的滤波后PKiKP的尾波已经具有足够大的能量，但当滤波频率提高到2-3HZ，尾波振幅则大大减小，所以1-2HZ是比较适合观测这个区域尾波的频率范围。
+
+为了确认PKiKP之后的信号确实是尾波，而非单个事件在某个台阵的产生的偶然结果，这里将ASAR台阵接收到的4个地震
+事件的PKiKP附近的波形进行比较，发现均出现相似的尾波，这4个地震位置相差不到1度，且震源深度也很接近，
+见表\ref{evtlst1}。由此可以推测，这可能是来自深部同一源产生的散射能量。同时可以发现，第四个事件产生的PKiKP尾波振幅较小，可能是其震级较前三个事件小(MW 5.7)，激发的散射能量更小的缘故。
+
+\begin{figure}
+	\centering
+	\includegraphics[width=12cm,height=6cm]{fig/chap3/asar_mul.eps}
+	\caption{ASAR台阵对表中事件的PKiKP波形及其叠加结果，均根据理论慢度进行叠加。%
+上部为单道波形，下为相加权叠加(PWS),中为线性叠加，可以在单道上看到很大的PKiKP尾波能量。}
+	\label{asar_mul}
+\end{figure}
+
+\begin{table}[!ht]
+\centering
+\begin{tabular}{*{3}{l}*{2}{c}*{2}{l}}
+\hline
+n & Date & Hour & Latitude & Longitude & Depth & Magnitude\\
+\hline
+1 & 2012/07/28 & 20:03:56.8 &  -4.651  &  153.173  &  41  & 6.5\\
+2 & 2012/08/24 & 10:01:53.9 & -33.435  & -179.533  &  38  & 5.6\\
+3 & 2012/10/14 & 04:58:04.9 &  -7.145  &  156.048  &  37  & 5.8\\
+4 & 2012/11/17 & 02:51:23.3 & -14.99  &  167.46  &  123.2 & 5.6\\
+\hline
+\end{tabular}
+\caption{四个位置相近的地震的震源参数。}
+\label{evtlst1}
+\end{table}
+
+\begin{figure}[tbph]
+	\centering
+	\includegraphics[width=6cm,height=4cm]{fig/chap3/3344573_coda.eps}
+	\hspace{2em}
+	\includegraphics[width=6cm,height=4cm]{fig/chap3/3347700_coda.eps}\\
+	\includegraphics[width=6cm,height=4cm]{fig/chap3/3712078_coda.eps}
+	\hspace{2em}
+	\includegraphics[width=6cm,height=4cm]{fig/chap3/3343509_coda.eps}
+	\caption{4个位置接近的地震在ARSR台阵上产生的PKiKP波包叠加，频率范围为1-2HZ，它们的尾波均持续超过%
+100s,图中振幅均为对数坐标。注意到第四个事件的PKiKP尾波振幅较前三个小。}
+\end{figure}
+
+之前的研究认为~\citep{Koper2004,Poupinet2004}，PKiKP尾波是由之前震相的尾波，例如P，ScP的尾波与由
+深部散射产生的尾波叠加而成。
