@@ -13,7 +13,7 @@ dir_exist()
     if [ ! -d $1 ]
     then
         echo "directory $1 not exists."
-        exit $DIRERROR
+        exit $E_DIRERROR
     fi
 }
 
@@ -22,7 +22,7 @@ file_exist()
     if [ ! -f $1 ]
     then
         echo "file $1 not exists."
-        exit $FILEERROR
+        exit $E_FILEERROR
     fi
 }
 
@@ -97,6 +97,8 @@ do
         done
 
         echo "$array finished."
+    else
+        exit $E_DIRERROR
     fi
 
 done
