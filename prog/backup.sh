@@ -47,6 +47,13 @@ do
     esac
 done
 
+if [[ $dest = '' ]] || [[ $origin = '' ]]
+then
+	echo "No destination or origin dir specified."
+	exit $E_OPTERROR
+fi
+
+
 shift $(($OPTIND - 1))
 
 if [ $# -eq $NO_ARGS ]
@@ -57,28 +64,32 @@ else
     AR=$@
 fi
 
-cdir=`pwd`
 
 cd $origin
+
+cdir=`pwd`
+echo "cd to $cdir"
 
 for array in $AR
 do
     if [ -d $array ]
     then
-        echo "make directory for $array ."
+        echo "make directory for $array"
         mkdir $dest/$array
        
         file_exist $array/save.txt
 
+		cp $array/save.txt $dest/$array
+
         for event in `cat $array/save.txt`
         do
-            echo "make directory for $event ."
+            echo "make directory for $event"
             mkdir $dest/$array/$event
             
             echo "copy mseed file."
             for mseed in $array/$event/*.mseed
             do
-                echo "copy $mseed ."
+                echo "copy $mseed"
                 cp $mseed $dest/$array/$event
             done
 
