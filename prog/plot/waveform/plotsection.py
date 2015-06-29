@@ -134,11 +134,15 @@ class PlotSection(object):
         for line in ax.lines:
             line.set_linewidth(0.5)
             line.set_color('darkblue')
-            
+
+        if self.ttime is True:
+            self.PlotTtimeLine(ax)
+    
         ax.set_xlabel('Time [s]')
 
         ax.set_ylim(-1.5,(self.tr_num)*1.5)
         ax.set_xlim(self.time_min,self.time_max)
+        #ax.figure.set_size_inches(12,8)
         pl.savefig('sec.eps',bbox_inches='tight')
         #pl.show()
 
@@ -203,15 +207,19 @@ class PlotSection(object):
         ttime = np.empty(self.tr_num)
         for i,tr in enumerate(self.stream):
             ttime[i] = tr.stats.sac[self.marker]
-
-        tmp1=self.tr_offsets_norm.copy()
-        #tmp1.sort()
-        tmp2=ttime.copy()
-        tmp3=zip(tmp1,tmp2)
-        tmp3.sort(key = lambda x:x[0])
-        #tmp2.sort()
-        dist,time = zip(*tmp3)
-        ax.plot(time,dist,'r--')
+        
+        if self.smallaperture is True:
+            for i in range(self.tr_num):
+                ax.plot(ttime[i],1.5*i+0.5,'ro')
+        else :
+            tmp1=self.tr_offsets_norm.copy()
+            #tmp1.sort()
+            tmp2=ttime.copy()
+            tmp3=zip(tmp1,tmp2)
+            tmp3.sort(key = lambda x:x[0])
+            #tmp2.sort()
+            dist,time = zip(*tmp3)
+            ax.plot(time,dist,'r--')
 
 def GetStream(path):
 
@@ -257,8 +265,7 @@ if __name__ == '__main__':
     
     st = GetStream(path)
 
-    section = PlotSection(stream=st,scale=1,plot_dx=1,msf=1.5,
-            ttime=True,marker='t2')
-    #section = PlotSection(stream=st,sa=True)
-    section.PlotSection()
-    #section.PlotSectionSA()
+    #section = PlotSection(stream=st,scale=1,plot_dx=1,msf=1.5,ttime=True,marker='t2')
+    section = PlotSection(stream=st,sa=True,ttime=True,marker='t2')
+    #section.PlotSection()
+    section.PlotSectionSA()

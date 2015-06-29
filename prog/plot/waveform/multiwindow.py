@@ -13,6 +13,7 @@ class MultiWindow(object):
         self.kwargs = kwargs
 
         self.normalize = kwargs.get('norm',False)
+        self.log = kwargs.get('log',False)
 
     def InitTrace(self):
         self.tr_num = len(self.stream)
@@ -67,7 +68,10 @@ class MultiWindow(object):
 
 
             if self.normalize:
-                ax.semilogy(self.tr_times[i],self.tr_data[i]/self.tr_normfac[i],'k')
+                if self.log is True:
+                    ax.semilogy(self.tr_times[i],self.tr_data[i]/self.tr_normfac[i],'k')
+                else:
+                    ax.plot(self.tr_times[i],self.tr_data[i]/self.tr_normfac[i],'k')
             else:
                 ax.plot(self.tr_times[i],self.tr_data[i],'k')
 
@@ -75,7 +79,7 @@ class MultiWindow(object):
                 self.PlotInfo(ax,self.stream[0])
             ax.set_xlim(self.time_min,self.time_max)
             
-            #ax.locator_params(axis='y',nbins=6,prune='both')
+            ax.locator_params(axis='y',nbins=6,prune='both')
             ax.minorticks_on()
 
 
