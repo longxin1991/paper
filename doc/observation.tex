@@ -43,8 +43,8 @@ PKiKP在ICB反射点的分布主要集中在环太平洋区域，欧亚大陆下
 用到的CMAR和KSAR等台阵的数据不能获取。
 所用到的台阵数据如下:澳大利亚的ASAR(2012-2013)、WRA(2010-2012)、PSAR(2012-2015)；北美的BCAR、BMAR和IMAR(2013.11-2015.5)，YKA(2013.7-2014.11)，NVAR(1998-2014)，ILAR，TXAR，PDAR；哈萨克斯坦的ABKAR，KKAR，MKAR；德国的GERES；
 罗马尼亚的BURAR；苏格兰的EKB；挪威的SPB。所有的地震事件均选取5级以上，震中距从10到70度，震源
-深度没有限制。观测到的PKiKP的事件与台阵分布如图，其中包含了每道都具有清晰的PKiKP相位的观测和需要
-叠加才能看到清晰PKiKP相位的观测。
+深度没有限制。所有的IMS台站数据均通过1-2Hz的滤波，所有的事件均通过手工挑选，保证数据的质量。
+观测到的PKiKP的事件与台阵分布如图\ref{distibution}，其中包含了每道都具有清晰的PKiKP相位的观测和需要叠加才能看到清晰PKiKP相位的观测。可以看到PKiKP的IMS台阵的震中距主要集中在20～40度之间，这也是前临界PKiKP在ICB反射系数最大的区间。
 
 除了小口径台阵，这里还增加了部分阿拉斯加区域台网AK、USarray以及Hi-net的数据，观测到PKiKP相位
 的震中距范围在10至50度之内。在之前的研究中除了在Hi-net上，很少有在其他台网上观测到PKiKP的报道，
@@ -57,14 +57,27 @@ PKiKP相位，震中距的跨度甚至能超过20度，这些是之前的研究�
 
 \begin{figure}
 	\centering
-	\includegraphics[width=12cm,height=6cm]{fig/chap3/global.eps}
-	\caption{观测到PKiKP的IMS小口径台阵和事件的全球分布。红色五角星表示地震，黑色三角形%
-表示台阵，黑线表示射线路径的投影。}
+	\subfloat[]{%
+\includegraphics[width=12cm,height=6cm]{fig/chap3/global.eps}
+}
+\\
+	\subfloat[]{%
+\includegraphics[width=9cm,height=6cm]{fig/chap3/hist_dist.eps}	
+}
+	\caption{(a)观测到PKiKP的IMS小口径台阵和事件的全球分布。红色五角星表示地震，黑色三角形%
+表示台阵，黑线表示射线路径的投影。(b)所有观测到PKiKP的IMS台阵数随震中距的分布直方图。}
+	\label{distibution}
 \end{figure}
+
+\subsection{Observation from global IMS stations}
 
 \newpage
 
-\section{PKiKP尾波}
+\section{PKiKP Precursor}
+
+\newpage
+
+\section{PKiKP Coda}
 
 
 到目前为止的地震学观测表明，内核并不是一个均匀的球体，PKP和PKIKP走时的观测~\citep{Creager1992}和
