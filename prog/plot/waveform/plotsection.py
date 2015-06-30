@@ -18,7 +18,7 @@ class PlotSection(object):
         self.marker = kwargs.get('marker','t2')
         self.smallaperture = kwargs.get('sa',False)
         self.margin_shrink_fac = kwargs.get('msf',3)
-        self.fig = pl.figure(1,figsize=(6,8))
+        self.fig = pl.figure(1,figsize=(5,8))
         # Background, face and grid color.
         self.background_color = kwargs.get('bgcolor', 'w')
         self.face_color = kwargs.get('face_color', 'w')
@@ -109,7 +109,8 @@ class PlotSection(object):
             tl = self.time_max -self.time_min
             for tr in range(self.tr_num):
                 ax.plot(self.tr_times[tr],data[tr]+tr*1.5)
-                ax.text(self.time_min-tl/10,tr*1.5,stalst[tr],
+                strlen=len(stalst[tr])
+                ax.text(self.time_min-tl/(strlen*1.4),tr*1.5,stalst[tr],
                         horizontalalignment='left',
                         verticalalignment='center')
 
@@ -266,6 +267,6 @@ if __name__ == '__main__':
     st = GetStream(path)
 
     #section = PlotSection(stream=st,scale=1,plot_dx=1,msf=1.5,ttime=True,marker='t2')
-    section = PlotSection(stream=st,sa=True,ttime=True,marker='t2')
+    section = PlotSection(stream=st,sa=True,ttime=False,marker='t2')
     #section.PlotSection()
     section.PlotSectionSA()

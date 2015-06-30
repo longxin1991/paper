@@ -56,8 +56,8 @@ class MultiWindow(object):
 
     def InitPlot(self):
         fig = pl.gcf()
-        fig.set_size_inches(6,4)
-        #fig.set_size_inches(8,4)
+        #fig.set_size_inches(6,4)
+        fig.set_size_inches(8,4)
         self.axs = []
         gs = gridspec.GridSpec(self.tr_num,1,wspace=0,hspace=0)
         
@@ -75,8 +75,8 @@ class MultiWindow(object):
             else:
                 ax.plot(self.tr_times[i],self.tr_data[i],'k')
 
-            if self.tr_num is 1:
-                self.PlotInfo(ax,self.stream[0])
+            #if self.tr_num is 1:
+            #    self.PlotInfo(ax,self.stream[0])
             ax.set_xlim(self.time_min,self.time_max)
             
             ax.locator_params(axis='y',nbins=6,prune='both')
