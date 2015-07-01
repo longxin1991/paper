@@ -110,7 +110,7 @@ class PlotSection(object):
             for tr in range(self.tr_num):
                 ax.plot(self.tr_times[tr],data[tr]+tr*1.5)
                 strlen=len(stalst[tr])
-                ax.text(self.time_min-tl/(strlen*1.4),tr*1.5,stalst[tr],
+                ax.text(self.time_min-tl/(strlen*2),tr*1.5,stalst[tr],
                         horizontalalignment='left',
                         verticalalignment='center')
 
