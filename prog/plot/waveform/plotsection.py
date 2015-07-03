@@ -18,7 +18,7 @@ class PlotSection(object):
         self.marker = kwargs.get('marker','t2')
         self.smallaperture = kwargs.get('sa',False)
         self.margin_shrink_fac = kwargs.get('msf',3)
-        self.fig = pl.figure(1,figsize=(5,8))
+        self.fig = pl.figure(1,figsize=(6,8))
         # Background, face and grid color.
         self.background_color = kwargs.get('bgcolor', 'w')
         self.face_color = kwargs.get('face_color', 'w')
@@ -34,7 +34,7 @@ class PlotSection(object):
         self.x_labels_size = kwargs.get('x_labels_size', 8)
         self.y_labels_size = kwargs.get('y_labels_size', 8)
         self.title_size = kwargs.get('title_size', 10)
-        self.linewidth = kwargs.get('linewidth', 1)
+        self.linewidth = kwargs.get('linewidth', 0.5)
         self.linestyle = kwargs.get('linestyle', '-')
         self.subplots_adjust_left = kwargs.get('subplots_adjust_left', 0.12)
         self.subplots_adjust_right = kwargs.get('subplots_adjust_right', 0.88)
@@ -155,7 +155,7 @@ class PlotSection(object):
 
         # Setting up line properties
         for line in ax.lines:
-            line.set_alpha(self.alpha)
+            #line.set_alpha(self.alpha)
             line.set_linewidth(self.linewidth)
             line.set_color(self.color)
 
@@ -187,8 +187,8 @@ class PlotSection(object):
                 color=self.grid_color,
                 linestyle=self.grid_linestyle,
                 linewidth=self.grid_linewidth)
-
-        pl.show()
+        pl.savefig('sec.eps',bbox_inches='tight')
+        #pl.show()
 
     def OffsetToFraction(self, offset):
         return offset / self.tr_offsets.max()
@@ -266,7 +266,7 @@ if __name__ == '__main__':
     
     st = GetStream(path)
 
-    #section = PlotSection(stream=st,scale=1,plot_dx=1,msf=1.5,ttime=True,marker='t2')
-    section = PlotSection(stream=st,sa=True,ttime=False,marker='t2')
-    #section.PlotSection()
-    section.PlotSectionSA()
+    section = PlotSection(stream=st,scale=1.2,plot_dx=2,msf=1.5,ttime=True,marker='t2')
+    #section = PlotSection(stream=st,sa=True,ttime=False,marker='t2')
+    section.PlotSection()
+    #section.PlotSectionSA()
