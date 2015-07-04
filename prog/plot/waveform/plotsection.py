@@ -110,7 +110,7 @@ class PlotSection(object):
             for tr in range(self.tr_num):
                 ax.plot(self.tr_times[tr],data[tr]+tr*1.5)
                 strlen=len(stalst[tr])
-                ax.text(self.time_min-tl/(strlen*2),tr*1.5,stalst[tr],
+                ax.text(self.time_min-tl/(strlen*2.5),tr*1.5,stalst[tr],
                         horizontalalignment='left',
                         verticalalignment='center')
 
@@ -266,7 +266,7 @@ if __name__ == '__main__':
     
     st = GetStream(path)
 
-    section = PlotSection(stream=st,scale=1.2,plot_dx=2,msf=1.5,ttime=True,marker='t2')
-    #section = PlotSection(stream=st,sa=True,ttime=False,marker='t2')
-    section.PlotSection()
-    #section.PlotSectionSA()
+    #section = PlotSection(stream=st,scale=1.2,plot_dx=2,msf=1.5,ttime=True,marker='t2')
+    section = PlotSection(stream=st,sa=True,ttime=False,marker='t2')
+    #section.PlotSection()
+    section.PlotSectionSA()
