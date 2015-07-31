@@ -110,7 +110,7 @@ class PlotSection(object):
             for tr in range(self.tr_num):
                 ax.plot(self.tr_times[tr],data[tr]+tr*1.5)
                 strlen=len(stalst[tr])
-                ax.text(self.time_min-tl/(strlen*2.5),tr*1.5,stalst[tr],
+                ax.text(self.time_min-tl/(strlen*1.5),tr*1.5,stalst[tr],
                         horizontalalignment='left',
                         verticalalignment='center')
 
@@ -144,8 +144,8 @@ class PlotSection(object):
         ax.set_ylim(-1.5,(self.tr_num)*1.5)
         ax.set_xlim(self.time_min,self.time_max)
         #ax.figure.set_size_inches(12,8)
-        pl.savefig('sec.eps',bbox_inches='tight')
-        #pl.show()
+        #pl.savefig('sec.eps',bbox_inches='tight')
+        pl.show()
 
     def PlotSection(self,*args,**kwargs):
 
@@ -183,12 +183,12 @@ class PlotSection(object):
 
         ax.minorticks_on()
         
-        ax.grid(
-                color=self.grid_color,
-                linestyle=self.grid_linestyle,
-                linewidth=self.grid_linewidth)
-        pl.savefig('sec.eps',bbox_inches='tight')
-        #pl.show()
+        #ax.grid(
+        #        color=self.grid_color,
+        #        linestyle=self.grid_linestyle,
+        #        linewidth=self.grid_linewidth)
+        #pl.savefig('sec.pdf',bbox_inches='tight')
+        pl.show()
 
     def OffsetToFraction(self, offset):
         return offset / self.tr_offsets.max()
@@ -205,22 +205,43 @@ class PlotSection(object):
         self.sect_scale = (maxoffset-minoffset)*self.sect_user_scale/self.tr_num 
 
     def PlotTtimeLine(self,ax):
-        ttime = np.empty(self.tr_num)
-        for i,tr in enumerate(self.stream):
-            ttime[i] = tr.stats.sac[self.marker]
         
         if self.smallaperture is True:
-            for i in range(self.tr_num):
-                ax.plot(ttime[i],1.5*i+0.5,'ro')
+            ttime = np.empty(self.tr_num)
+            
+            for i,tr in enumerate(self.stream):
+                ttime[i] = tr.stats.sac[self.marker]
+        
+
+            tmp1=zip(self.stalst,ttime)
+            tmp1.sort(key=lambda x:x[0])
+
+            stalst,time = zip(*tmp1)
+            if self.ttime:
+                for i in range(self.tr_num):
+                    ax.plot(time[i],1.5*i+0.5,'ro')
         else :
-            tmp1=self.tr_offsets_norm.copy()
-            #tmp1.sort()
-            tmp2=ttime.copy()
-            tmp3=zip(tmp1,tmp2)
-            tmp3.sort(key = lambda x:x[0])
-            #tmp2.sort()
-            dist,time = zip(*tmp3)
-            ax.plot(time,dist,'r--')
+            mks=self.marker.split()
+            #定义相位字典
+            pdic = {'a':'P','t1':'PcP','t2':'PKiKP','t3':'ScS','t4':'S','t5':'ScP','t6':'pPcP'}
+            #pdic = {'a':'p','t1':'PcP','t2':'PKiKP','t3':'ScS','t4':'s','t5':'ScP','t6':'pPcP'}
+            for m in mks:
+                ttime = np.empty(self.tr_num)
+                
+                for i,tr in enumerate(self.stream):
+                    ttime[i] = tr.stats.sac[m]
+        
+                tmp1=self.tr_offsets_norm.copy()
+                #tmp1.sort()
+                tmp2=ttime.copy()
+                tmp3=zip(tmp1,tmp2)
+                tmp3.sort(key = lambda x:x[0])
+                #tmp2.sort()
+                tloc = tmp3[0]
+                dist,time = zip(*tmp3)
+                ax.plot(time,dist,'r--')
+                ax.text(tloc[1], tloc[0] - 0.005, pdic[m],
+                        horizontalalignment='center',fontsize=10)
 
 def GetStream(path):
 
@@ -265,8 +286,9 @@ if __name__ == '__main__':
     #    st += read(sacfile)
     
     st = GetStream(path)
-
-    #section = PlotSection(stream=st,scale=1.2,plot_dx=2,msf=1.5,ttime=True,marker='t2')
-    section = PlotSection(stream=st,sa=True,ttime=False,marker='t2')
+    mks = 'a t1 t2 t3 t4 t5 t6'
+    #mks = 't1 t2 t3 t5 t6'
+    #section = PlotSection(stream=st,scale=4,plot_dx=0.5,msf=3,ttime=False,marker=mks)
+    #section = PlotSection(stream=st,sa=True,ttime=False,marker='t2')
     #section.PlotSection()
     section.PlotSectionSA()

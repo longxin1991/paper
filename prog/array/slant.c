@@ -6,7 +6,7 @@ int main(int argc,char *argv[])
 {
 	int n,m,i=0,j,k,id;
 	SacTrace *st;
-	int p=0,np=100,cn,shift;
+	int p=0,np=200,cn,shift;
 	float *u,cd,delta,delay,*ut,add,tmp,b,e;
 	Ipp32fc *ht;
 	char *cst;
@@ -46,7 +46,7 @@ int main(int argc,char *argv[])
 	ht=(Ipp32fc *)malloc(m*sizeof(Ipp32fc *));
 	memset(ut,0,np*m);
 
-	linspace(p-2.0,p+2.0,np,u);
+	linspace(p-10.0,p+10.0,np,u);
 	delta=st[cn].hd.delta;
 	cd=st[cn].hd.gcarc;
 	b=st[cn].hd.b;
@@ -97,7 +97,7 @@ int main(int argc,char *argv[])
 	fwrite(ut,sizeof(float),np*m,fp);
 	fclose(fp);
 	/*output time and slowness extent */
-	printf("%.2f %.2f -2 2\n",b,e);
+	printf("%.2f %.2f -10 10\n",b,e);
 	/*output maxtrix dimension */
 	printf("%d %d\n",n,m);
 	free(u);

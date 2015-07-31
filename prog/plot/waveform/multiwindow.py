@@ -79,6 +79,8 @@ class MultiWindow(object):
             #    self.PlotInfo(ax,self.stream[0])
             ax.set_xlim(self.time_min,self.time_max)
             
+            ax.set_ylim(-20000,20000)
+            ax.ticklabel_format(axis='y',style='sci',scilimits=(-1,1));
             ax.locator_params(axis='y',nbins=6,prune='both')
             ax.minorticks_on()
 
@@ -110,6 +112,6 @@ if __name__ == '__main__':
     for sac in args.f :
         st += read(sac.name)
 
-    multiwin=MultiWindow(st,norm=True)
+    multiwin=MultiWindow(st,norm=False)
 
     multiwin.plotmultiwindow()
