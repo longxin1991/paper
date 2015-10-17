@@ -20,6 +20,7 @@ class PlotSection(object):
         self.smallaperture = kwargs.get('sa',False)
         self.margin_shrink_fac = kwargs.get('msf',3)
         self.fig = pl.figure(1,figsize=(4,8))
+        self.cut = kwargs.get('tlim',())
         # Background, face and grid color.
         self.background_color = kwargs.get('bgcolor', 'w')
         self.face_color = kwargs.get('face_color', 'w')
@@ -49,6 +50,14 @@ class PlotSection(object):
         #plot Ttime or not
         self.ttime = kwargs.get('ttime',True)
 
+    def Cut(self,data, b, delta, cut):
+
+        t1 = (cut[0] - b)/delta + 1
+        t2 = (cut[1] - cut[0])/delta + t1 + 1
+
+        return data[int(t1):int(t2)]
+
+
     def InitTraces(self):
         self.tr_num = len(self.stream)
         self.tr_b = np.empty(self.tr_num)
@@ -70,24 +79,35 @@ class PlotSection(object):
         self.stalst = ['']*self.tr_num
         
         for i,tr in enumerate(self.stream):
-            self.tr_data.append(tr.data)
             #self.tr_starttimes.append(tr.stats.starttime)
             self.tr_max_count[i] = tr.data.max()
             self.tr_npts[i] = tr.stats.npts
             self.tr_delta[i] = tr.stats.delta
             self.tr_b[i] = tr.stats.sac.b
-            self.stalst[i] = tr.stats.station 
+            self.stalst[i] = tr.stats.station
+            
+            if self.cut is not ():
+                self.tr_data.append(self.Cut(tr.data, self.tr_b[i],self.tr_delta[i], self.cut))
+            else:
+                self.tr_data.append(tr.data)
 
         self.InitTime()
 
     def InitTime(self):
         self.tr_times = []
 
-        for tr in range(self.tr_num):
-            self.tr_times.append(np.arange(self.tr_npts[tr])*self.tr_delta[tr]+self.tr_b[tr])
-
-        self.time_min = np.concatenate(self.tr_times).min()
-        self.time_max = np.concatenate(self.tr_times).max()
+       
+        if self.cut is not ():
+            self.time_min = self.cut[0]
+            self.time_max = self.cut[1]
+            for tr in range(self.tr_num):
+                npts = int((self.cut[1] - self.cut[0])/self.tr_delta[tr] + 1)
+                self.tr_times.append(np.arange(npts)*self.tr_delta[tr] + self.cut[0])
+        else:
+            for tr in range(self.tr_num):
+                self.tr_times.append(np.arange(self.tr_npts[tr])*self.tr_delta[tr]+self.tr_b[tr])
+            self.time_min = np.concatenate(self.tr_times).min()
+            self.time_max = np.concatenate(self.tr_times).max()
 
     def NormalizeTraces(self):
         self.tr_normfac = np.ones(self.tr_num)
@@ -109,6 +129,8 @@ class PlotSection(object):
             
             tl = self.time_max -self.time_min
             for tr in range(self.tr_num):
+                #print len(self.tr_times[tr]),len(data[tr])
+                #exit(0)
                 ax.plot(self.tr_times[tr],data[tr]+tr*1.5)
                 strlen=len(stalst[tr])
                 if self.label is True:
@@ -270,8 +292,6 @@ def GetStream(path):
 
     return st
 
-    
-
 if __name__ == '__main__':
     
     if len(argv) !=2:
@@ -294,6 +314,7 @@ if __name__ == '__main__':
     mks = 'a t1 t2 t3 t4 t5 t6'
     #mks = 't1 t2 t3 t5 t6'
     #section = PlotSection(stream=st,scale=4,plot_dx=0.5,msf=3,ttime=False,marker=mks)
-    section = PlotSection(stream=st,sa=True,ttime=True,text=False,marker='t4')
+    section = PlotSection(stream=st,sa=True,ttime=True,text=False,marker='t4',tlim=(1885,1895))
+    #section = PlotSection(stream=st,sa=True,ttime=False,marker='t2',tlim=(990,1020))
     #section.PlotSection()
     section.PlotSectionSA()
