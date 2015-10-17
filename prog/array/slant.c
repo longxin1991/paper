@@ -44,7 +44,7 @@ int main(int argc,char *argv[])
 
 	ut=(float *)malloc(np*m*sizeof(float));
 	ht=(Ipp32fc *)malloc(m*sizeof(Ipp32fc *));
-	memset(ut,0,np*m);
+	memset(ut,0,np*m*sizeof(float));
 
 	linspace(p-10.0,p+10.0,np,u);
 	delta=st[cn].hd.delta;
