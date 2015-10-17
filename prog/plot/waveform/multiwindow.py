@@ -54,10 +54,15 @@ class MultiWindow(object):
         ax.set_ylim(top=2)
         ax.text(b+(e-b)/2,1,info)
 
+    def PlotTtime(self,ax,tr,marker):
+        ttime = tr.stats.sac[marker]
+        ylim = ax.get_ylim()
+        ax.plot([ttime,ttime],[ylim[0],ylim[1]],'r--')
+
     def InitPlot(self):
         fig = pl.gcf()
-        #fig.set_size_inches(6,4)
-        fig.set_size_inches(8,4)
+        fig.set_size_inches(6,4)
+        #fig.set_size_inches(8,4)
         self.axs = []
         gs = gridspec.GridSpec(self.tr_num,1,wspace=0,hspace=0)
         
@@ -77,11 +82,12 @@ class MultiWindow(object):
 
             #if self.tr_num is 1:
             #    self.PlotInfo(ax,self.stream[0])
+            self.PlotTtime(ax,self.stream[i],'t4')
             ax.set_xlim(self.time_min,self.time_max)
             
-            ax.set_ylim(-20000,20000)
+            #ax.set_ylim(-20000,20000)
             ax.ticklabel_format(axis='y',style='sci',scilimits=(-1,1));
-            ax.locator_params(axis='y',nbins=6,prune='both')
+            ax.locator_params(axis='y',nbins=4,prune='both',tight=True)
             ax.minorticks_on()
 
 

@@ -36,7 +36,7 @@ int main(int argc,char *argv[])
 	cn=i;
 
 	ut=(float *)malloc(m*sizeof(float));
-	memset(ut,0,m);
+	memset(ut,0,m*sizeof(float));
 
 	delta=st[cn].hd.delta;
 	cd=st[cn].hd.gcarc;
@@ -52,7 +52,9 @@ int main(int argc,char *argv[])
 			for (j=0;j<m;j++)
 			{
 				if (j>=shift && (j-shift)<m)
+				{
 					add=st[i].data[j-shift];
+				}
 				else
 					add=0;
 				ut[j]+=add;

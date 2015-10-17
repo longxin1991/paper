@@ -94,6 +94,7 @@ PKiKP相位，震中距的跨度甚至能超过20度，这些是之前的研究�
 }
 	\caption{(a)YKA台阵的PKiKP记录(b)PcP所有单道记录(c)线性叠加后的PKiKP波形(d)事件和%
 YKA台阵的位置关系，和地震的震源机制。}
+	\label{yka}
 \end{figure}
 
 \newpage
@@ -119,6 +120,7 @@ YKA台阵的位置关系，和地震的震源机制。}
 }
 	\caption{(a)NVAR台阵的PKiKP记录(b)PcP所有单道记录(c)线性叠加后的PKiKP波形(d)事件和%
 NVAR台阵的位置关系，和地震的震源机制。}
+	\label{nvar}
 \end{figure}
 
 \newpage
@@ -256,6 +258,69 @@ PKiKP的理论走时曲线已经有一定弯曲，在较小震中距区间(10\~2
 	\caption{AK台网观测到的43道清晰PKiKP波形，震中距从10度到24度，红色虚线表示PREM%
 理论PKiKP到时。}
 	\label{ak_sec}
+\end{figure}
+
+\newpage
+
+\section{Tentative observation of PKIIKP and PKIKKIKP phases}
+
+PKIIKP和PKIKKIKP都是经过内核的P波相位，前者的反射发生在内核的下界面，后者的反射发生在外核的下
+界面。由于已经能找到很多清晰的PKiKP观测，因此假设产生清晰可观测的PKiKP的条件也同样有利于产生可观测到的PKIIKP和PKIKKIKP，我们可以尝试对于这些更稀有的震相的存在性进行验证。
+
+利用之前产生清晰PKiKP观测的事件，在不同滤波频段下观察它们理论到时附近的波形，但是并没有任何有效的
+、一致的信号的发现。在1-2Hz频段下，每道上这两个相位理论到时附近的振幅就已经是噪声级别了。
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=4cm,height=8cm]{fig/chap3/nvar_e1_1_2.eps}
+	\includegraphics[width=4cm,height=8cm]{fig/chap3/nvar_e1_2_3.eps}
+	\includegraphics[width=4cm,height=8cm]{fig/chap3/nvar_e1_3_4.eps}\\
+	\includegraphics[width=4cm,height=8cm]{fig/chap3/nvar_e2_1_2.eps}
+	\includegraphics[width=4cm,height=8cm]{fig/chap3/nvar_e2_2_3.eps}
+	\includegraphics[width=4cm,height=8cm]{fig/chap3/nvar_e2_3_4.eps}
+	\caption{NVAR台阵PKIIKP和PKIKKIKP理论到时附近在不同滤波频率下的波形,对应图\ref{nvar}的事件。上三图是%
+PKIIKP，下三图是PKIKKIKP。每道均按照PcP对齐，且理论到时用黑点标出。}
+	\label{nvar_e1_e2}
+\end{figure}
+
+\newpage
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=4cm,height=8cm]{fig/chap3/yka_e1_1_2.eps}
+	\includegraphics[width=4cm,height=8cm]{fig/chap3/yka_e1_2_3.eps}
+	\includegraphics[width=4cm,height=8cm]{fig/chap3/yka_e1_3_4.eps}\\
+	\includegraphics[width=4cm,height=8cm]{fig/chap3/yka_e2_1_2.eps}
+	\includegraphics[width=4cm,height=8cm]{fig/chap3/yka_e2_2_3.eps}
+	\includegraphics[width=4cm,height=8cm]{fig/chap3/yka_e2_3_4.eps}
+	\caption{YKA台阵PKIIKP和PKIKKIKP理论到时附近在不同滤波频率下的波形，对应图\ref{yka}的事件。上三图是%
+PKIIKP，下三图是PKIKKIKP。每道均按照PcP对齐，且理论到时用黑点标出。}
+	\label{yka_e1_e2}
+\end{figure}
+
+再对图\ref{nvar_e1_e2}和图\ref{yka_e1_e2}中每个频段下的波形进行PWS叠加，叠加慢度分别取PKIIKP和PKIKKIKP与PcP的理论相对慢度，得到的结果如图\ref{nvar_pws}和图\ref{yka_pws}，也没有发现清晰可靠的信号。在1-2Hz频率下，震中距30{\textdegree}时PKIIKP和PcP的振幅比约为0.02，%
+PKIKKIKP和PcP的振幅比约为0.01，而对于上面两个事件的记录，在每道中取这两个相位理论到时前后五秒的最大振幅再取平均，与各道平均的PcP振幅再相比，得到：对NVAR台阵，$AMP_{PKIIKP/PcP}=0.011$，%
+$AMP_{PKIKKIKP/PcP}=0.013$；对YKA台阵$AMP_{PKIIKP/PcP}=0.009$，%
+$AMP_{PKIKKIKP/PcP}=0.007$。可见在这样的信噪比条件下是不可能清晰地观测到这两个相位的。
+
+从多个能同时观测到PcP和PKiKP信号的地震事件记录中都未能发现PKIIKP和PKIKKIKP信号，说明观测到这些相位的可能性确实很低。
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=7cm,height=5cm]{fig/chap3/nvar_e1_pws.eps}
+	\hspace{1em}
+	\includegraphics[width=7cm,height=5cm]{fig/chap3/nvar_e2_pws.eps}
+	\caption{图\ref{nvar_e1_e2}中NVAR台阵记录的PWS叠加。左侧为PKIIKP，右侧为PKIKKIKP,理论到时用红色虚线标出，对应的滤波频率在左上角。并没有得到理想的叠加效果。}
+	\label{nvar_pws}
+\end{figure}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=7cm,height=5cm]{fig/chap3/yka_e1_pws.eps}
+	\hspace{1em}
+	\includegraphics[width=7cm,height=5cm]{fig/chap3/yka_e2_pws.eps}
+	\caption{图\ref{yka_e1_e2}中YKA台阵记录的PWS叠加。左侧为PKIIKP，右侧为PKIKKIKP,理论到时用红色虚线标出，对应的滤波频率在左上角。并没有得到理想的叠加效果。}
+	\label{yka_pws}
 \end{figure}
 
 \newpage

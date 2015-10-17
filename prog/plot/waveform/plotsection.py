@@ -14,11 +14,12 @@ class PlotSection(object):
         self.kwargs = kwargs
         self.stream = kwargs.get('stream')
         self.stream = self.stream.copy()
+        self.label = kwargs.get('text',True)
         self.sect_plot_dx = kwargs.get('plot_dx')
         self.marker = kwargs.get('marker','t2')
         self.smallaperture = kwargs.get('sa',False)
         self.margin_shrink_fac = kwargs.get('msf',3)
-        self.fig = pl.figure(1,figsize=(6,8))
+        self.fig = pl.figure(1,figsize=(4,8))
         # Background, face and grid color.
         self.background_color = kwargs.get('bgcolor', 'w')
         self.face_color = kwargs.get('face_color', 'w')
@@ -110,12 +111,14 @@ class PlotSection(object):
             for tr in range(self.tr_num):
                 ax.plot(self.tr_times[tr],data[tr]+tr*1.5)
                 strlen=len(stalst[tr])
-                ax.text(self.time_min-tl/(strlen*1.5),tr*1.5,stalst[tr],
-                        horizontalalignment='left',
-                        verticalalignment='center')
+                if self.label is True:
+                    ax.text(self.time_min-tl/(strlen*1.5),tr*1.5,stalst[tr],
+                            horizontalalignment='left',
+                            verticalalignment='center')
 
             ax.set_yticklabels([])
             ax.set_yticks([])
+            ax.locator_params(axis='x',nbins=6)
         else:
             self.ScaleTraces()
             
@@ -144,8 +147,8 @@ class PlotSection(object):
         ax.set_ylim(-1.5,(self.tr_num)*1.5)
         ax.set_xlim(self.time_min,self.time_max)
         #ax.figure.set_size_inches(12,8)
-        #pl.savefig('sec.eps',bbox_inches='tight')
-        pl.show()
+        pl.savefig('sec.eps',bbox_inches='tight')
+        #pl.show()
 
     def PlotSection(self,*args,**kwargs):
 
@@ -217,9 +220,11 @@ class PlotSection(object):
             tmp1.sort(key=lambda x:x[0])
 
             stalst,time = zip(*tmp1)
-            if self.ttime:
-                for i in range(self.tr_num):
-                    ax.plot(time[i],1.5*i+0.5,'ro')
+            ypos = np.arange(self.tr_num)*1.5 + 0.5
+            ax.plot(time,ypos,'ko')
+            #if self.ttime:
+            #    for i in range(self.tr_num):
+            #        ax.plot(time[i],1.5*i+0.5,'ro')
         else :
             mks=self.marker.split()
             #定义相位字典
@@ -289,6 +294,6 @@ if __name__ == '__main__':
     mks = 'a t1 t2 t3 t4 t5 t6'
     #mks = 't1 t2 t3 t5 t6'
     #section = PlotSection(stream=st,scale=4,plot_dx=0.5,msf=3,ttime=False,marker=mks)
-    #section = PlotSection(stream=st,sa=True,ttime=False,marker='t2')
+    section = PlotSection(stream=st,sa=True,ttime=True,text=False,marker='t4')
     #section.PlotSection()
     section.PlotSectionSA()
