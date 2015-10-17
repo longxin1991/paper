@@ -48,8 +48,8 @@ int main(int argc,char *argv[])
 	pt=(Ipp32fc *)malloc(np*m*sizeof(Ipp32fc *));
 	ph=(Ipp32f *)malloc(np*m*sizeof(Ipp32f *));
 	ht=(Ipp32fc *)malloc(m*sizeof(Ipp32fc *));
-	memset(ut,0,np*m);
-	memset(pt,0,np*m);
+	memset(ut,0,np*m*sizeof(float));
+	memset(pt,0,np*m*sizeof(float));
 
 	linspace(p-2.0,p+2.0,np,u);
 	delta=st[cn].hd.delta;
