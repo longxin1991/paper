@@ -8,7 +8,7 @@ Reader = evince
 Target = Thesis.pdf
 Source = Thesis.tex
 Class = CAS.cls
-Chapter = theory.tex observation.tex
+Chapter = theory.tex observation.tex amplitude.tex
 BibSource = Thesis.aux
 TmpFile = *.out *.log *.aux *.nav *.snm *.toc
 
