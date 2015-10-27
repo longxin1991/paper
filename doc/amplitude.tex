@@ -82,10 +82,10 @@ iKP/PcP振幅比分别与PcP、PKiKP振幅的关系。NVAR台阵数据中，PKiK
 7个都在31-34{\textdegree}之间，这些事件全都来自墨西哥—危地马拉的地震带，震源位置都比较接近，
 震源深度的差别也不是很大。这十个事件见表\ref{nvpd}。通过对比可以发现，不同台阵观测到的PKiKP/Pc
 P振幅比可以有巨大的差别，对有的事件NVAR和PDAR两个台阵观测到的振幅比差别竟然能达到10倍之多，而且
-在后面的讨论中可以看出这绝不是偶然的情况，如此大的差别很难想象是由除CMB横向变化之外的其他因素所
-造成，因为两个台阵到事件的震中距差别不大，NVAR和PDAR也只相距1000公里，同一事件在内核的反射点在内
-核表面的距离也小于它们对应于CMB反射点的距离；对某些事件，两个台阵的观测的振幅比则极为接近，可能这
-部分事件的数据采样到CMB性质相近的区域。
+在后面的讨论中可以看出这绝不是偶然的情况，在相同的观测频率下(1-2Hz)，如此大的差别很难想象是由除C
+MB横向变化之外的其他因素所造成，因为两个台阵到事件的震中距差别不大，NVAR和PDAR也只相距1000公里，
+同一事件在内核的反射点在内核表面的距离也小于它们对应于CMB反射点的距离；对某些事件，两个台阵的观测
+的振幅比则极为接近，可能这部分事件的数据采样到CMB性质相近的区域。
 
 \begin{table}[!ht]
 	\centering
@@ -110,9 +110,6 @@ P振幅比可以有巨大的差别，对有的事件NVAR和PDAR两个台阵观�
 	\label{nvpd}
 \end{table}
 
-表\ref{nvpd}中的事件10产生的PcP在NVAR和PDAR台阵的记录中存在很大差别，而对于PKiKP相位两台阵
-之间的差别则很小(图\ref{amp_comp_nvpd_4371355})。
-
 \begin{figure}[!ht]
 	\hfill{}
 	\subfloat[]{\centering%
@@ -129,7 +126,36 @@ PKiKP；(b)PDAR台阵的记录，上为PcP，下为PKiKP。}
 	\label{amp_comp_nvpd_4371355}
 \end{figure}
 	
-	从图\ref{amp_comp_nvpd_4371355}中可以发现，NVAR和PDAR记录到的PKiKP信号均很清晰，不仅
+表\ref{nvpd}中的事件10产生的PcP在NVAR和PDAR台阵的记录中存在很大差别，而对于PKiKP相位两台阵
+之间的差别则很小(图\ref{amp_comp_nvpd_4371355})，使得两个台阵观测到的PKiKP/PcP振幅比分别
+为0.03和0.15；图\ref{amp_comp_nvpd_2872958}中则显示，对于事件6，两台阵记录到相似的PcP和PK
+iKP波形，振幅比也很接近，分别为0.145和0.143。
+
+\begin{figure}[!ht]
+	\hfill{}
+	\subfloat[]{\centering%
+\includegraphics[width=8cm,height=8cm]{fig/chap4/amp_nv_2872958.eps}
+}
+	\hfill{}
+	\subfloat[]{\centering%
+\includegraphics[width=8cm,height=8cm]{fig/chap4/amp_pd_2872958.eps}
+}
+	\hfill{}
+	\caption{NVAR和PDAR记录到的表\ref{nvpd}中事件6产生的PKiKP和PcP信号对比。波形均为%
+每个台阵所有台站记录到的对应相位的最大振幅叠加后的结果。(a)为NVAR台阵的记录，上为PcP，下为%
+PKiKP；(b)PDAR台阵的记录，上为PcP，下为PKiKP。}
+	\label{amp_comp_nvpd_2872958}
+\end{figure}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=16cm,height=5cm]{fig/chap4/wf_cor.eps}
+	\caption{图\ref{amp_comp_nvpd_4371355}中的PKiKP波形比较，左边是将两个波形归一化后%
+画在一起，按照各自的最大振幅对齐；右边是归一化后的PKiKP波形的互相关函数。可以看出两个台阵记录到的PKiKP波形相似度非常高，最大互相关值在两个波形的最大振幅处取得。}
+	\label{wf_cor}
+\end{figure}
+
+从图\ref{amp_comp_nvpd_4371355}中可以发现，NVAR和PDAR记录到的PKiKP信号均很清晰，不仅
 振幅很接近，而且波形也很相似，由于是同一地震产生的同一震相，这也是完全符合预期的。但两台阵记录到
 的PcP信号却大不相同，NVAR记录中的PcP清晰尖锐，和PKiKP具有相似性,图\ref{wf_cor}是两个PKiKP
 波形的互相关；PDAR记录中的PcP前半部分和NVAR记录到的PcP略有相似性，但后半部分还有别的信号成分
@@ -141,10 +167,9 @@ PKiKP；(b)PDAR台阵的记录，上为PcP，下为PKiKP。}
 究发现了支持CMB存在强烈散射的证据，比如PKKP前驱波的研究~\citep{Rost2010616}等。
 图\ref{amp_comp_nvpd_4371355}中PDAR台阵记录到的复杂PcP波形可能是在CMB散射的结果。
 
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[width=16cm,height=5cm]{fig/chap4/wf_cor.eps}
-	\caption{图\ref{amp_comp_nvpd_4371355}中的PKiKP波形比较，左边是将两个波形归一化后%
-画在一起，按照各自的最大振幅对齐；右边是归一化后的PKiKP波形的互相关函数。可以看出两个台阵记录到的PKiKP波形相似度非常高，最大互相关值在两个波形的最大振幅处取得。}
-	\label{wf_cor}
-\end{figure}
+再通过对比图\ref{amp_comp_nvpd_4371355}和图\ref{amp_comp_nvpd_2872958}，它们对应的两个
+事件的震级相同均为5.5，震源深度也仅差10km，可以发现:(1)对于两个事件，NVAR记录到的PcP振幅则相差1
+0倍，PKiKP振幅只有两倍的差别；(2)事件6的两个台阵记录的PcP振幅与PDAR记录到的事件10的PcP振幅相
+近。综合这两点可以推测，对于事件6，PcP在核幔边界的反射点可能位于低速带内，虽然台阵到两个事件的震
+中距有所差别，且射线路径也不一样，但这些差别不足以解释观测到的巨大的PcP振幅差异和PKiKP振幅大小的
+相似性。
