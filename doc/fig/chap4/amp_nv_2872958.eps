@@ -1,5122 +1,1679 @@
 %!PS-Adobe-3.0 EPSF-3.0
-%%Title: amp_comp.eps
-%%Creator: matplotlib version 1.1.1rc2, http://matplotlib.sourceforge.net/
-%%CreationDate: Tue Oct 27 18:42:50 2015
-%%Orientation: portrait
-%%BoundingBox: 23 184 588 607
+%%Creator: cairo 1.14.0 (http://cairographics.org)
+%%CreationDate: Thu Oct 29 13:54:05 2015
+%%Pages: 1
+%%DocumentData: Clean7Bit
+%%LanguageLevel: 2
+%%BoundingBox: 0 0 565 423
 %%EndComments
 %%BeginProlog
-/mpldict 8 dict def
-mpldict begin
+save
+50 dict begin
+/q { gsave } bind def
+/Q { grestore } bind def
+/cm { 6 array astore concat } bind def
+/w { setlinewidth } bind def
+/J { setlinecap } bind def
+/j { setlinejoin } bind def
+/M { setmiterlimit } bind def
+/d { setdash } bind def
 /m { moveto } bind def
 /l { lineto } bind def
-/r { rlineto } bind def
 /c { curveto } bind def
-/cl { closepath } bind def
-/box {
-m
-1 index 0 r
-0 exch r
-neg 0 r
-cl
+/h { closepath } bind def
+/re { exch dup neg 3 1 roll 5 3 roll moveto 0 rlineto
+      0 exch rlineto 0 rlineto closepath } bind def
+/S { stroke } bind def
+/f { fill } bind def
+/f* { eofill } bind def
+/n { newpath } bind def
+/W { clip } bind def
+/W* { eoclip } bind def
+/BT { } bind def
+/ET { } bind def
+/pdfmark where { pop globaldict /?pdfmark /exec load put }
+    { globaldict begin /?pdfmark /pop load def /pdfmark
+    /cleartomark load def end } ifelse
+/BDC { mark 3 1 roll /BDC pdfmark } bind def
+/EMC { mark /EMC pdfmark } bind def
+/cairo_store_point { /cairo_point_y exch def /cairo_point_x exch def } def
+/Tj { show currentpoint cairo_store_point } bind def
+/TJ {
+  {
+    dup
+    type /stringtype eq
+    { show } { -0.001 mul 0 cairo_font_matrix dtransform rmoveto } ifelse
+  } forall
+  currentpoint cairo_store_point
 } bind def
-/clipbox {
-box
-clip
-newpath
-} bind def
-%!PS-Adobe-3.0 Resource-Font
-%%Title: DejaVu Sans
-%%Copyright: Copyright (c) 2003 by Bitstream, Inc. All Rights Reserved. Copyright (c) 2006 by Tavmjong Bah. All Rights Reserved. DejaVu changes are in public domain 
-%%Creator: Converted from TrueType to type 3 by PPR
-25 dict begin
-/_d{bind def}bind def
-/_m{moveto}_d
-/_l{lineto}_d
-/_cl{closepath eofill}_d
-/_c{curveto}_d
-/_sc{7 -1 roll{setcachedevice}{pop pop pop pop pop pop}ifelse}_d
-/_e{exec}_d
-/FontName /DejaVuSans def
-/PaintType 0 def
-/FontMatrix[.001 0 0 .001 0 0]def
-/FontBBox[-1021 -415 1681 1167]def
-/FontType 3 def
-/Encoding [ /period /zero /one /two /three /four /five /six /eight /nine /T /bracketleft /bracketright /e /i /m /s /minus ] def
-/FontInfo 10 dict dup begin
-/FamilyName (DejaVu Sans) def
-/FullName (DejaVu Sans) def
-/Notice (Copyright (c) 2003 by Bitstream, Inc. All Rights Reserved. Copyright (c) 2006 by Tavmjong Bah. All Rights Reserved. DejaVu changes are in public domain ) def
-/Weight (Book) def
-/Version (Version 2.33) def
-/ItalicAngle 0.0 def
-/isFixedPitch false def
-/UnderlinePosition -130 def
-/UnderlineThickness 90 def
-end readonly def
-/CharStrings 18 dict dup begin
-/period{318 0 107 0 210 124 _sc
-107 124 _m
-210 124 _l
-210 0 _l
-107 0 _l
-107 124 _l
-_cl}_d
-/zero{636 0 66 -13 570 742 _sc
-318 664 _m
-267 664 229 639 203 589 _c
-177 539 165 464 165 364 _c
-165 264 177 189 203 139 _c
-229 89 267 64 318 64 _c
-369 64 407 89 433 139 _c
-458 189 471 264 471 364 _c
-471 464 458 539 433 589 _c
-407 639 369 664 318 664 _c
-318 742 _m
-399 742 461 709 505 645 _c
-548 580 570 486 570 364 _c
-570 241 548 147 505 83 _c
-461 19 399 -13 318 -13 _c
-236 -13 173 19 130 83 _c
-87 147 66 241 66 364 _c
-66 486 87 580 130 645 _c
-173 709 236 742 318 742 _c
-_cl}_d
-/one{636 0 110 0 544 729 _sc
-124 83 _m
-285 83 _l
-285 639 _l
-110 604 _l
-110 694 _l
-284 729 _l
-383 729 _l
-383 83 _l
-544 83 _l
-544 0 _l
-124 0 _l
-124 83 _l
-_cl}_d
-/two{{636 0 73 0 536 742 _sc
-192 83 _m
-536 83 _l
-536 0 _l
-73 0 _l
-73 83 _l
-110 121 161 173 226 239 _c
-290 304 331 346 348 365 _c
-380 400 402 430 414 455 _c
-426 479 433 504 433 528 _c
-433 566 419 598 392 622 _c
-365 646 330 659 286 659 _c
-255 659 222 653 188 643 _c
-154 632 117 616 78 594 _c
-78 694 _l
-118 710 155 722 189 730 _c
-223 738 255 742 284 742 _c
-}_e{359 742 419 723 464 685 _c
-509 647 532 597 532 534 _c
-532 504 526 475 515 449 _c
-504 422 484 390 454 354 _c
-446 344 420 317 376 272 _c
-332 227 271 164 192 83 _c
-_cl}_e}_d
-/three{{636 0 76 -13 556 742 _sc
-406 393 _m
-453 383 490 362 516 330 _c
-542 298 556 258 556 212 _c
-556 140 531 84 482 45 _c
-432 6 362 -13 271 -13 _c
-240 -13 208 -10 176 -4 _c
-144 1 110 10 76 22 _c
-76 117 _l
-103 101 133 89 166 81 _c
-198 73 232 69 268 69 _c
-330 69 377 81 409 105 _c
-441 129 458 165 458 212 _c
-458 254 443 288 413 312 _c
-383 336 341 349 287 349 _c
-}_e{202 349 _l
-202 430 _l
-291 430 _l
-339 430 376 439 402 459 _c
-428 478 441 506 441 543 _c
-441 580 427 609 401 629 _c
-374 649 336 659 287 659 _c
-260 659 231 656 200 650 _c
-169 644 135 635 98 623 _c
-98 711 _l
-135 721 170 729 203 734 _c
-235 739 266 742 296 742 _c
-370 742 429 725 473 691 _c
-517 657 539 611 539 553 _c
-539 513 527 479 504 451 _c
-481 423 448 403 406 393 _c
-_cl}_e}_d
-/four{636 0 49 0 580 729 _sc
-378 643 _m
-129 254 _l
-378 254 _l
-378 643 _l
-352 729 _m
-476 729 _l
-476 254 _l
-580 254 _l
-580 172 _l
-476 172 _l
-476 0 _l
-378 0 _l
-378 172 _l
-49 172 _l
-49 267 _l
-352 729 _l
-_cl}_d
-/five{{636 0 77 -13 549 729 _sc
-108 729 _m
-495 729 _l
-495 646 _l
-198 646 _l
-198 467 _l
-212 472 227 476 241 478 _c
-255 480 270 482 284 482 _c
-365 482 429 459 477 415 _c
-525 370 549 310 549 234 _c
-549 155 524 94 475 51 _c
-426 8 357 -13 269 -13 _c
-238 -13 207 -10 175 -6 _c
-143 -1 111 6 77 17 _c
-77 116 _l
-106 100 136 88 168 80 _c
-199 72 232 69 267 69 _c
-}_e{323 69 368 83 401 113 _c
-433 143 450 183 450 234 _c
-450 284 433 324 401 354 _c
-368 384 323 399 267 399 _c
-241 399 214 396 188 390 _c
-162 384 135 375 108 363 _c
-108 729 _l
-_cl}_e}_d
-/six{{636 0 70 -13 573 742 _sc
-330 404 _m
-286 404 251 388 225 358 _c
-199 328 186 286 186 234 _c
-186 181 199 139 225 109 _c
-251 79 286 64 330 64 _c
-374 64 409 79 435 109 _c
-461 139 474 181 474 234 _c
-474 286 461 328 435 358 _c
-409 388 374 404 330 404 _c
-526 713 _m
-526 623 _l
-501 635 476 644 451 650 _c
-425 656 400 659 376 659 _c
-310 659 260 637 226 593 _c
-}_e{192 549 172 482 168 394 _c
-187 422 211 444 240 459 _c
-269 474 301 482 336 482 _c
-409 482 467 459 509 415 _c
-551 371 573 310 573 234 _c
-573 159 550 99 506 54 _c
-462 9 403 -13 330 -13 _c
-246 -13 181 19 137 83 _c
-92 147 70 241 70 364 _c
-70 479 97 571 152 639 _c
-206 707 280 742 372 742 _c
-396 742 421 739 447 735 _c
-472 730 498 723 526 713 _c
-_cl}_e}_d
-/eight{{636 0 68 -13 568 742 _sc
-318 346 _m
-271 346 234 333 207 308 _c
-180 283 167 249 167 205 _c
-167 161 180 126 207 101 _c
-234 76 271 64 318 64 _c
-364 64 401 76 428 102 _c
-455 127 469 161 469 205 _c
-469 249 455 283 429 308 _c
-402 333 365 346 318 346 _c
-219 388 _m
-177 398 144 418 120 447 _c
-96 476 85 511 85 553 _c
-85 611 105 657 147 691 _c
-188 725 245 742 318 742 _c
-}_e{390 742 447 725 489 691 _c
-530 657 551 611 551 553 _c
-551 511 539 476 515 447 _c
-491 418 459 398 417 388 _c
-464 377 501 355 528 323 _c
-554 291 568 251 568 205 _c
-568 134 546 80 503 43 _c
-459 5 398 -13 318 -13 _c
-237 -13 175 5 132 43 _c
-89 80 68 134 68 205 _c
-68 251 81 291 108 323 _c
-134 355 171 377 219 388 _c
-183 544 _m
-183 506 194 476 218 455 _c
-}_e{242 434 275 424 318 424 _c
-360 424 393 434 417 455 _c
-441 476 453 506 453 544 _c
-453 582 441 611 417 632 _c
-393 653 360 664 318 664 _c
-275 664 242 653 218 632 _c
-194 611 183 582 183 544 _c
-_cl}_e}_d
-/nine{{636 0 63 -13 566 742 _sc
-110 15 _m
-110 105 _l
-134 93 159 84 185 78 _c
-210 72 235 69 260 69 _c
-324 69 374 90 408 134 _c
-442 178 462 244 468 334 _c
-448 306 424 284 396 269 _c
-367 254 335 247 300 247 _c
-226 247 168 269 126 313 _c
-84 357 63 417 63 494 _c
-63 568 85 628 129 674 _c
-173 719 232 742 306 742 _c
-390 742 455 709 499 645 _c
-543 580 566 486 566 364 _c
-}_e{566 248 538 157 484 89 _c
-429 21 356 -13 264 -13 _c
-239 -13 214 -10 189 -6 _c
-163 -2 137 5 110 15 _c
-306 324 _m
-350 324 385 339 411 369 _c
-437 399 450 441 450 494 _c
-450 546 437 588 411 618 _c
-385 648 350 664 306 664 _c
-262 664 227 648 201 618 _c
-175 588 162 546 162 494 _c
-162 441 175 399 201 369 _c
-227 339 262 324 306 324 _c
-_cl}_e}_d
-/T{611 0 -2 0 614 729 _sc
--2 729 _m
-614 729 _l
-614 646 _l
-355 646 _l
-355 0 _l
-256 0 _l
-256 646 _l
--2 646 _l
--2 729 _l
-_cl}_d
-/bracketleft{390 0 86 -131 293 760 _sc
-86 760 _m
-293 760 _l
-293 690 _l
-176 690 _l
-176 -61 _l
-293 -61 _l
-293 -131 _l
-86 -131 _l
-86 760 _l
-_cl}_d
-/bracketright{390 0 97 -131 304 760 _sc
-304 760 _m
-304 -131 _l
-97 -131 _l
-97 -61 _l
-214 -61 _l
-214 690 _l
-97 690 _l
-97 760 _l
-304 760 _l
-_cl}_d
-/e{{615 0 55 -13 562 560 _sc
-562 296 _m
-562 252 _l
-149 252 _l
-153 190 171 142 205 110 _c
-238 78 284 62 344 62 _c
-378 62 412 66 444 74 _c
-476 82 509 95 541 113 _c
-541 28 _l
-509 14 476 3 442 -3 _c
-408 -9 373 -13 339 -13 _c
-251 -13 182 12 131 62 _c
-80 112 55 181 55 268 _c
-55 357 79 428 127 481 _c
-175 533 241 560 323 560 _c
-397 560 455 536 498 489 _c
-}_e{540 441 562 377 562 296 _c
-472 322 _m
-471 371 457 410 431 440 _c
-404 469 368 484 324 484 _c
-274 484 234 469 204 441 _c
-174 413 156 373 152 322 _c
-472 322 _l
-_cl}_e}_d
-/i{278 0 94 0 184 760 _sc
-94 547 _m
-184 547 _l
-184 0 _l
-94 0 _l
-94 547 _l
-94 760 _m
-184 760 _l
-184 646 _l
-94 646 _l
-94 760 _l
-_cl}_d
-/m{{974 0 91 0 889 560 _sc
-520 442 _m
-542 482 569 511 600 531 _c
-631 550 668 560 711 560 _c
-767 560 811 540 842 500 _c
-873 460 889 403 889 330 _c
-889 0 _l
-799 0 _l
-799 327 _l
-799 379 789 418 771 444 _c
-752 469 724 482 686 482 _c
-639 482 602 466 575 435 _c
-548 404 535 362 535 309 _c
-535 0 _l
-445 0 _l
-445 327 _l
-445 379 435 418 417 444 _c
-398 469 369 482 331 482 _c
-}_e{285 482 248 466 221 435 _c
-194 404 181 362 181 309 _c
-181 0 _l
-91 0 _l
-91 547 _l
-181 547 _l
-181 462 _l
-201 495 226 520 255 536 _c
-283 552 317 560 357 560 _c
-397 560 430 550 458 530 _c
-486 510 506 480 520 442 _c
-_cl}_e}_d
-/s{{521 0 54 -13 472 560 _sc
-443 531 _m
-443 446 _l
-417 458 391 468 364 475 _c
-336 481 308 485 279 485 _c
-234 485 200 478 178 464 _c
-156 450 145 430 145 403 _c
-145 382 153 366 169 354 _c
-185 342 217 330 265 320 _c
-296 313 _l
-360 299 405 279 432 255 _c
-458 230 472 195 472 151 _c
-472 100 452 60 412 31 _c
-372 1 316 -13 246 -13 _c
-216 -13 186 -10 154 -5 _c
-}_e{122 0 89 8 54 20 _c
-54 113 _l
-87 95 120 82 152 74 _c
-184 65 216 61 248 61 _c
-290 61 323 68 346 82 _c
-368 96 380 117 380 144 _c
-380 168 371 187 355 200 _c
-339 213 303 226 247 238 _c
-216 245 _l
-160 257 119 275 95 299 _c
-70 323 58 356 58 399 _c
-58 450 76 490 112 518 _c
-148 546 200 560 268 560 _c
-301 560 332 557 362 552 _c
-391 547 418 540 443 531 _c
-}_e{_cl}_e}_d
-/minus{838 0 106 272 732 355 _sc
-106 355 _m
-732 355 _l
-732 272 _l
-106 272 _l
-106 355 _l
-_cl}_d
-end readonly def
-
-/BuildGlyph
- {exch begin
- CharStrings exch
- 2 copy known not{pop /.notdef}if
- true 3 1 roll get exec
- end}_d
-
-/BuildChar {
- 1 index /Encoding get exch get
- 1 index /BuildGlyph get exec
-}_d
-
-FontName currentdict end definefont pop
-end
+/cairo_selectfont { cairo_font_matrix aload pop pop pop 0 0 6 array astore
+    cairo_font exch selectfont cairo_point_x cairo_point_y moveto } bind def
+/Tf { pop /cairo_font exch def /cairo_font_matrix where
+      { pop cairo_selectfont } if } bind def
+/Td { matrix translate cairo_font_matrix matrix concatmatrix dup
+      /cairo_font_matrix exch def dup 4 get exch 5 get cairo_store_point
+      /cairo_font where { pop cairo_selectfont } if } bind def
+/Tm { 2 copy 8 2 roll 6 array astore /cairo_font_matrix exch def
+      cairo_store_point /cairo_font where { pop cairo_selectfont } if } bind def
+/g { setgray } bind def
+/rg { setrgbcolor } bind def
+/d1 { setcachedevice } bind def
 %%EndProlog
-mpldict begin
-23.8 184.855 translate
-564.4 422.289 0 0 clipbox
-gsave
-0 4.44089e-16 m
-564.4 4.44089e-16 l
-564.4 422.289 l
-0 422.289 l
-cl
-1.000 setgray
-fill
-grestore
-gsave
-38.4188 238.065 m
-543.099 238.065 l
-543.099 415.089 l
-38.4188 415.089 l
-cl
-1.000 setgray
-fill
-grestore
-1.000 setlinewidth
-1 setlinejoin
-2 setlinecap
-[] 0 setdash
-0.000 setgray
-gsave
-504.7 177 38.42 238.1 clipbox
-38.4188 318.121 m
-39.0496 317.79 l
-39.6804 317.567 l
-40.9422 317.449 l
-42.2039 317.736 l
-43.4656 318.358 l
-45.3581 319.699 l
-52.2975 325.111 l
-54.8209 326.925 l
-56.0826 327.653 l
-57.3443 328.081 l
-57.9751 328.128 l
-58.606 328.037 l
-59.2368 327.79 l
-59.8677 327.374 l
-60.4985 326.782 l
-61.7602 325.08 l
-63.0219 322.791 l
-66.1762 316.321 l
-67.4379 314.435 l
-68.0687 313.829 l
-68.6996 313.493 l
-69.3304 313.45 l
-69.9613 313.71 l
-70.5921 314.27 l
-71.223 315.117 l
-72.4847 317.551 l
-73.7464 320.677 l
-76.2698 327.171 l
-77.5315 329.615 l
-78.1623 330.477 l
-78.7932 331.062 l
-79.424 331.358 l
-80.0549 331.361 l
-80.6857 331.082 l
-81.3166 330.538 l
-81.9474 329.759 l
-83.2091 327.639 l
-85.7325 322.37 l
-86.9942 319.909 l
-88.2559 317.935 l
-88.8868 317.186 l
-89.5176 316.614 l
-90.1485 316.226 l
-90.7793 316.021 l
-91.4102 315.995 l
-92.041 316.14 l
-92.6719 316.444 l
-93.9336 317.464 l
-95.1953 318.902 l
-99.6112 324.654 l
-100.873 325.798 l
-102.135 326.492 l
-102.765 326.656 l
-103.396 326.699 l
-104.658 326.447 l
-105.92 325.826 l
-107.812 324.504 l
-110.336 322.76 l
-111.597 322.114 l
-113.49 321.46 l
-120.429 319.786 l
-121.691 319.712 l
-122.953 319.93 l
-124.214 320.499 l
-125.476 321.405 l
-127.369 323.156 l
-129.261 324.833 l
-130.523 325.588 l
-131.154 325.8 l
-131.785 325.89 l
-132.415 325.855 l
-133.677 325.435 l
-134.939 324.639 l
-138.724 321.796 l
-139.986 321.275 l
-141.247 321.127 l
-142.509 321.335 l
-143.771 321.81 l
-146.294 322.949 l
-147.556 323.262 l
-148.818 323.203 l
-150.079 322.691 l
-151.341 321.739 l
-153.233 319.78 l
-154.495 318.48 l
-155.757 317.552 l
-156.388 317.327 l
-157.019 317.305 l
-157.649 317.511 l
-158.28 317.959 l
-158.911 318.651 l
-159.542 319.577 l
-160.804 322.021 l
-164.589 330.361 l
-165.22 331.246 l
-165.85 331.844 l
-166.481 332.125 l
-167.112 332.074 l
-167.743 331.691 l
-168.374 330.994 l
-169.005 330.011 l
-170.266 327.371 l
-174.682 316.775 l
-175.944 314.768 l
-177.206 313.451 l
-177.837 313.038 l
-178.467 312.779 l
-179.098 312.668 l
-179.729 312.7 l
-180.36 312.878 l
-180.991 313.207 l
-181.622 313.698 l
-182.253 314.365 l
-182.883 315.22 l
-184.145 317.537 l
-185.407 320.669 l
-186.669 324.48 l
-189.192 332.627 l
-190.454 335.839 l
-191.084 336.967 l
-191.715 337.691 l
-192.346 337.965 l
-192.977 337.76 l
-193.608 337.068 l
-194.239 335.9 l
-194.87 334.289 l
-196.131 329.963 l
-198.024 321.926 l
-199.286 316.636 l
-200.547 312.234 l
-201.178 310.54 l
-201.809 309.247 l
-202.44 308.38 l
-203.071 307.948 l
-203.701 307.944 l
-204.332 308.345 l
-204.963 309.116 l
-205.594 310.21 l
-206.856 313.15 l
-211.272 325.126 l
-212.533 327.464 l
-213.164 328.323 l
-213.795 328.973 l
-214.426 329.42 l
-215.057 329.679 l
-215.688 329.771 l
-216.318 329.719 l
-217.58 329.291 l
-219.473 328.243 l
-221.996 326.889 l
-226.412 324.886 l
-227.674 324.048 l
-228.935 322.984 l
-230.197 321.684 l
-232.09 319.315 l
-233.982 316.501 l
-237.137 311.515 l
-238.398 310.013 l
-239.029 309.54 l
-239.66 309.322 l
-240.291 309.411 l
-240.922 309.854 l
-241.552 310.688 l
-242.183 311.938 l
-242.814 313.612 l
-244.076 318.174 l
-245.338 324.044 l
-248.492 339.83 l
-249.754 344.363 l
-250.384 345.886 l
-251.015 346.844 l
-251.646 347.212 l
-252.277 346.987 l
-252.908 346.186 l
-253.539 344.842 l
-254.169 343.003 l
-255.431 338.06 l
-256.693 331.808 l
-258.585 320.827 l
-263.001 293.419 l
-264.263 287.465 l
-264.894 285.337 l
-265.525 283.949 l
-266.156 283.425 l
-266.786 283.871 l
-267.417 285.369 l
-268.048 287.964 l
-268.679 291.664 l
-269.31 296.432 l
-270.572 308.794 l
-272.464 331.91 l
-274.357 355.166 l
-275.618 367.676 l
-276.249 372.468 l
-276.88 376.108 l
-277.511 378.509 l
-278.142 379.62 l
-278.773 379.42 l
-279.403 377.914 l
-280.034 375.13 l
-280.665 371.11 l
-281.296 365.91 l
-282.558 352.251 l
-283.819 334.83 l
-285.712 303.856 l
-287.605 271.901 l
-288.866 253.898 l
-289.497 246.922 l
-290.128 241.759 l
-290.759 238.72 l
-291.39 238.065 l
-292.02 239.98 l
-292.651 244.557 l
-293.282 251.784 l
-293.913 261.535 l
-295.175 287.515 l
-297.067 335.937 l
-298.329 367.78 l
-299.591 393.736 l
-300.222 403.296 l
-300.852 410.136 l
-301.483 414.081 l
-302.114 415.089 l
-302.745 413.247 l
-303.376 408.759 l
-304.007 401.928 l
-305.268 382.798 l
-307.161 346.958 l
-309.053 311.693 l
-310.315 291.676 l
-311.577 275.243 l
-312.839 262.441 l
-313.469 257.408 l
-314.1 253.33 l
-314.731 250.283 l
-315.362 248.373 l
-315.993 247.734 l
-316.624 248.516 l
-317.254 250.867 l
-317.885 254.916 l
-318.516 260.75 l
-319.147 268.4 l
-320.409 288.873 l
-321.67 314.906 l
-324.194 371.39 l
-325.456 393.941 l
-326.086 402.151 l
-326.717 407.862 l
-327.348 410.863 l
-327.979 411.059 l
-328.61 408.479 l
-329.241 403.269 l
-329.871 395.682 l
-331.133 374.819 l
-333.026 336.004 l
-334.918 298.919 l
-336.18 279.727 l
-336.811 272.373 l
-337.442 266.615 l
-338.073 262.458 l
-338.703 259.864 l
-339.334 258.763 l
-339.965 259.061 l
-340.596 260.657 l
-341.227 263.442 l
-341.858 267.31 l
-342.488 272.155 l
-343.75 284.362 l
-345.012 299.197 l
-349.428 355.116 l
-350.69 366.248 l
-351.32 370.125 l
-351.951 372.722 l
-352.582 373.971 l
-353.213 373.85 l
-353.844 372.382 l
-354.475 369.637 l
-355.105 365.725 l
-356.367 355.008 l
-358.26 334.567 l
-360.152 313.763 l
-361.414 302.077 l
-362.676 293.338 l
-363.307 290.277 l
-363.937 288.151 l
-364.568 286.979 l
-365.199 286.756 l
-365.83 287.46 l
-366.461 289.045 l
-367.092 291.444 l
-367.722 294.573 l
-368.984 302.575 l
-372.769 330.188 l
-373.4 333.716 l
-374.031 336.597 l
-374.662 338.756 l
-375.293 340.152 l
-375.924 340.782 l
-376.554 340.676 l
-377.185 339.902 l
-377.816 338.553 l
-379.078 334.63 l
-381.601 325.766 l
-382.232 324.063 l
-382.863 322.731 l
-383.494 321.805 l
-384.125 321.288 l
-384.755 321.157 l
-385.386 321.363 l
-386.017 321.84 l
-387.279 323.282 l
-388.541 324.829 l
-389.171 325.462 l
-389.802 325.929 l
-390.433 326.2 l
-391.064 326.259 l
-391.695 326.105 l
-392.326 325.752 l
-392.956 325.221 l
-394.218 323.738 l
-396.111 320.863 l
-398.634 316.495 l
-401.788 310.973 l
-403.05 309.374 l
-403.681 308.9 l
-404.312 308.723 l
-404.943 308.899 l
-405.573 309.478 l
-406.204 310.498 l
-406.835 311.979 l
-407.466 313.923 l
-408.728 319.089 l
-409.989 325.548 l
-412.513 339.067 l
-413.775 344.151 l
-414.405 345.876 l
-415.036 346.944 l
-415.667 347.304 l
-416.298 346.927 l
-416.929 345.816 l
-417.56 343.998 l
-418.19 341.528 l
-419.452 334.963 l
-421.345 322.713 l
-423.237 310.583 l
-424.499 304.098 l
-425.13 301.595 l
-425.761 299.662 l
-426.392 298.328 l
-427.022 297.608 l
-427.653 297.497 l
-428.284 297.973 l
-428.915 299.003 l
-429.546 300.539 l
-430.177 302.527 l
-431.438 307.606 l
-433.331 316.992 l
-436.485 333.19 l
-437.747 338.607 l
-439.009 342.854 l
-439.639 344.433 l
-440.27 345.594 l
-440.901 346.303 l
-441.532 346.527 l
-442.163 346.241 l
-442.794 345.43 l
-443.424 344.088 l
-444.055 342.221 l
-444.686 339.849 l
-445.948 333.749 l
-447.21 326.254 l
-450.364 306.283 l
-451.626 300.087 l
-452.256 297.78 l
-452.887 296.105 l
-453.518 295.118 l
-454.149 294.853 l
-454.78 295.326 l
-455.411 296.532 l
-456.041 298.441 l
-456.672 301.007 l
-457.934 307.821 l
-459.196 316.245 l
-462.35 338.135 l
-463.612 344.645 l
-464.243 346.993 l
-464.873 348.635 l
-465.504 349.522 l
-466.135 349.624 l
-466.766 348.936 l
-467.397 347.48 l
-468.028 345.301 l
-468.658 342.466 l
-469.92 335.216 l
-473.705 310.1 l
-474.967 304.152 l
-475.598 302.1 l
-476.229 300.731 l
-476.86 300.067 l
-477.49 300.102 l
-478.121 300.807 l
-478.752 302.132 l
-479.383 304.009 l
-480.645 309.073 l
-482.537 318.485 l
-484.43 327.755 l
-485.691 332.78 l
-486.322 334.768 l
-486.953 336.351 l
-487.584 337.503 l
-488.215 338.203 l
-488.846 338.443 l
-489.477 338.226 l
-490.107 337.562 l
-490.738 336.473 l
-491.369 334.992 l
-492.631 331.041 l
-494.523 323.601 l
-496.416 316.274 l
-497.678 312.575 l
-498.308 311.294 l
-498.939 310.454 l
-499.57 310.081 l
-500.201 310.181 l
-500.832 310.739 l
-501.463 311.72 l
-502.094 313.072 l
-503.355 316.61 l
-506.509 326.415 l
-507.771 329.135 l
-508.402 330.041 l
-509.033 330.622 l
-509.664 330.878 l
-510.295 330.823 l
-510.925 330.479 l
-511.556 329.875 l
-512.187 329.046 l
-513.449 326.863 l
-515.341 322.842 l
-517.234 318.792 l
-518.496 316.554 l
-519.126 315.685 l
-519.757 315.031 l
-520.388 314.628 l
-521.019 314.505 l
-521.65 314.685 l
-522.281 315.181 l
-522.912 315.995 l
-523.542 317.114 l
-524.804 320.14 l
-528.589 330.773 l
-529.22 331.897 l
-529.851 332.633 l
-530.482 332.935 l
-531.113 332.779 l
-531.743 332.164 l
-532.374 331.115 l
-533.005 329.677 l
-534.267 325.917 l
-536.79 317.467 l
-538.052 314.264 l
-538.683 313.161 l
-539.314 312.437 l
-539.945 312.099 l
-540.575 312.138 l
-541.206 312.525 l
-541.837 313.221 l
-542.468 314.175 l
-543.099 315.33 l
-543.099 315.33 l
-stroke
-grestore
-0.500 setlinewidth
-0 setlinecap
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 4 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 238.065 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -4 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 415.089 o
-grestore
-/DejaVuSans findfont
-12.000 scalefont
-setfont
-gsave
-27.942188 224.987187 translate
-0.000000 rotate
-0.000000 0.171875 m /five glyphshow
-7.634766 0.171875 m /two glyphshow
-15.269531 0.171875 m /five glyphshow
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 4 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-164.589 238.065 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -4 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-164.589 415.089 o
-grestore
-gsave
-153.987188 224.987187 translate
-0.000000 rotate
-0.000000 0.171875 m /five glyphshow
-7.634766 0.171875 m /three glyphshow
-15.269531 0.171875 m /zero glyphshow
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 4 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-290.759 238.065 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -4 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-290.759 415.089 o
-grestore
-gsave
-280.282188 224.987187 translate
-0.000000 rotate
-0.000000 0.171875 m /five glyphshow
-7.634766 0.171875 m /three glyphshow
-15.269531 0.171875 m /five glyphshow
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 4 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-416.929 238.065 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -4 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-416.929 415.089 o
-grestore
-gsave
-406.327188 224.987187 translate
-0.000000 rotate
-0.000000 0.171875 m /five glyphshow
-7.634766 0.171875 m /four glyphshow
-15.269531 0.171875 m /zero glyphshow
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 4 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 238.065 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -4 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 415.089 o
-grestore
-gsave
-532.622188 225.143437 translate
-0.000000 rotate
-0.000000 0.171875 m /five glyphshow
-7.634766 0.171875 m /four glyphshow
-15.269531 0.171875 m /five glyphshow
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-63.6528 238.065 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-63.6528 415.089 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-88.8868 238.065 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-88.8868 415.089 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-114.121 238.065 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-114.121 415.089 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-139.355 238.065 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-139.355 415.089 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-189.823 238.065 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-189.823 415.089 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-215.057 238.065 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-215.057 415.089 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-240.291 238.065 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-240.291 415.089 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-265.525 238.065 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-265.525 415.089 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-315.993 238.065 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-315.993 415.089 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-341.227 238.065 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-341.227 415.089 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-366.461 238.065 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-366.461 415.089 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-391.695 238.065 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-391.695 415.089 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-442.163 238.065 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-442.163 415.089 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-467.397 238.065 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-467.397 415.089 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-492.631 238.065 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-492.631 415.089 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-517.865 238.065 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-517.865 415.089 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-4 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 257.105 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--4 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 257.105 o
-grestore
-gsave
-18.653125 252.730081 translate
-0.000000 rotate
-0.000000 0.000000 m /minus glyphshow
-10.054688 0.000000 m /four glyphshow
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-4 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 289.785 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--4 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 289.785 o
-grestore
-gsave
-19.184375 285.331929 translate
-0.000000 rotate
-0.000000 0.000000 m /minus glyphshow
-10.054688 0.000000 m /two glyphshow
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-4 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 322.465 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--4 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 322.465 o
-grestore
-gsave
-28.371875 317.925964 translate
-0.000000 rotate
-0.000000 0.171875 m /zero glyphshow
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-4 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 355.145 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--4 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 355.145 o
-grestore
-gsave
-28.856250 350.691874 translate
-0.000000 rotate
-0.000000 0.000000 m /two glyphshow
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-4 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 387.825 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--4 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 387.825 o
-grestore
-gsave
-28.043750 383.449971 translate
-0.000000 rotate
-0.000000 0.000000 m /four glyphshow
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 240.765 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 240.765 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 248.935 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 248.935 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 265.275 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 265.275 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 273.445 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 273.445 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 281.615 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 281.615 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 297.955 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 297.955 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 306.125 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 306.125 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 314.295 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 314.295 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 330.635 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 330.635 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 338.805 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 338.805 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 346.975 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 346.975 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 363.315 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 363.315 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 371.485 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 371.485 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 379.655 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 379.655 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 395.995 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 395.995 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 404.165 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 404.165 o
-grestore
-1.000 setlinewidth
-2 setlinecap
-gsave
-38.4188 415.089 m
-543.099 415.089 l
-stroke
-grestore
-gsave
-543.099 238.065 m
-543.099 415.089 l
-stroke
-grestore
-gsave
-38.4188 238.065 m
-543.099 238.065 l
-stroke
-grestore
-gsave
-38.4188 238.065 m
-38.4188 415.089 l
-stroke
-grestore
-gsave
-38.4188 35.9813 m
-543.099 35.9813 l
-543.099 213.005 l
-38.4188 213.005 l
-cl
-1.000 setgray
-fill
-grestore
-gsave
-504.7 177 38.42 35.98 clipbox
-38.4187 93.0158 m
-39.0494 94.4706 l
-40.3108 98.541 l
-41.5722 103.631 l
-44.7257 116.999 l
-45.9871 121.443 l
-47.2485 124.971 l
-48.5099 127.492 l
-49.1405 128.374 l
-49.7712 129.014 l
-50.4019 129.425 l
-51.0326 129.62 l
-51.6633 129.616 l
-52.294 129.425 l
-52.9247 129.06 l
-53.5554 128.533 l
-54.8168 127.014 l
-56.0782 124.888 l
-57.3396 122.148 l
-58.601 118.812 l
-60.493 112.953 l
-62.3851 106.991 l
-63.6465 103.763 l
-64.2772 102.579 l
-64.9079 101.767 l
-65.5386 101.372 l
-66.1693 101.428 l
-66.8 101.944 l
-67.4307 102.91 l
-68.0614 104.291 l
-69.3228 108.04 l
-72.4762 118.71 l
-73.1069 120.257 l
-73.7376 121.431 l
-74.3683 122.204 l
-74.999 122.574 l
-75.6297 122.57 l
-76.2604 122.248 l
-76.8911 121.683 l
-79.4139 118.898 l
-80.0446 118.523 l
-80.6753 118.405 l
-81.3059 118.563 l
-81.9366 118.986 l
-83.198 120.444 l
-84.4594 122.173 l
-85.0901 122.888 l
-85.7208 123.367 l
-86.3515 123.524 l
-86.9822 123.295 l
-87.6129 122.644 l
-88.2436 121.569 l
-88.8743 120.103 l
-90.1357 116.283 l
-92.0277 109.996 l
-92.6584 108.252 l
-93.2891 106.869 l
-93.9198 105.925 l
-94.5505 105.464 l
-95.1812 105.494 l
-95.8119 105.985 l
-96.4426 106.876 l
-97.704 109.469 l
-99.5961 113.599 l
-100.227 114.591 l
-100.857 115.259 l
-101.488 115.575 l
-102.119 115.543 l
-102.75 115.206 l
-104.011 113.939 l
-105.272 112.621 l
-105.903 112.243 l
-106.534 112.196 l
-107.164 112.557 l
-107.795 113.371 l
-108.426 114.647 l
-109.056 116.354 l
-110.318 120.753 l
-112.21 127.962 l
-112.841 129.951 l
-113.471 131.507 l
-114.102 132.525 l
-114.733 132.933 l
-115.363 132.694 l
-115.994 131.808 l
-116.625 130.312 l
-117.256 128.274 l
-118.517 122.964 l
-121.67 107.891 l
-122.932 103.118 l
-124.193 99.5989 l
-124.824 98.3156 l
-125.455 97.3372 l
-126.085 96.6544 l
-126.716 96.2636 l
-127.347 96.171 l
-127.977 96.3934 l
-128.608 96.9584 l
-129.239 97.9019 l
-129.869 99.2632 l
-130.5 101.08 l
-131.131 103.381 l
-132.392 109.465 l
-133.654 117.323 l
-136.807 139.286 l
-137.438 142.785 l
-138.068 145.572 l
-138.699 147.499 l
-139.33 148.447 l
-139.96 148.339 l
-140.591 147.142 l
-141.222 144.873 l
-141.853 141.599 l
-142.483 137.431 l
-143.745 127.048 l
-146.898 98.5659 l
-148.16 90.1903 l
-148.79 87.1884 l
-149.421 85.0567 l
-150.052 83.8125 l
-150.682 83.4431 l
-151.313 83.9109 l
-151.944 85.1589 l
-152.574 87.1168 l
-153.205 89.7056 l
-154.466 96.4434 l
-155.728 104.707 l
-160.143 135.969 l
-161.404 142.477 l
-162.035 144.818 l
-162.665 146.43 l
-163.296 147.242 l
-163.927 147.206 l
-164.558 146.301 l
-165.188 144.537 l
-165.819 141.957 l
-166.45 138.637 l
-167.711 130.229 l
-171.495 102.01 l
-172.757 95.5838 l
-173.387 93.3612 l
-174.018 91.8267 l
-174.649 90.964 l
-175.279 90.7314 l
-175.91 91.0678 l
-176.541 91.8995 l
-177.171 93.1471 l
-178.433 96.5837 l
-179.694 100.859 l
-181.586 108.231 l
-183.478 116.586 l
-187.893 137.33 l
-188.524 139.508 l
-189.155 141.191 l
-189.785 142.277 l
-190.416 142.68 l
-191.047 142.336 l
-191.677 141.207 l
-192.308 139.29 l
-192.939 136.614 l
-194.2 129.276 l
-196.092 115.193 l
-197.984 101.398 l
-199.246 94.5736 l
-199.876 92.25 l
-200.507 90.7482 l
-201.138 90.0948 l
-201.769 90.2789 l
-202.399 91.2541 l
-203.03 92.9419 l
-203.661 95.2365 l
-204.922 101.126 l
-207.445 114.129 l
-208.706 119.271 l
-209.337 121.228 l
-209.968 122.743 l
-210.598 123.828 l
-211.229 124.519 l
-211.86 124.874 l
-212.49 124.968 l
-213.752 124.718 l
-215.013 124.459 l
-215.644 124.507 l
-216.274 124.736 l
-216.905 125.162 l
-217.536 125.779 l
-218.797 127.427 l
-220.059 129.146 l
-220.689 129.795 l
-221.32 130.165 l
-221.951 130.158 l
-222.581 129.688 l
-223.212 128.69 l
-223.843 127.126 l
-224.474 124.988 l
-225.104 122.299 l
-226.366 115.538 l
-229.519 96.3234 l
-230.15 93.2902 l
-230.78 90.8564 l
-231.411 89.1223 l
-232.042 88.1574 l
-232.673 87.9965 l
-233.303 88.6393 l
-233.934 90.0517 l
-234.565 92.1688 l
-235.195 94.9005 l
-236.457 101.76 l
-240.872 128.512 l
-242.133 134.413 l
-243.394 139.163 l
-244.656 142.757 l
-245.286 144.097 l
-245.917 145.096 l
-246.548 145.713 l
-247.178 145.893 l
-247.809 145.574 l
-248.44 144.689 l
-249.071 143.172 l
-249.701 140.966 l
-250.332 138.03 l
-250.963 134.345 l
-252.224 124.8 l
-253.485 112.819 l
-256.639 80.2803 l
-257.9 70.6794 l
-258.531 67.4601 l
-259.162 65.5115 l
-259.792 64.9449 l
-260.423 65.8236 l
-261.054 68.1587 l
-261.684 71.9084 l
-262.315 76.9795 l
-263.577 90.4827 l
-265.469 115.978 l
-267.361 141.878 l
-268.622 156.297 l
-269.253 162.115 l
-269.883 166.84 l
-270.514 170.391 l
-271.145 172.718 l
-271.776 173.796 l
-272.406 173.628 l
-273.037 172.234 l
-273.668 169.648 l
-274.298 165.918 l
-274.929 161.101 l
-276.19 148.467 l
-277.452 132.373 l
-279.344 103.674 l
-281.867 64.1993 l
-283.128 48.3735 l
-283.759 42.4578 l
-284.389 38.2574 l
-285.02 36.0281 l
-285.651 35.9813 l
-286.282 38.2687 l
-286.912 42.969 l
-287.543 50.0758 l
-288.174 59.4899 l
-289.435 84.3623 l
-291.327 131.151 l
-293.219 176.952 l
-293.85 189.377 l
-294.481 199.539 l
-295.111 207.042 l
-295.742 211.591 l
-296.373 213.005 l
-297.003 211.231 l
-297.634 206.339 l
-298.265 198.525 l
-298.895 188.099 l
-300.157 161.12 l
-303.941 70.1007 l
-304.572 58.9238 l
-305.202 49.9096 l
-305.833 43.2473 l
-306.464 39.0291 l
-307.094 37.2539 l
-307.725 37.835 l
-308.356 40.6103 l
-308.987 45.3559 l
-309.617 51.8004 l
-310.879 68.5522 l
-315.293 135.672 l
-316.555 149.471 l
-317.186 154.783 l
-317.816 158.973 l
-318.447 162.027 l
-319.078 163.955 l
-319.708 164.786 l
-320.339 164.569 l
-320.97 163.365 l
-321.6 161.25 l
-322.231 158.31 l
-323.492 150.337 l
-324.754 140.26 l
-327.277 117.213 l
-329.169 100.621 l
-330.43 91.2718 l
-331.692 84.0363 l
-332.322 81.3843 l
-332.953 79.4557 l
-333.584 78.2995 l
-334.214 77.9542 l
-334.845 78.4448 l
-335.476 79.7808 l
-336.106 81.9533 l
-336.737 84.9324 l
-337.368 88.6659 l
-338.629 98.0669 l
-340.521 115.175 l
-342.413 132.068 l
-343.675 140.925 l
-344.305 144.185 l
-344.936 146.524 l
-345.567 147.876 l
-346.197 148.212 l
-346.828 147.544 l
-347.459 145.92 l
-348.09 143.426 l
-348.72 140.18 l
-349.982 132.028 l
-352.504 113.946 l
-353.766 106.657 l
-354.396 103.89 l
-355.027 101.798 l
-355.658 100.413 l
-356.289 99.7294 l
-356.919 99.7149 l
-357.55 100.309 l
-358.181 101.427 l
-358.811 102.97 l
-360.073 106.868 l
-361.965 112.99 l
-363.226 116.072 l
-363.857 117.104 l
-364.488 117.754 l
-365.118 118.016 l
-365.749 117.908 l
-366.38 117.469 l
-367.01 116.753 l
-368.272 114.782 l
-370.164 111.718 l
-370.795 110.99 l
-371.425 110.516 l
-372.056 110.341 l
-372.687 110.49 l
-373.317 110.969 l
-373.948 111.766 l
-374.579 112.853 l
-375.84 115.706 l
-378.994 123.883 l
-380.255 126.32 l
-380.886 127.197 l
-381.516 127.821 l
-382.147 128.185 l
-382.778 128.29 l
-383.408 128.137 l
-384.039 127.733 l
-384.67 127.082 l
-385.301 126.189 l
-385.931 125.054 l
-387.193 122.066 l
-388.454 118.142 l
-389.715 113.395 l
-392.869 100.487 l
-393.5 98.4027 l
-394.13 96.7316 l
-394.761 95.5776 l
-395.392 95.031 l
-396.022 95.1615 l
-396.653 96.0105 l
-397.284 97.5865 l
-397.914 99.8612 l
-398.545 102.769 l
-399.806 110.041 l
-402.329 125.956 l
-402.96 129.199 l
-403.591 131.842 l
-404.221 133.784 l
-404.852 134.964 l
-405.483 135.364 l
-406.113 135.012 l
-406.744 133.977 l
-407.375 132.363 l
-408.636 127.942 l
-410.528 120.572 l
-411.79 116.651 l
-412.42 115.211 l
-413.051 114.139 l
-413.682 113.406 l
-414.312 112.956 l
-415.574 112.585 l
-416.835 112.326 l
-417.466 112.039 l
-418.097 111.579 l
-418.727 110.924 l
-419.989 109.096 l
-421.881 105.93 l
-422.511 105.103 l
-423.142 104.54 l
-423.773 104.318 l
-424.404 104.49 l
-425.034 105.087 l
-425.665 106.112 l
-426.296 107.538 l
-427.557 111.364 l
-430.71 122.384 l
-431.341 124.091 l
-431.972 125.472 l
-432.603 126.498 l
-433.233 127.159 l
-433.864 127.465 l
-434.495 127.442 l
-435.125 127.127 l
-435.756 126.565 l
-437.017 124.881 l
-438.279 122.722 l
-440.802 117.785 l
-444.586 110.211 l
-445.847 108.279 l
-446.478 107.583 l
-447.109 107.115 l
-447.739 106.904 l
-448.37 106.968 l
-449.001 107.312 l
-449.631 107.928 l
-450.262 108.79 l
-451.523 111.096 l
-454.677 117.558 l
-455.308 118.515 l
-455.938 119.269 l
-456.569 119.808 l
-457.2 120.134 l
-457.83 120.261 l
-458.461 120.216 l
-459.722 119.747 l
-464.137 117.361 l
-466.66 116.246 l
-468.552 115.117 l
-470.444 113.973 l
-471.075 113.721 l
-471.706 113.594 l
-472.336 113.625 l
-472.967 113.84 l
-473.598 114.252 l
-474.228 114.866 l
-475.49 116.623 l
-478.643 121.761 l
-479.274 122.341 l
-479.905 122.598 l
-480.535 122.474 l
-481.166 121.928 l
-481.797 120.942 l
-482.427 119.52 l
-483.058 117.694 l
-484.319 113.08 l
-486.842 102.981 l
-487.473 101.05 l
-488.104 99.6302 l
-488.734 98.8392 l
-489.365 98.7708 l
-489.996 99.4889 l
-490.626 101.022 l
-491.257 103.358 l
-491.888 106.443 l
-493.149 114.436 l
-495.672 132.794 l
-496.303 136.612 l
-496.933 139.681 l
-497.564 141.818 l
-498.195 142.879 l
-498.825 142.768 l
-499.456 141.451 l
-500.087 138.951 l
-500.718 135.359 l
-501.979 125.551 l
-505.132 97.5925 l
-505.763 93.6531 l
-506.394 90.8071 l
-507.024 89.1849 l
-507.655 88.8468 l
-508.286 89.78 l
-508.917 91.8992 l
-509.547 95.0525 l
-510.809 103.586 l
-512.701 117.917 l
-513.962 125.429 l
-514.593 127.986 l
-515.223 129.616 l
-515.854 130.304 l
-516.485 130.101 l
-517.116 129.116 l
-517.746 127.505 l
-519.008 123.185 l
-520.269 118.776 l
-520.9 116.999 l
-521.53 115.684 l
-522.161 114.904 l
-522.792 114.678 l
-523.423 114.974 l
-524.053 115.711 l
-525.315 118.002 l
-526.576 120.359 l
-527.207 121.179 l
-527.837 121.597 l
-528.468 121.533 l
-529.099 120.951 l
-529.729 119.862 l
-530.36 118.322 l
-531.622 114.297 l
-533.514 108.026 l
-534.144 106.462 l
-534.775 105.36 l
-535.406 104.792 l
-536.036 104.787 l
-536.667 105.335 l
-537.298 106.384 l
-537.928 107.848 l
-539.19 111.547 l
-540.451 115.381 l
-541.713 118.369 l
-542.343 119.337 l
-542.974 119.908 l
-542.974 119.908 l
-stroke
-grestore
-0.500 setlinewidth
-0 setlinecap
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 4 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.5435 35.9813 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -4 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.5435 213.005 o
-grestore
-gsave
-27.980972 22.903125 translate
-0.000000 rotate
-0.000000 0.171875 m /nine glyphshow
-7.634766 0.171875 m /eight glyphshow
-15.269531 0.171875 m /five glyphshow
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 4 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-164.682 35.9813 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -4 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-164.682 213.005 o
-grestore
-gsave
-153.994792 22.903125 translate
-0.000000 rotate
-0.000000 0.171875 m /nine glyphshow
-7.634766 0.171875 m /nine glyphshow
-15.269531 0.171875 m /zero glyphshow
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 4 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-290.821 35.9813 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -4 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-290.821 213.005 o
-grestore
-gsave
-280.258611 22.903125 translate
-0.000000 rotate
-0.000000 0.171875 m /nine glyphshow
-7.634766 0.171875 m /nine glyphshow
-15.269531 0.171875 m /five glyphshow
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 4 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-416.96 35.9813 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -4 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-416.96 213.005 o
-grestore
-gsave
-402.733368 22.903125 translate
-0.000000 rotate
-0.000000 0.171875 m /one glyphshow
-7.634766 0.171875 m /zero glyphshow
-15.269531 0.171875 m /zero glyphshow
-22.904297 0.171875 m /zero glyphshow
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 4 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 35.9813 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -4 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 213.005 o
-grestore
-gsave
-528.997188 22.903125 translate
-0.000000 rotate
-0.000000 0.171875 m /one glyphshow
-7.634766 0.171875 m /zero glyphshow
-15.269531 0.171875 m /zero glyphshow
-22.904297 0.171875 m /five glyphshow
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-63.7712 35.9813 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-63.7712 213.005 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-88.999 35.9813 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-88.999 213.005 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-114.227 35.9813 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-114.227 213.005 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-139.455 35.9813 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-139.455 213.005 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-189.91 35.9813 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-189.91 213.005 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-215.138 35.9813 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-215.138 213.005 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-240.366 35.9813 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-240.366 213.005 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-265.593 35.9813 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-265.593 213.005 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-316.049 35.9813 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-316.049 213.005 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-341.277 35.9813 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-341.277 213.005 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-366.504 35.9813 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-366.504 213.005 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-391.732 35.9813 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-391.732 213.005 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-442.188 35.9813 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-442.188 213.005 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-467.415 35.9813 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-467.415 213.005 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-492.643 35.9813 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-492.643 213.005 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-517.871 35.9813 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-0 -2 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-517.871 213.005 o
-grestore
-gsave
-268.766563 7.200000 translate
-0.000000 rotate
-0.000000 1.578125 m /T glyphshow
-6.955078 1.578125 m /i glyphshow
-10.289062 1.578125 m /m glyphshow
-21.978516 1.578125 m /e glyphshow
-29.361328 1.578125 m /bracketleft glyphshow
-34.042969 1.578125 m /s glyphshow
-40.294922 1.578125 m /bracketright glyphshow
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-4 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 40.6581 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--4 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 40.6581 o
-grestore
-gsave
-7.293750 36.119054 translate
-0.000000 rotate
-0.000000 0.171875 m /minus glyphshow
-10.054688 0.171875 m /zero glyphshow
-17.689453 0.171875 m /period glyphshow
-21.503906 0.171875 m /six glyphshow
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-4 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 65.7324 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--4 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 65.7324 o
-grestore
-gsave
-7.200000 61.193349 translate
-0.000000 rotate
-0.000000 0.171875 m /minus glyphshow
-10.054688 0.171875 m /zero glyphshow
-17.689453 0.171875 m /period glyphshow
-21.503906 0.171875 m /four glyphshow
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-4 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 90.8067 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--4 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 90.8067 o
-grestore
-gsave
-7.731250 86.267644 translate
-0.000000 rotate
-0.000000 0.171875 m /minus glyphshow
-10.054688 0.171875 m /zero glyphshow
-17.689453 0.171875 m /period glyphshow
-21.503906 0.171875 m /two glyphshow
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-4 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 115.881 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--4 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 115.881 o
-grestore
-gsave
-16.918750 111.341940 translate
-0.000000 rotate
-0.000000 0.171875 m /zero glyphshow
-7.634766 0.171875 m /period glyphshow
-11.449219 0.171875 m /zero glyphshow
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-4 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 140.955 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--4 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 140.955 o
-grestore
-gsave
-17.325000 136.416235 translate
-0.000000 rotate
-0.000000 0.171875 m /zero glyphshow
-7.634766 0.171875 m /period glyphshow
-11.449219 0.171875 m /two glyphshow
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-4 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 166.03 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--4 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 166.03 o
-grestore
-gsave
-16.793750 161.490531 translate
-0.000000 rotate
-0.000000 0.171875 m /zero glyphshow
-7.634766 0.171875 m /period glyphshow
-11.449219 0.171875 m /four glyphshow
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-4 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 191.104 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--4 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 191.104 o
-grestore
-gsave
-16.887500 186.564826 translate
-0.000000 rotate
-0.000000 0.171875 m /zero glyphshow
-7.634766 0.171875 m /period glyphshow
-11.449219 0.171875 m /six glyphshow
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 46.9267 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 46.9267 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 53.1953 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 53.1953 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 59.4638 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 59.4638 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 72.001 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 72.001 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 78.2696 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 78.2696 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 84.5381 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 84.5381 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 97.0753 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 97.0753 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 103.344 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 103.344 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 109.612 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 109.612 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 122.15 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 122.15 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 128.418 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 128.418 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 134.687 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 134.687 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 147.224 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 147.224 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 153.492 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 153.492 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 159.761 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 159.761 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 172.298 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 172.298 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 178.567 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 178.567 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 184.835 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 184.835 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 197.372 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 197.372 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
-2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-38.4188 203.641 o
-grestore
-gsave
-/o {
-gsave
-newpath
-translate
-0.5 setlinewidth
-1 setlinejoin
-0 setlinecap
-0 0 m
--2 0 l
-gsave
-0.000 setgray
-fill
-grestore
-stroke
-grestore
-} bind def
-543.099 203.641 o
-grestore
-1.000 setlinewidth
-2 setlinecap
-gsave
-38.4187 213.005 m
-543.099 213.005 l
-stroke
-grestore
-gsave
-543.099 35.9813 m
-543.099 213.005 l
-stroke
-grestore
-gsave
-38.4187 35.9813 m
-543.099 35.9813 l
-stroke
-grestore
-gsave
-38.4188 35.9813 m
-38.4188 213.005 l
-stroke
-grestore
-
-end
+%%BeginSetup
+%%BeginResource: font ArialMT
+11 dict begin
+/FontType 42 def
+/FontName /ArialMT def
+/PaintType 0 def
+/FontMatrix [ 1 0 0 1 0 0 ] def
+/FontBBox [ 0 0 0 0 ] def
+/Encoding 256 array def
+0 1 255 { Encoding exch /.notdef put } for
+Encoding 46 /period put
+Encoding 48 /zero put
+Encoding 49 /one put
+Encoding 50 /two put
+Encoding 51 /three put
+Encoding 52 /four put
+Encoding 53 /five put
+Encoding 54 /six put
+Encoding 56 /eight put
+Encoding 57 /nine put
+Encoding 84 /T put
+Encoding 91 /bracketleft put
+Encoding 93 /bracketright put
+Encoding 101 /e put
+Encoding 105 /i put
+Encoding 109 /m put
+Encoding 115 /s put
+/CharStrings 18 dict dup begin
+/.notdef 0 def
+/five 1 def
+/two 2 def
+/three 3 def
+/zero 4 def
+/four 5 def
+/nine 6 def
+/eight 7 def
+/one 8 def
+/T 9 def
+/i 10 def
+/m 11 def
+/e 12 def
+/bracketleft 13 def
+/s 14 def
+/bracketright 15 def
+/period 16 def
+/six 17 def
+end readonly def
+/sfnts [
+<00010000000900800003001063767420a11cd7eb00001b6c000006546670676dc83d982f0000
+21c0000005ee676c7966a6364cdb0000009c00001ad068656164d7c8e4bb000027b000000036
+68686561123308db000027e800000024686d74784a7d075f0000280c000000486c6f63610001
+049c000028540000004c6d617870052905df000028a0000000207072657025d64dbf000028c0
+00000bbe00020100000005000500000300070000211121112521112101000400fc2003c0fc40
+0500fb002004c000000000010055ffe7042105a6001e0156b10202435458b90001ffc0400d0d
+0d0255011c0e0a1e15151c12b802bb400b0f04041e1c0d0e01000718b8ffeab40f0f025518b8
+ffeab40d0d0255182f2b2bcd2fcd2f003fed3fed12392ffdc410c42b31301b4029120c0d0d06
+550f0c0d0d06554b1a791d8a1d9613a713c30cd60cdb1b080913180e2a1a03093005300bbaff
+e00003ffe04010130a15121313ca0e0f140e13140e0f0db802a440130e0a1e15400ea00e020e
+0e0f40150115151c12b802bbb70f0401d340000100b801184020041e1c0d115f106f107f108f
+1004108007731840212334301801001810180218b8fff4b70d0d065518902012bc0135000f01
+95000d0138b20eb501ba01380000ffc0400b212334200040000200901fb80192b18b182b10f6
+5d2bedf4edf4ed10f62b5d712bedf45d3c003fedfd5de43fed12392f5d11392f5d10ed10e487
+082e2b057d10c4001112393130013838383801715d2b2b591337161633323635342623220607
+271321152103363332001514070623222655bd15996c82b4ad8c578c28a98e02d9fdb74f8491
+c00108748df4c8fd0180108a8bc4a29ab24f3f1602f1acfe765cfef6d1c791b2e00000000001
+003c0000040705c0001e01c7b10602435458400911100d18131306550db8fff4b4111106550d
+b8ffee4009101006550d1e14051eb8ffe84017131306551e1e111106551e1c0e1006551e0c0d
+0d06551eb802bb400c020a1717201f10110202201f1112392fd4cd1112392fcd002fed2b2b2b
+2b3fed2b2b2bc43231301bb10202435458400911100d0c121202550db8fff440090f1102550d
+1e14051eb8ffe0400b121302551e140f1102551eb802bbb2020a17b8ffe8b40b0b025517b8ff
+ec400e0d0d02551717201f10110202201f1112392fd4cd1112392f2b2bcd002fed2b2b3fed2b
+2bc43231301b40363b053b06bb05bf06bb07c708c91c07490c590c540e6b0c640e7a127a1389
+12bc12e51ae51bf01a0cbf0bb713021b101c101d101e1006befff00007ffe00008fff00009ff
+f0401a1e0a10080606ca1c1a141c1c1a081c1a030102081a1c030d1e10b802a4b34f110111b8
+0118b50d1e1405001eb802bb400f01020c0a7317d30000014021233401bb0281002000100138
+400c11b53f025f026f027f020402ba0224001f018fb18b182b10f65df4ed10f62b3c10f4ed00
+3f3cfd3c3fedfd5de4111217390111121739870e2e2b0e7d10c4011112393130003838383801
+38383838005d015d725959251521263736363736363534262322060727363633321615140606
+070606070407fc37021725a39aefa8997b829c01b913f8d1d3f648a7c2a25c1eadad413c63c0
+7ec4e5666b939c8a13cfd9eaad58aabca4886131000000010056ffe6041605c0002b0159b102
+02435458400b1918400d0d0255181c0001b8ffc0402b0c0d02550129230a0d0f0c0f1e0a0a29
+151e1c041e291c05290d230d0c181901001220100c0c0255200726b8ffe8b40c0d0255262f2b
+cd2f2bcd2fcd2fcd2f0012393f3f10ed10ed12392fedc610c6123910c42b3210c42b3231301b
+4028050d160d450d860d0445115711761b0352166c106a146416750d7914860d8a14891ba50d
+0a052003b8ffe0400b0b0c0d0e040701230d0c01b802a4b340000100bb01180029000d0135b4
+0c0c150418ba02a4001902684027151e1c05041e290d12735f206f200220180d0d0655208007
+732640212334302601002610260226b8fff4b70d0d065526902d18b80138b219d301ba013800
+00ffc0400b212334200040000200902cb80192b18b182b10f65d2bedf4ed10f62b5d712bedf4
+2b5ded003fed3fedfde41112392fed10fd5de411123901111217393130013838015d005d0171
+5913371616333236353426232207371633323635342623220607273636333216161514060716
+1615140023222656b41f956b7fafa27d334c14120b73b8866a698c14b421eaae78ca6b666482
+90fee8d6c1ff0183189987b0827ca1149e02787d6382848420b5c767b2645f9c2e1ebd8ec0fe
+f5e6000000020055ffe7041105c00010001d0155b10202435458400a1a1e0405141e0d0d1709
+b8ffe8b40f0f025509b8ffe840190d0d02550911000c0f0f025500160c0c0255000c0d0d0255
+002f2b2b2bcd2f2b2bcd003fed3fed31301bb10602435458400a1a1e0405141e0d0d1709b8ff
+f4b40f0f065509b8ffe6b40d0d065509b8ffee40190b0b0655091100100d0d065500100c0c06
+5500100b0b0655002f2b2b2bcd2f2b2b2bcd003fed3fed31301bb4062019101cb8fff0b20220
+0bbeffe00016ffe00012ffe0000fffe0406204068702880b880fc90e0509070b180245134c15
+4a19431b54135c155c19521b6b076b0b63136c156b19601b79027706760b7a0f870698079610
+c918da02d606d60bdb0f1a1a1e0405141e0d0d17730940212334300901000910090209901f11
+7300b8ffc0400e212334200040000200901ec78b182b10f65d2bed10f65d712bed003fed3fed
+3130015d71005d00383838383801383838595913101236333216161215100206232227261310
+1633323611102623220706556bd3a076b274426ad3a1d47991b9a97c7ca9a97e7c4a5d02d301
+04013dac5fb3feffdafefefec3ad98b7019dfe97eff00168016aee6986000002001a00000410
+05ba000a000d0126403612580c680c9a0ca90cc90c054c034c0d94040312010208000c060307
+050a0b0307000c0c0d0dca030414030304030d00020c0d040703bb02bb0008000201a0400a00
+0404000c0c00ca0a04b80266b705050a401d1f340ab8ffe0b4101002550ab8ffe6b40d0d0255
+0ab8ffeeb40d0d06550ab80137400d07402223340780213507900f02b8ffc0400b0d14340002
+100220020302b8ffe0b40d0d025502b8ffe4b60d0d065502b50eb8018cb18b182b10ec2b2b5d
+2b10f62b2bf42b2b2b2b3c10e610fd3c003f3f10f43cf63c1139390111123939872e2b047d10
+c40f0f0f313001435c58b9000dffdeb212390db8ffd4400b333903222d3903041d1d3c2b2b2b
+2b595d005d435c5840140c400b390c8050390c4026390c221c390c402d392b2b2b2b2b592111
+2135013311331523110311010296fd84029d93c6c6b4fe35015fa503b6fc4aa5fea102040295
+fd6b00020055ffe7041905c0001e002a01aeb10602435458b70b1f180100251118b8fff6b40f
+0f065518b8fff4b40d0d065518b8fff040280c0c065518110c0d0d065511100c0c0655111811
+2c2b0b281e0f0e1f0e4f0e030e0e140050010101b8ffc0400d1011065501041e1c0d221e1405
+003fed3fedc42b5d3212392f5ded3201111239392f2b2b2f2b2b2b10cdd4cd10ddc531301bb1
+0202435458b70b1f180100251118b8ffeab40f0f025518b8ffea402a0d0d025518110c0c0c02
+551118112c2b0b281e0f0e1f0e4f0e030e0e140050010101041e1c0d221e1405003fed3fedc4
+5d3212392f5ded3201111239392f2b2f2b2b10cdd4cd10ddc531301b40343a1a4c1640235b16
+572366036c166d1a67237a1a7d1e8c1a8b1e9a16a91abc1aea16e620f620133d169e16ad1603
+3a2964060227baffe00023ffe0401821200620281e4f0e5f0e020e0e1c221e140501d3500001
+00b80268b4041e1c0d1fba0139000b013840111840212334301801001810180218902c01b801
+38b400b5257311b8ffc0400e212334201140110211902bc78b182b10f65d2bedf4ed10f65d71
+2beded003fedfd5de43fed12392f5ded31300138383838005d71015d59591337161633323e02
+3534270606232202353400333216121110020623222601342623220615141633323670ad167c
+61537d50360136bb6db6fc0107c68fed7b7af1a2acda02cba57478b2a97c7da10153107a6e4c
+7fd8700c18566b0108d8df01109afee3fef2fee7feb3aebf03349bb6c49c8cafaf0000030053
+ffe7041905c00017002300300200b10202435458b40c001b1e2eb8ffc04017131302552e2e12
+211e0605281e120d1e090c0c0c025509b8fff4b60d0d0255092b0fb8fff0b40f0f02550fb8ff
+e8b40b0b02550fb8ffe8b60d0d02550f1803b8fff0b41010025503b8fff0b40f0f025503b8ff
+f440190d0d02550324150c0b0b0255150c0c0c0255150c0d0d0255152f2b2b2bcd2f2b2b2bcd
+2f2b2b2bcd2f2b2bcd003fed3fed12392f2bed393931301bb10602435458b71e090c0c0c0655
+09b8fff4b60d0d0655092b0fb8ffe4b40f0f06550fb8ffe4b60d0d06550f1803b8fff0b40f0f
+065503b8fffc40220d0d06550324150c0c0c0655150c0d0d0655150c001b1e2e2e12211e0605
+281e120d003fed3fed12392fed3939012f2b2bcd2f2b2bcd2f2b2bcd2f2b2bcd31301b403735
+1601291649164926e60ce930050930017d007d017c047408710b720c750d7a178b008a018c04
+8608810b840c860d8d17cc11c6131222b8ffe0b21c201ab8ffe0b220202fb8ffe0b22d2026b8
+ffe0401e29200c001e18000c1b1e2ea02e012e12211e0605281e120d1e73bf090109b8026740
+102b730f40202334300f01000f100f020fb80191b6321873b0030103b80267b2247315b8ffc0
+400e2123342015401502159031c78b182b10f65d2bedf45ded10f45d712bedf45ded003fed3f
+ed12395d2fed393901111239393130013838383838383838015d727100715959012626353436
+3332161514060716161514002322003534361314163332363534262322060314161633323635
+3426232206016a706ce6bfc0ea6b6d878dfef6d9d9fef69162866b6885896667883a49905381
+a8ad827fa7031b29986aa0dadfa06697292cc488bcff000101c08fc101546884835f638784fc
+ff4d904fa68082aaa800000100df000002fb05c0000a00af402003400d11346b047f028f0299
+0804ac04010900060502030905010c0201ca0a00b8ffc0400a21233430000120000100b8ffe0
+b41010025500b8ffea40110f0f0255001c0c0c0255000e0d0d025500b8fff040190f0f065500
+100c0c065500100d0d0655001a0c05400d0f3405b8ffc0400e21233430050120054005020519
+0bba013c018500182b4e10e45d712b2b10f62b2b2b2b2b2b2b5d712b3c4dfd3c003f3f173901
+11393130015d005d2b212311060607353636373302fbb441d35497e22f74047b3e7c1fae47ca
+5f0000010030000004ba05ba00070089400d05021e04030200080706050409b80273b3200401
+04b80101b7062001022f030103b80101b5010120000100b8ffe8400b1010025500080f0f0255
+00b8fff2b40c0c025500b8ffe2b40d0d025500b8fffcb40c0c065500b8fffeb40d0d065500b8
+0273b308b699182b10f62b2b2b2b2b2b5d3c10f45d3c10fde45de6103c103c003f3f3cfd3c31
+3021112135211521110213fe1d048afe1b050dadadfaf3000000000200880000013c05ba0003
+000700cd405e09360b0b02554f099009a009b009c009df09f0090700091f09700980099f09b0
+09c009df09e009ff090a1f09010001070402030906037e0100060506040a0607250500049f04
+a004b004c004e00406c004f0040200042004d004e0040404b8fff8b41010025504b8fffa4017
+0e0e025504040c0c0255040a0b0b025504140b0b065504b8ffeab41010065504b8fffeb40d0d
+065504b8fffc400a0c0c0655044e084750182b10f62b2b2b2b2b2b2b2b5d71723cfd3c003f3f
+3c3fed0111123939111239393130015d72712b133533150311331188b4b4b404ebcfcffb1504
+26fbda000001008700000626043e002301c7b9000dfff4b40d0d065508b8fff4b40d0d065509
+b8ffd8404d0b0d342504e404e409e117e52005d505f620021708202309181b20090303231e1c
+06151c0b0b06070106231a19100ad025019025a025022517171a0e2590110111041010025511
+180f0f025511b8ffec400b0e0e025511140c0c025511b8ffe840170b0b025511020b0b065511
+0c1010065511060f0f065511b8fffab40c0c065511b8fff8b40d0d065511b8015d400c182590
+1b011b180f0f02551bb8ffec400b0e0e02551b140c0c02551bb8ffee40110b0b02551b040b0b
+06551b0a101006551bb8fffe400b0d0d06551b0c0f0f06551bb8fffcb40c0c06551bb8015d40
+16000233232501d000019000a000021f003f004f000300b8fffe401d0e0e025500100d0d0255
+00100c0c0255000c0b0b025500160b0b065500b8fffcb41010065500b8fff440140f0f065500
+0a0c0c0655000e0d0d065500192425b80178b3214750182b2b4ef42b2b2b2b2b2b2b2b2b5d71
+723c4dfde410f42b2b2b2b2b2b2b2b2b5dedf42b2b2b2b2b2b2b2b2b2b5dfd4e456544e67172
+003f3c3c3c3f3f3c4d10ed10ed11173901111239123931304379400e0c141326140c111b0112
+0d151b01002b012b2b81015d005d2b2b2b331133153636333216173633321615112311342626
+23220615112311342623220606151187a132a66a76971f7eca9eaab3235c3e7094b458644c81
+3a0426954e5f6258baafb6fd27029d6c5f3a95a4fd9702b27878509a91fdd9000002004bffe8
+041e043e0015001d015340171f001c150255035d055d09550b65036b056f09650b0815b8ffe4
+b40d0d065511b8ffe440520d0d06551d1c0d0d06552712d905fa14f61a0431123a19311c4112
+4d1a411c51125c19521c61126d1a611c78067815f602f618100016010f0d1717501660167016
+03161c0f9010a010021010041b1c0a0700ba02aa0001ffc0b41010025501b8ffc04010101006
+551001010195131c040b17400db8ffdcb40d0d02550db8ffeeb40d0d06550db8ffeab40c0c06
+550db8ffc04009272a34b00d010d1a1fb8ffc0b32526341fb8ffc040411e2334301f011f1633
+10240740242a341f073f074f070307200b0b025507180c0c0255071c0d0d0255070e0b0b0655
+071c0c0c065507160d0d065507191e3437182b4e10f42b2b2b2b2b2b5d2b4dfde44e10712b2b
+f6712b2b2b2b4ded003fedfd5d2b2be43fed12392f5d3cfd713c011112393912393130015d00
+5d2b2b2b01717201170606232200111000333200111407211616333236012126272623220603
+5eba2ceeb9e9feef0114dcd5010e01fce80ab285638cfdda02510c3856897ca9015617a3b401
+1f0103010c0128fedefef91020afba680195864368a600000001008bfe69021805ba00070046
+402b04032b01021005062b0007120302020706ae0405250100060c0c02550008090902552000
+0100ac089d68182b10f65d2b2b3cfd3cf43c3c103c003f3cfd3c3f3cfd3c3130131121152311
+33158b018dd9d9fe69075195f9d9950000000001003fffe803b1043e00300317407b04221422
+3a094a094424562265227c098e098424a613ab2cc2030d09171a1817304b2cd617051b025502
+021032010a185c085c095c0a5c0b5c0c5c0d6a086a096a0a6a0b6a0c6a0db426b4270f272624
+27242936245a0a590b64266428742374248024930a9c0c9228972c9530a40aa90ca327a428b3
+26c5261628b8fff4b40d0d065522b8fff4b40d0d065523b8fff4b40d0d065524b8fff4b40d0d
+065528b8fff4b40c0c065522b8fff4b40c0c065523b8fff4b40c0c065524b8fff4b40c0c0655
+1db8ffde40121e395a0827250c0a041a202615040b2e1d1ab802aa4022192c0b0b02551f193f
+194f195f19af19cf19060f191f196f19df19041f198f190219bd02550015000002aa0001ffc0
+40140b0b025510014001021001d00102000110010201b8ffc0b314163401b8ffc040100e1134
+01012e5c1d6c1d021d1c150704b8fff4b40b0b025504b8ffe6b41010065504b8ffe640130f0f
+0655041c2e0b1f1a011a24194013183432b8ffc0402f0f0f025519180f0f025519180d0d0255
+19160c0c025519201010065519200f0f065519100c0c065519160d0d065519b8025bb207242a
+b8ffc0b51c39d02a012ab8ffe6b40c0c02552ab8ffe8b40f0f02552ab8ffe8b40c0c06552ab8
+ffeab60d0d06552a1a32b8ffc04021272a346032c032023f3280320232100101012400180d0d
+025500100d0d06550020b8fff4b40d0d025520b8fff4b41010065520b8fff440190f0f065520
+240f100b0b02550f160c0c02550f200d0d02550fb8fffa40200f0f02550f0e0c0c06550f0c0d
+0d06550f22df00013f004f00020019313437182b4e10f45d714df42b2b2b2b2b2bed2b2b2b10
+2b2bed724e105d712bf62b2b2b2b712b4dedf42b2b2b2b2b2b2b2b2bed72003fed2b2b2b3fed
+7112392f2b2b5d71722be410fd5d71722be41112391112390111121739313043794040272d1e
+2305142c261110121013100306220d201b000928071b01052d071b011e14201b00210e231b00
+22230d0c08290a1b012827090a062b041b001f101d1b01002b2b103c103c2b103c103c2b012b
+2b2b2b2a2b818181002b2b2b2b2b2b2b2b2b5d71015d72715d1337161633323635342726272e
+023534363736363332161617072626232206151417161716171e02151406062322263fb20f89
+7b7c78352593c6994f41382a91537dbd5a11b00c73697c6a16162f1b84bf975669c67dcfd901
+3d1c6b7265443d2318253249814e4779281f2b487b6718525c5237231c1d130a2433417c5c5a
+9f57ac0000010027fe6901b405ba0007003f401704052b07061003022b0001120605050102ae
+0403250700b8ffec400a0c0c025500ac099b5a182b10f42b3cfd3cf43c3c103c003f3cfd3c3f
+3cfd3c3130012135331123352101b4fe73d9d9018dfe699506279500000100ba0000018700cd
+000300254018023c000a023c5f006f007f00af0004a0000100a004a198182b10f65d5ded003f
+ed313033353315bacdcdcd000002004dffe7041505c0001d002a014fb10202435458401f0f01
+1f015f0103011b281e400d010d0d14051e1b05221e140d0a1e01002510b8fff440190d0d0255
+101e17100f0f025517100c0c0255170c0d0d0255172f2b2b2bcd2f2bcdd4cd10c5003fed3fed
+12392f5ded10c45d31301b402d6b190144074015441944205a1254206b03640764086a126420
+7408751c8508861cd608d4161107200d0d065527b8ffe0b40d0d065523b8ffe0400b0d0d0655
+21200d0d065507b8ffe0b42720232021b8ffe04011281e400d500d020d0d141b01d35f000100
+b802684009051e1b05221e140d01b80138401200b525731040212334301001001010100210b8
+fff0b70c0c065510902c0aba0138001e013940163f175f176f177f170417160c0c065517160d
+0d065517b80224b32bc78b182b10f62b2b5deded10f62b5d712bedf4ed003fed3fedfd5de411
+12392f5ded313001383838382b2b2b2b015d005d590107262726232207060607363633321215
+140606232200111037363332160114161633323635342623220603fbb3182c496b5641556202
+41bc67b4fd77d084e1fee49d89e8adddfd374f8e4e72a4a27b7aaa04530e6a304d303eeedc63
+60fef7d28aed7e014b017c01a9c1a8c2fcdd5daa59b89e98afaf000005ba001905ba001a05a7
+0019042600180000ffe70000ffe80000ffe7fe69ffe805ba0019fe69ffe802ea000000b80000
+00b80000000000a800ad016900ad00bf00c201f0001800af00b900b400c800170044009c007c
+009400870006005a00c80089005200520005004400940119ffb4002f00a1000300a100cd0017
+0057007e00ba00160118ffe9007f008503d300870085000d002200410050006f008d014cff75
+005c00df04830037004c006e00700180ff58ff8eff92ffa400a500b903c8fffd000b001a0063
+006300cdffee05d8ffdc002d005c0095009900df019209b500400057008000b9039d0072009a
+035d0401ff67fffa00030021007700cd0004004d00cd01c0022b004c006500e70118017c0343
+05d8ffa3ffb0ffc40003001c005d0068009a00ba013501470221055cff4dffcd0016002d0078
+0080009900b200b600b600b800bd00da010c05f0ffa4fff00019002c0049007f00b400ce01c0
+03fefd81fe3f000000050018002900390049006f00be00c700d0012301c1026f050c05320540
+057affd4001400310055005700a700b400e601f7027e027e027f03c60446ff42000e00850091
+00bf00c200c500e1011a012f014f01560229026f029e03720008002c00310031006400690089
+009800c700de012b01b6020c02cf03a304ab04fb061dfee0ff0e00060026009b009d00c1010d
+011801200173018201d601e30243025f029b02e2039404a904d20761001c005e006d008d00ab
+00f7011201380151015b0168017c01870191019901cd01d001e802410254026b02ef03680371
+03bd044204420453047304830586058b06e8fe58fec4fed1fef7ff32ff860051007c00810091
+0095009e00b400b900cf00d900d900df00e20105010b010e010e012001210155017b017b017e
+018d01a201a801a901b401d001d001e201e901f201f501fb020002000206021b022102220222
+0223027202770294029c02cf02cf02d002ec02f903170322032b0335033c0359036f03710387
+0390039003b503e1041a04cf04ff053205320596059f05a805ab05c205f0060c0782080008cc
+fca3fd2afddefe00fe88fe96feb2feb4ffe100150019001a001c001f003c005100610061006a
+0078009600a500af00d3010c0118011a012a013e014c0151015f016a0171017801820184019a
+01a501a801a901ae01bc01cd01d701ef0200020d021c02210222022e02350242024f024f025e
+026502710290029202b402d602fa0307030b030f0315032a0347035d036503740379039603b0
+03cc03dd03e203f603fc03fc03ff040a041f04220426042b0447045f0475049e04e704e7055c
+05cb05e5060a066d068606b806f10736073e07500751075d078f07b607d4086000b600c300b5
+00b700000000000000000000000001e00381034503b5008e0233041902ce02ce002d005f0064
+034d023f000002a80188027d01b402240578063b023b014e00f00426029402c6029f02f6023b
+034d014b0153006a0231000000000000061404aa0000003c04c300ed04bc026502ce03b50078
+060c017e02ef060c00b201000239000001c50330042b03cb00da03df010704a100db040a0117
+01ed02a70350010b01bd043e05580021039c00ae0371017d00b5024500000afb088c012b014e
+01aa00870054013201f803ff0003024e00b4003703e30083006b02d800ed0077008800970164
+0467008e0033017c00e700a6029e0329056e062a061501c90269048a021301b4000204a90000
+02390124010305140084015d039a06ef02d9007500cf040a00de03ac04bc02cf02ae034d04f0
+05520168006d007d00860071ff810079055804d2016700030156002504e00094007c03320421
+0094007f0072005c002f00b6001800ba00b80041034d00720018001f004c016a01550099009a
+009a009800b200040078006900140057006e00ce00b4065402b80067050e016500e7000004cb
+fe52005affa60099ff67006eff92002dffd40087ff7c00b800a800e5008f00a80185fe7b0070
+001e00d900de014c054602cf0546ff2d028a02d90253029600b7000000000000000000000000
+00000125011800ea00ea00ae0000003e05bb008a04d70053003fff8cffd50015002800220099
+0062004a00e4006d00ee00e5004803c00033fe4e02b1ff460370007905df0051ffa7ff1f010a
+0068ff6c004f00bc00a507050061072b00ed04b001d200b6007b00650252ff740365fe690094
+008f005c004000860075008900894043555441403f3e3d3c3b3a3938373534333231302f2e2d
+2c2b2a292827262524232221201f1e1d1c1b1a191817161514131211100f0e0d0c0b0a090807
+060504030201002c4523466020b02660b004262348482d2c452346236120b02661b004262348
+482d2c45234660b0206120b04660b004262348482d2c4523462361b0206020b02661b02061b0
+04262348482d2c45234660b0406120b06660b004262348482d2c4523462361b0406020b02661
+b04061b004262348482d2c0110203c003c2d2c20452320b0cd442320b8015a51582320b08d44
+235920b0ed51582320b04d44235920b09051582320b00d44235921212d2c20204518684420b0
+01602045b04676688a4560442d2c01b10b0a432343650a2d2c00b10a0b4323430b2d2c00b017
+2370b101173e01b0172370b10217453ab10200080d2d2c45b01a234445b01923442d2c2045b0
+0325456164b050515845441b2121592d2cb00143632362b0002342b00f2b2d2c2045b0004360
+442d2c01b00643b00743650a2d2c2069b04061b0008b20b12cc08a8cb8100062602b0c642364
+615c58b00361592d2c45b0112bb0172344b0177ae4182d2c45b0112bb01723442d2cb0124358
+8745b0112bb0172344b0177ae41b038a45186920b01723448a8a8720b0a05158b0112bb01723
+44b0177ae41b21b0177ae45959182d2c2d2cb0022546608a46b040618c482d2c4b53205c58b0
+02855958b00185592d2c20b0032545b019234445b01a23444565234520b00325606a20b00923
+4223688a6a606120b01a8ab000527921b21a1a40b9ffe0001a45208a54582321b03f1b235961
+441cb114008a5279b31940201945208a54582321b03f1b235961442d2cb110114323430b2d2c
+b10e0f4323430b2d2cb10c0d4323430b2d2cb10c0d432343650b2d2cb10e0f432343650b2d2c
+b11011432343650b2d2c4b525845441b2121592d2c0120b003252349b04060b0206320b00052
+5823b002253823b002256538008a63381b212121212159012d2c4bb06451584569b00943608a
+103a1b212121592d2c01b005251023208af500b0016023edec2d2c01b005251023208af500b0
+016123edec2d2c01b0062510f500edec2d2c20b001600110203c003c2d2c20b001610110203c
+003c2d2cb02b2bb02a2a2d2c00b00743b006430b2d2c3eb02a2a2d2c352d2c76b80223237010
+20b802234520b0005058b00161593a2f182d2c21210c6423648bb84000622d2c21b08051580c
+6423648bb82000621bb200402f2b59b002602d2c21b0c051580c6423648bb81555621bb20080
+2f2b59b002602d2c0c6423648bb84000626023212d2cb4000100000015b00826b00826b00826
+b008260f10161345683ab001162d2cb4000100000015b00826b00826b00826b008260f101613
+4568653ab001162d2c4b53234b515a5820458a60441b2121592d2c4b545820458a60441b2121
+592d2c4b53234b515a58381b2121592d2c4b5458381b2121592d2cb0134358031b02592d2cb0
+134358021b03592d2c4b54b012435c5a58381b2121592d2cb012435c580cb00425b00425060c
+6423646164b807085158b00425b00425012046b01060482046b0106048590a21211b2121592d
+2cb012435c580cb00425b00425060c6423646164b807085158b00425b00425012046b8fff060
+482046b8fff06048590a21211b2121592d2c4b53234b515a58b03a2b1b2121592d2c4b53234b
+515a58b03b2b1b2121592d2c4b53234b515ab012435c5a58381b2121592d2c0c8a034b54b004
+26024b545a8a8a0ab012435c5a58381b2121592d2c4b5258b00425b0042549b00425b0042549
+6120b0005458212043b0005558b00325b00325b8ffc038b8ffc038591bb04054582043b00054
+58b00225b8ffc038591b2043b0005458b00325b00325b8ffc038b8ffc0381bb00325b8ffc038
+59595959212121212d2c462346608a8a462320468a608a61b8ff8062232010238ab902c202c2
+8a70456020b0005058b00161b8ffba8b1bb0468c59b0106068013a2d2cb1020042b123018851
+b1400188535a58b910000020885458b202010243604259592d2cb0024354584b53234b515a58
+381b2121591b21212121592d0000000100000005028f1ebc66735f0f3cf5081b080000000000
+a2e3272a00000000c3047090faaffd671000080c00000009000100010000000000010000073e
+fe4e00431000faaffa7a10000001000000000000000000000000000000120600010004730055
+0473003c04730056047300550473001a0473005504730053047300df04e3003001c7008806aa
+00870473004b0239008b0400003f02390027023900ba0473004d000000000000002c000001e8
+00000414000005f0000007ac0000090c00000b4000000dd400000eb000000f60000010540000
+128400001444000014b000001858000018bc000018f800001ad000010000001200f2003c009d
+000700020010002f005600000468041d00050002b900540328b326181fd0bc032900e0032900
+020329b22b1d1fb90327031db23b1f40b80323b31215320f412d03200001002f032000010020
+0320006f032000af032000bf03200004005f031e00010010031e007f031e0080031e00af031e
+00bf031e00d0031e00060000031e0010031e0020031e006f031e009f031e00e0031e0006031d
+031cb2201f1041270319007f03190002000f031700ef031700ff03170003001f0317002f0317
+004f0317005f0317008f0317009f03170006000f0317005f0317006f0317007f031700bf0317
+00f00317000600400317b2923340b80317b28b3340b80317b36a6c3240b80317b2613340b803
+17b35c5d3240b80317b357593240b80317b34d513240b80317b344493240b80317b23a3340b8
+0317b331343240b80317b32e423240b80317b3272c3240b80317b312253280b80317b30a0d32
+c04116031600d00316000200700316000102c4000f0101001f00a0031500b003150002030600
+0f0101001f00400312b32426329fbf03040001030203010064001fffc00301b20d1132410a02
+ff02ef0012001f02ee02ed0064001fffc002edb30e11329f414a02e200af02e200bf02e20003
+02e202e202e102e1007f02e00001001002e0003f02e0009f02e000bf02e000cf02e000ef02e0
+000602e002e002df02df02de02de000f02dd002f02dd003f02dd005f02dd009f02dd00bf02dd
+00ef02dd000702dd02dd001002dc0001000002dc0001001002dc003f02dc000202dc02dc0010
+02db000102db02db000f02da000102da02daffc002d3b2373932b9ffc002d3b22b2f32b9ffc0
+02d3b21f2532b9ffc002d3b2171b32b9ffc002d3b2121632b802d2b2f9291fb90326031cb23b
+1f40bb0322003e00330322b225311fb80318b23c691fb802e3b3202b1fa0413002d400b002d4
+0002000002d4001002d4002002d4005002d4006002d4007002d40006006002d6007002d60080
+02d6009002d600a002d600b002d60006000002d6001002d6002002ca002002cc002002d60030
+02d6004002d6005002d6000802d0b2202b1fb802cfb226421f411602ce02c70017001f02cd02
+c80017001f02cc02c60017001f02cb02c50017001f02c902c5001e001f02ca02c6b21e1f0041
+0b02c6000002c7001002c6001002c7002f02c5000502c1b324121fff411102bf0001001f02bf
+002f02bf003f02bf004f02bf005f02bf008f02bf000602bf0222b2641f12410b02bb00ca0800
+001f02b200e90800001f02a600a20800406a1f4026434932402043493240263a3d3240203a3d
+329f209f26024026969932402096993240268e923240208e92324026848c324020848c324026
+7a813240207a813240266c763240206c76324026646a324020646a3240265a5f3240205a5f32
+40264f543240204f5432b8029eb724271f374f6b0120410f0277003002770040027700500277
+000402770277027700f90400001f029bb22a2a1fb8029a402b292a1f80ba0180bc0180520180
+a201806501807e01808101803c01805e01802b01801c01801e0180400180bb01380001008001
+40b40180400180bb013800010080013940180180ca0180ad0180730180260180250180240180
+20013740b80221b2493340b80221b2453340b80221b341423240b80221b33d3e320f410f0221
+003f0221007f0221000300bf022100cf022100ff0221000300400221b320223240b80221b319
+1e3240b80222b32a3f3240b80221b32e3a326f414802c3007f02c3008f02c300df02c3000400
+2f02c3006002c300cf02c30003000f02c3003f02c3005f02c300c002c300ef02c300ff02c300
+0600df02220001008f02220001000f0222002f0222003f0222005f0222007f022200ef022200
+0600bf022100ef02210002006f0221007f022100af02210003002f0221003f0221004f022100
+0302c302c30222022202210221401d101c102b1048038f1c010f1e014f1eff1e023700161600
+000012110811b8010db6f70df8f70d00094109028e028f001d001f0290028f001d001f028fb2
+f91d1fb80198b226bb1f41150197001e0401001f013900260125001f013800730401001f0135
+001c0801001f0134001c02ab001f0132b21c561fb8010fb2262c1fba010e001e0401b61ff91c
+e41fe91cb80201b61fe81cbb1fd720b80401b21fd51cb802abb61fd41c891fc92fb80801b21f
+bc26b80101b21fba20b80201b61fb91c381fadcab80401b21f8126b8019ab21f7e26b8019ab6
+1f7d1c471f6b1cb80401b21f6526b8019ab21f5e73b80401400f1f52265a1f481c891f441c62
+1f4073b80801b61f3f1c5e1f3c26b8019ab21f351cb80401b61f301cbb1f2b1cb80401b61f2a
+1c561f291cb80101b21f231eb80401b21f5537b80168402c07960758074f07360732072c0721
+071f071d071b071408120810080e080c080a080808060804080208000814b8ffe0402b000001
+0014061000000100060400000100041000000100100200000100020000000100000201080200
+4a00b013034b024b5342014bb0c063004b6220b0f65323b8010a515ab005234201b0124b004b
+5442b0382b4bb807ff52b0372b4bb007505b58b101018e59b0382bb00288b801005458b801ff
+b101018e851bb0124358b900010111858d1bb900010128858d5959001816763f183f123e1139
+46443e113946443e113946443e113946443e11394660443e11394660442b2b2b2b2b2b2b2b2b
+2b2b182b2b2b2b2b2b2b2b2b2b2b182b1db0964b5358b0aa1d59b0324b5358b0ff1d594bb093
+53205c58b901f201f04544b901f101f045445958b9033e01f2455258b901f2033e4459594bb8
+015653205c58b9002001f14544b9002601f145445958b9081e0020455258b90020081e445959
+4bb8019a53205c58b9002501f24544b9002401f245445958b909090025455258b90025090944
+59594bb8040153205c58b173244544b1242445445958b917200073455258b900731720445959
+4bb8040153205c58b1ca254544b1252545445958b9168000ca455258b900ca16804459594bb0
+3e53205c58b11c1c4544b11e1c45445958b9011a001c455258b9001c011a4459594bb0565320
+5c58b11c1c4544b12f1c45445958b90189001c455258b9001c01894459594bb8030153205c58
+b11c1c4544b11c1c45445958b90de0001c455258b9001c0de04459592b2b2b2b2b2b2b2b2b2b
+2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b65422b2b01b33b
+59635c456523456023456560234560b08b766818b080622020b163594565234520b003266062
+636820b003266165b059236544b063234420b13b5c4565234520b003266062636820b0032661
+65b05c236544b03b2344b1005c455458b15c406544b23b403b4523614459b347503437456523
+456023456560234560b089766818b080622020b134504565234520b003266062636820b00326
+6165b050236544b034234420b147374565234520b003266062636820b003266165b037236544
+b0472344b10037455458b137406544b24740474523614459004b5342014b5058b10800425943
+5c58b108004259b3020b0a124358601b2159421610703eb0124358b93b21187e1bba040001a8
+000b2b59b00c2342b00d2342b0124358b92d412d411bba04000400000b2b59b00e2342b00f23
+42b0124358b9187e3b211bba01a80400000b2b59b0102342b0112342002b7475737500184569
+444569444569447373737374757374752b2b2b2b74752b2b2b2b2b7373737373737373737373
+73737373737373737373737373732b2b2b45b0406144737400004bb02a534bb03f515a58b107
+0745b040604459004bb03a534bb03f515a58b10b0b45b8ffc0604459004bb02e534bb03a515a
+58b1030345b040604459004bb02e534bb03c515a58b1090945b8ffc06044592b2b2b2b2b2b2b
+2b2b2b2b2b2b2b2b2b2b2b752b2b2b2b2b2b2b435c58b9008002bbb301401e017400735903b0
+1e4b5402b0124b545ab012435c5a58ba009f02220001007359002b7473012b01732b2b2b2b2b
+2b2b2b737373732b2b2b2b2b002b2b2b2b2b2b00456944734569447345694473747545694473
+4569444569444569447374456944456944732b2b2b2b2b732b002b732b74752b2b2b2b2b2b2b
+2b2b2b2b2b2b2b737475732b7374757374752b2b2b742b2b000000>
+] def
+/f-0-0 currentdict end definefont pop
+%%EndResource
+%%BeginResource: font ArialMT
+11 dict begin
+/FontType 42 def
+/FontName /ArialMT def
+/PaintType 0 def
+/FontMatrix [ 1 0 0 1 0 0 ] def
+/FontBBox [ 0 0 0 0 ] def
+/Encoding 256 array def
+0 1 255 { Encoding exch /.notdef put } for
+Encoding 1 /uni2212 put
+/CharStrings 2 dict dup begin
+/.notdef 0 def
+/uni2212 1 def
+end readonly def
+/sfnts [
+<00010000000900800003001063767420a11cd7eb00000100000006546670676dc83d982f0000
+0754000005ee676c796661337b000000009c0000006468656164d7c8e4bb00000d4400000036
+68686561123308cb00000d7c00000024686d74780aac017200000da0000000086c6f63610000
+009000000da80000000c6d617870051905df00000db4000000207072657025d64dbf00000dd4
+00000bbe00020100000005000500000300070000211121112521112101000400fc2003c0fc40
+0500fb002004c000000000010072027f043a03270003001a400c022500001a05011904575a18
+2b4e10e410f6002f4ded313001213521043afc3803c8027fa800000005ba001905ba001a05a7
+0019042600180000ffe70000ffe80000ffe7fe69ffe805ba0019fe69ffe802ea000000b80000
+00b80000000000a800ad016900ad00bf00c201f0001800af00b900b400c800170044009c007c
+009400870006005a00c80089005200520005004400940119ffb4002f00a1000300a100cd0017
+0057007e00ba00160118ffe9007f008503d300870085000d002200410050006f008d014cff75
+005c00df04830037004c006e00700180ff58ff8eff92ffa400a500b903c8fffd000b001a0063
+006300cdffee05d8ffdc002d005c0095009900df019209b500400057008000b9039d0072009a
+035d0401ff67fffa00030021007700cd0004004d00cd01c0022b004c006500e70118017c0343
+05d8ffa3ffb0ffc40003001c005d0068009a00ba013501470221055cff4dffcd0016002d0078
+0080009900b200b600b600b800bd00da010c05f0ffa4fff00019002c0049007f00b400ce01c0
+03fefd81fe3f000000050018002900390049006f00be00c700d0012301c1026f050c05320540
+057affd4001400310055005700a700b400e601f7027e027e027f03c60446ff42000e00850091
+00bf00c200c500e1011a012f014f01560229026f029e03720008002c00310031006400690089
+009800c700de012b01b6020c02cf03a304ab04fb061dfee0ff0e00060026009b009d00c1010d
+011801200173018201d601e30243025f029b02e2039404a904d20761001c005e006d008d00ab
+00f7011201380151015b0168017c01870191019901cd01d001e802410254026b02ef03680371
+03bd044204420453047304830586058b06e8fe58fec4fed1fef7ff32ff860051007c00810091
+0095009e00b400b900cf00d900d900df00e20105010b010e010e012001210155017b017b017e
+018d01a201a801a901b401d001d001e201e901f201f501fb020002000206021b022102220222
+0223027202770294029c02cf02cf02d002ec02f903170322032b0335033c0359036f03710387
+0390039003b503e1041a04cf04ff053205320596059f05a805ab05c205f0060c0782080008cc
+fca3fd2afddefe00fe88fe96feb2feb4ffe100150019001a001c001f003c005100610061006a
+0078009600a500af00d3010c0118011a012a013e014c0151015f016a0171017801820184019a
+01a501a801a901ae01bc01cd01d701ef0200020d021c02210222022e02350242024f024f025e
+026502710290029202b402d602fa0307030b030f0315032a0347035d036503740379039603b0
+03cc03dd03e203f603fc03fc03ff040a041f04220426042b0447045f0475049e04e704e7055c
+05cb05e5060a066d068606b806f10736073e07500751075d078f07b607d4086000b600c300b5
+00b700000000000000000000000001e00381034503b5008e0233041902ce02ce002d005f0064
+034d023f000002a80188027d01b402240578063b023b014e00f00426029402c6029f02f6023b
+034d014b0153006a0231000000000000061404aa0000003c04c300ed04bc026502ce03b50078
+060c017e02ef060c00b201000239000001c50330042b03cb00da03df010704a100db040a0117
+01ed02a70350010b01bd043e05580021039c00ae0371017d00b5024500000afb088c012b014e
+01aa00870054013201f803ff0003024e00b4003703e30083006b02d800ed0077008800970164
+0467008e0033017c00e700a6029e0329056e062a061501c90269048a021301b4000204a90000
+02390124010305140084015d039a06ef02d9007500cf040a00de03ac04bc02cf02ae034d04f0
+05520168006d007d00860071ff810079055804d2016700030156002504e00094007c03320421
+0094007f0072005c002f00b6001800ba00b80041034d00720018001f004c016a01550099009a
+009a009800b200040078006900140057006e00ce00b4065402b80067050e016500e7000004cb
+fe52005affa60099ff67006eff92002dffd40087ff7c00b800a800e5008f00a80185fe7b0070
+001e00d900de014c054602cf0546ff2d028a02d90253029600b7000000000000000000000000
+00000125011800ea00ea00ae0000003e05bb008a04d70053003fff8cffd50015002800220099
+0062004a00e4006d00ee00e5004803c00033fe4e02b1ff460370007905df0051ffa7ff1f010a
+0068ff6c004f00bc00a507050061072b00ed04b001d200b6007b00650252ff740365fe690094
+008f005c004000860075008900894043555441403f3e3d3c3b3a3938373534333231302f2e2d
+2c2b2a292827262524232221201f1e1d1c1b1a191817161514131211100f0e0d0c0b0a090807
+060504030201002c4523466020b02660b004262348482d2c452346236120b02661b004262348
+482d2c45234660b0206120b04660b004262348482d2c4523462361b0206020b02661b02061b0
+04262348482d2c45234660b0406120b06660b004262348482d2c4523462361b0406020b02661
+b04061b004262348482d2c0110203c003c2d2c20452320b0cd442320b8015a51582320b08d44
+235920b0ed51582320b04d44235920b09051582320b00d44235921212d2c20204518684420b0
+01602045b04676688a4560442d2c01b10b0a432343650a2d2c00b10a0b4323430b2d2c00b017
+2370b101173e01b0172370b10217453ab10200080d2d2c45b01a234445b01923442d2c2045b0
+0325456164b050515845441b2121592d2cb00143632362b0002342b00f2b2d2c2045b0004360
+442d2c01b00643b00743650a2d2c2069b04061b0008b20b12cc08a8cb8100062602b0c642364
+615c58b00361592d2c45b0112bb0172344b0177ae4182d2c45b0112bb01723442d2cb0124358
+8745b0112bb0172344b0177ae41b038a45186920b01723448a8a8720b0a05158b0112bb01723
+44b0177ae41b21b0177ae45959182d2c2d2cb0022546608a46b040618c482d2c4b53205c58b0
+02855958b00185592d2c20b0032545b019234445b01a23444565234520b00325606a20b00923
+4223688a6a606120b01a8ab000527921b21a1a40b9ffe0001a45208a54582321b03f1b235961
+441cb114008a5279b31940201945208a54582321b03f1b235961442d2cb110114323430b2d2c
+b10e0f4323430b2d2cb10c0d4323430b2d2cb10c0d432343650b2d2cb10e0f432343650b2d2c
+b11011432343650b2d2c4b525845441b2121592d2c0120b003252349b04060b0206320b00052
+5823b002253823b002256538008a63381b212121212159012d2c4bb06451584569b00943608a
+103a1b212121592d2c01b005251023208af500b0016023edec2d2c01b005251023208af500b0
+016123edec2d2c01b0062510f500edec2d2c20b001600110203c003c2d2c20b001610110203c
+003c2d2cb02b2bb02a2a2d2c00b00743b006430b2d2c3eb02a2a2d2c352d2c76b80223237010
+20b802234520b0005058b00161593a2f182d2c21210c6423648bb84000622d2c21b08051580c
+6423648bb82000621bb200402f2b59b002602d2c21b0c051580c6423648bb81555621bb20080
+2f2b59b002602d2c0c6423648bb84000626023212d2cb4000100000015b00826b00826b00826
+b008260f10161345683ab001162d2cb4000100000015b00826b00826b00826b008260f101613
+4568653ab001162d2c4b53234b515a5820458a60441b2121592d2c4b545820458a60441b2121
+592d2c4b53234b515a58381b2121592d2c4b5458381b2121592d2cb0134358031b02592d2cb0
+134358021b03592d2c4b54b012435c5a58381b2121592d2cb012435c580cb00425b00425060c
+6423646164b807085158b00425b00425012046b01060482046b0106048590a21211b2121592d
+2cb012435c580cb00425b00425060c6423646164b807085158b00425b00425012046b8fff060
+482046b8fff06048590a21211b2121592d2c4b53234b515a58b03a2b1b2121592d2c4b53234b
+515a58b03b2b1b2121592d2c4b53234b515ab012435c5a58381b2121592d2c0c8a034b54b004
+26024b545a8a8a0ab012435c5a58381b2121592d2c4b5258b00425b0042549b00425b0042549
+6120b0005458212043b0005558b00325b00325b8ffc038b8ffc038591bb04054582043b00054
+58b00225b8ffc038591b2043b0005458b00325b00325b8ffc038b8ffc0381bb00325b8ffc038
+59595959212121212d2c462346608a8a462320468a608a61b8ff8062232010238ab902c202c2
+8a70456020b0005058b00161b8ffba8b1bb0468c59b0106068013a2d2cb1020042b123018851
+b1400188535a58b910000020885458b202010243604259592d2cb0024354584b53234b515a58
+381b2121591b21212121592d0000000100000005028f28870dc75f0f3cf5081b080000000000
+a2e3272a00000000c3047090faaffd671000080c00000009000100010000000000010000073e
+fe4e00431000faaffa7a10000001000000000000000000000000000000020600010004ac0072
+000000000000002c0000006400010000000200f2003c009d000700020010002f005600000468
+041d00050002b900540328b326181fd0bc032900e0032900020329b22b1d1fb90327031db23b
+1f40b80323b31215320f412d03200001002f0320000100200320006f032000af032000bf0320
+0004005f031e00010010031e007f031e0080031e00af031e00bf031e00d0031e00060000031e
+0010031e0020031e006f031e009f031e00e0031e0006031d031cb2201f1041270319007f0319
+0002000f031700ef031700ff03170003001f0317002f0317004f0317005f0317008f0317009f
+03170006000f0317005f0317006f0317007f031700bf031700f00317000600400317b2923340
+b80317b28b3340b80317b36a6c3240b80317b2613340b80317b35c5d3240b80317b357593240
+b80317b34d513240b80317b344493240b80317b23a3340b80317b331343240b80317b32e4232
+40b80317b3272c3240b80317b312253280b80317b30a0d32c04116031600d003160002007003
+16000102c4000f0101001f00a0031500b0031500020306000f0101001f00400312b32426329f
+bf03040001030203010064001fffc00301b20d1132410a02ff02ef0012001f02ee02ed006400
+1fffc002edb30e11329f414a02e200af02e200bf02e2000302e202e202e102e1007f02e00001
+001002e0003f02e0009f02e000bf02e000cf02e000ef02e0000602e002e002df02df02de02de
+000f02dd002f02dd003f02dd005f02dd009f02dd00bf02dd00ef02dd000702dd02dd001002dc
+0001000002dc0001001002dc003f02dc000202dc02dc001002db000102db02db000f02da0001
+02da02daffc002d3b2373932b9ffc002d3b22b2f32b9ffc002d3b21f2532b9ffc002d3b2171b
+32b9ffc002d3b2121632b802d2b2f9291fb90326031cb23b1f40bb0322003e00330322b22531
+1fb80318b23c691fb802e3b3202b1fa0413002d400b002d40002000002d4001002d4002002d4
+005002d4006002d4007002d40006006002d6007002d6008002d6009002d600a002d600b002d6
+0006000002d6001002d6002002ca002002cc002002d6003002d6004002d6005002d6000802d0
+b2202b1fb802cfb226421f411602ce02c70017001f02cd02c80017001f02cc02c60017001f02
+cb02c50017001f02c902c5001e001f02ca02c6b21e1f00410b02c6000002c7001002c6001002
+c7002f02c5000502c1b324121fff411102bf0001001f02bf002f02bf003f02bf004f02bf005f
+02bf008f02bf000602bf0222b2641f12410b02bb00ca0800001f02b200e90800001f02a600a2
+0800406a1f4026434932402043493240263a3d3240203a3d329f209f26024026969932402096
+993240268e923240208e92324026848c324020848c3240267a813240207a813240266c763240
+206c76324026646a324020646a3240265a5f3240205a5f3240264f543240204f5432b8029eb7
+24271f374f6b0120410f0277003002770040027700500277000402770277027700f90400001f
+029bb22a2a1fb8029a402b292a1f80ba0180bc0180520180a201806501807e01808101803c01
+805e01802b01801c01801e0180400180bb0138000100800140b40180400180bb013800010080
+013940180180ca0180ad018073018026018025018024018020013740b80221b2493340b80221
+b2453340b80221b341423240b80221b33d3e320f410f0221003f0221007f0221000300bf0221
+00cf022100ff0221000300400221b320223240b80221b3191e3240b80222b32a3f3240b80221
+b32e3a326f414802c3007f02c3008f02c300df02c30004002f02c3006002c300cf02c3000300
+0f02c3003f02c3005f02c300c002c300ef02c300ff02c3000600df02220001008f0222000100
+0f0222002f0222003f0222005f0222007f022200ef0222000600bf022100ef02210002006f02
+21007f022100af02210003002f0221003f0221004f0221000302c302c3022202220221022140
+1d101c102b1048038f1c010f1e014f1eff1e023700161600000012110811b8010db6f70df8f7
+0d00094109028e028f001d001f0290028f001d001f028fb2f91d1fb80198b226bb1f41150197
+001e0401001f013900260125001f013800730401001f0135001c0801001f0134001c02ab001f
+0132b21c561fb8010fb2262c1fba010e001e0401b61ff91ce41fe91cb80201b61fe81cbb1fd7
+20b80401b21fd51cb802abb61fd41c891fc92fb80801b21fbc26b80101b21fba20b80201b61f
+b91c381fadcab80401b21f8126b8019ab21f7e26b8019ab61f7d1c471f6b1cb80401b21f6526
+b8019ab21f5e73b80401400f1f52265a1f481c891f441c621f4073b80801b61f3f1c5e1f3c26
+b8019ab21f351cb80401b61f301cbb1f2b1cb80401b61f2a1c561f291cb80101b21f231eb804
+01b21f5537b80168402c07960758074f07360732072c0721071f071d071b071408120810080e
+080c080a080808060804080208000814b8ffe0402b0000010014061000000100060400000100
+0410000001001002000001000200000001000002010802004a00b013034b024b5342014bb0c0
+63004b6220b0f65323b8010a515ab005234201b0124b004b5442b0382b4bb807ff52b0372b4b
+b007505b58b101018e59b0382bb00288b801005458b801ffb101018e851bb0124358b9000101
+11858d1bb900010128858d5959001816763f183f123e113946443e113946443e113946443e11
+3946443e11394660443e11394660442b2b2b2b2b2b2b2b2b2b2b182b2b2b2b2b2b2b2b2b2b2b
+182b1db0964b5358b0aa1d59b0324b5358b0ff1d594bb09353205c58b901f201f04544b901f1
+01f045445958b9033e01f2455258b901f2033e4459594bb8015653205c58b9002001f14544b9
+002601f145445958b9081e0020455258b90020081e4459594bb8019a53205c58b9002501f245
+44b9002401f245445958b909090025455258b9002509094459594bb8040153205c58b1732445
+44b1242445445958b917200073455258b9007317204459594bb8040153205c58b1ca254544b1
+252545445958b9168000ca455258b900ca16804459594bb03e53205c58b11c1c4544b11e1c45
+445958b9011a001c455258b9001c011a4459594bb05653205c58b11c1c4544b12f1c45445958
+b90189001c455258b9001c01894459594bb8030153205c58b11c1c4544b11c1c45445958b90d
+e0001c455258b9001c0de04459592b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b
+2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b65422b2b01b33b59635c4565234560234565602345
+60b08b766818b080622020b163594565234520b003266062636820b003266165b059236544b0
+63234420b13b5c4565234520b003266062636820b003266165b05c236544b03b2344b1005c45
+5458b15c406544b23b403b4523614459b347503437456523456023456560234560b089766818
+b080622020b134504565234520b003266062636820b003266165b050236544b034234420b147
+374565234520b003266062636820b003266165b037236544b0472344b10037455458b1374065
+44b24740474523614459004b5342014b5058b108004259435c58b108004259b3020b0a124358
+601b2159421610703eb0124358b93b21187e1bba040001a8000b2b59b00c2342b00d2342b012
+4358b92d412d411bba04000400000b2b59b00e2342b00f2342b0124358b9187e3b211bba01a8
+0400000b2b59b0102342b0112342002b74757375001845694445694445694473737373747573
+74752b2b2b2b74752b2b2b2b2b73737373737373737373737373737373737373737373737373
+2b2b2b45b0406144737400004bb02a534bb03f515a58b1070745b040604459004bb03a534bb0
+3f515a58b10b0b45b8ffc0604459004bb02e534bb03a515a58b1030345b040604459004bb02e
+534bb03c515a58b1090945b8ffc06044592b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b752b2b
+2b2b2b2b2b435c58b9008002bbb301401e017400735903b01e4b5402b0124b545ab012435c5a
+58ba009f02220001007359002b7473012b01732b2b2b2b2b2b2b2b737373732b2b2b2b2b002b
+2b2b2b2b2b004569447345694473456944737475456944734569444569444569447374456944
+456944732b2b2b2b2b732b002b732b74752b2b2b2b2b2b2b2b2b2b2b2b2b2b737475732b7374
+757374752b2b2b742b2b000000>
+] def
+/f-0-1 currentdict end definefont pop
+%%EndResource
+%%BeginResource: font BitstreamVeraSans-Roman
+11 dict begin
+/FontType 42 def
+/FontName /BitstreamVeraSans-Roman def
+/PaintType 0 def
+/FontMatrix [ 1 0 0 1 0 0 ] def
+/FontBBox [ 0 0 0 0 ] def
+/Encoding 256 array def
+0 1 255 { Encoding exch /.notdef put } for
+Encoding 46 /period put
+Encoding 50 /two put
+Encoding 53 /five put
+Encoding 61 /equal put
+Encoding 75 /K put
+Encoding 80 /P put
+Encoding 99 /c put
+Encoding 105 /i put
+Encoding 176 /degree put
+/CharStrings 10 dict dup begin
+/.notdef 0 def
+/P 1 def
+/c 2 def
+/equal 3 def
+/two 4 def
+/five 5 def
+/period 6 def
+/degree 7 def
+/K 8 def
+/i 9 def
+end readonly def
+/sfnts [
+<00010000000900800003001063767420ffd31d3900000634000001fc6670676de7b4f1c40000
+08300000008b676c79660d809db60000009c0000059868656164dd84a2d0000008bc00000036
+686865611045076d000008f400000024686d74782ceb06d500000918000000286c6f636107ce
+069c00000940000000166d6178700445063a0000095800000020707265703b07f10000000978
+0000056800020066fe96046605a400030007001a400c04fb0006fb0108057f0204002fc4d4ec
+310010d4ecd4ec301311211125211121660400fc73031bfce5fe96070ef8f2720629000200c9
+0000048d05d500080013003a40180195100095098112100a0802040005190d3f11001c090414
+10fcec32fcec11173931002ff4ecd4ec30400b0f151f153f155f15af1505015d011133323635
+342623252132041514042b0111230193fe8d9a9a8dfe3801c8fb0101fefffbfeca052ffdcf92
+878692a6e3dbdde2fda800010071ffe303e7047b0019003f401b00860188040e860d880ab911
+04b917b8118c1a07120d004814451a10fce432ec310010e4f4ec10fef4ee10f5ee30400b0f1b
+101b801b901ba01b05015d01152e0123220615141633323637150e0123220011100021321603
+e74e9d50b3c6c6b3509d4e4da55dfdfed6012d010655a20435ac2b2be3cdcde32b2baa242401
+3e010e0112013a230000000200d9016005db03a200030007001c400d009c02069c0408050104
+00230810fc3cc432310010d4ecd4ec301321152115211521d90502fafe0502fafe03a2a8f0aa
+0000000100960000044a05f0001c00a54027191a1b03181c11050400110505044210a111940d
+a014910400a00200100a02010a1c171003061d10fcc4d4ecc0c011123931002fec32f4ecf4ec
+304b5358071005ed0705ed1117395922014bb015544bb016545b4bb014545b58bd001d004000
+01001d001dffc0381137385940325504560556077a047a05761b87190704000419041a041b05
+1c74007606751a731b741c82008619821a821b821ca800a81b115d005d25211521353600373e
+0135342623220607353e01333204151406070600018902c1fc4c73018d33614da7865fd3787a
+d458e80114455b19fef4aaaaaa7701913a6d974977964243cc3132e8c25ca5701dfeeb000000
+0001009effe3046405d5001d00754023041a071186101d1aa00714a010890d02a000810d8c07
+a41e171c010a031c000a10061e10fcc4d4ec10c4ee310010e4e4f4ec10e6ee10fec410ee1112
+3930014bb016544bb014545b58bd001e00400001001e001effc03811373859014bb00f5458bd
+001effc00001001e001e0040381137385913211521113e0133320015140021222627351e0133
+323635342623220607dd0319fda02c582cfa0124fed4feef5ec3685ac06badcacaad51a15405
+d5aafe920f0ffeeeeaf1fef52020cb3130b69c9cb62426000000000100db000001ae00fe0003
+0011b7008302011900180410fcec31002fec3037331523dbd3d3fefe000200c30375033d05f0
+000b001a0020401106c315c400c30c911b095a125b035a181b10dcecfcec310010f4ecfcec30
+0122061514163332363534262732161716161514062322263534360200506e6e50506e6f4f40
+762b2e2eb98687b4b8056f6f504f6d6d4f4f7081312e2d724284b7b48786ba000000000100c9
+0000056a05d5000a00ef40280811050605071106060503110405040211050504420805020303
+00af09060501040608011c00040b10fcec32d4c4113931002f3cec321739304b5358071004ed
+071005ed071005ed071004ed5922b2080301015d409214020104020908160228052808370236
+0534084702460543085502670276027705830288058f0894029b08e702150603090509061b03
+1907050a030a07180328052b062a073604360536063507300c41034004450540064007400c62
+036004680567077705700c8b038b058e068f078f0c9a039d069d07b603b507c503c507d703d6
+07e803e904e805ea06f703f805f9062c5d71005d711333110121090121011123c9ca029e0104
+fd1b031afef6fd33ca05d5fd890277fd48fce302cffd31000000000200c10000017906140003
+0007002b400e06be04b100bc020501080400460810fc3cec3231002fe4fcec30400b10094009
+50096009700905015d1333112311331523c1b8b8b8b80460fba00614e900013500b800cb00cb
+00c100aa009c01a600b800660000007100cb00a002b20085007500b800c301cb0189022d00cb
+00a600f000d300aa008700cb03aa0400014a003300cb000000d9050200f4015400b4009c0139
+0114013907060400044e04b4045204b804e704cd0037047304cd04600473013303a2055605a6
+0556053903c5021200c9001f00b801df007300ba03e9033303bc0444040e00df03cd03aa00e5
+03aa0404000000cb008f00a4007b00b80014016f007f027b0252008f00c705cd009a009a006f
+00cb00cd019e01d300f000ba018300d5009803040248009e01d500c100cb00f600830354027f
+00000333026600d300c700a400cd008f009a0073040005d5010a00fe022b00a400b4009c0000
+0062009c0000001d032d05d505d505d505f0007f007b005400a406b80614072301d300b800cb
+00a601c301ec069300a000d3035c037103db0185042304a80448008f0139011401390360008f
+05d5019a0614072306660179046004600460047b009c00000277046001aa00e904600762007b
+00c5007f027b000000b4025205cd006600bc00660077061000cd013b01850389008f007b0000
+001d00cd074a042f009c009c0000077d006f0000006f0335006a006f007b00ae00b2002d0396
+008f027b00f600830354063705f6008f009c04e10266008f018d02f600cd03440029006604ee
+007300001400b6060504030201002c2010b002254964b040515820c859212d2cb002254964b0
+40515820c859212d2c20100720b00050b00d7920b8ffff5058041b0559b0051cb0032508b004
+2523e120b00050b00d7920b8ffff5058041b0559b0051cb0032508e12d2c4b505820b0fd4544
+59212d2cb002254560442d2c4b5358b00225b0022545445921212d2c45442d00000100000002
+00004f20d26c5f0f3cf5001f080000000000bab9f0b800000000bac26791fe89fe1d0a4c076d
+00000008000100000000000000010000076dfe1d00000abcfe89fe890a4c0001000000000000
+0000000000000000000a04cd006604d300c90466007106b400d9051700960517009e028b00db
+040000c3053f00c9023900c100000022006200ae00d0015401c001d4021002a402cc00000001
+0000000a004d000700420004000200100040000700000415056800030001b8028040fffbfe03
+fa1403f92503f83203f79603f60e03f5fe03f4fe03f32503f20e03f19603f02503ef8a4105ef
+fe03ee9603ed9603ecfa03ebfa03eafe03e93a03e84203e7fe03e63203e5e45305e59603e48a
+4105e45303e3e22f05e3fa03e22f03e1fe03e0fe03df3203de1403dd9603dcfe03db1203da7d
+03d9bb03d8fe03d68a4105d67d03d5d44705d57d03d44703d3d21b05d3fe03d21b03d1fe03d0
+fe03cffe03cefe03cd9603cccb1e05ccfe03cb1e03ca3203c9fe03c6851105c61c03c51603c4
+fe03c3fe03c2fe03c1fe03c0fe03bffe03befe03bdfe03bcfe03bbfe03ba1103b9862505b9fe
+03b8b7bb05b8fe03b7b65d05b7bb03b78004b6b52505b65d40ff03b64004b52503b4fe03b396
+03b2fe03b1fe03b0fe03affe03ae6403ad0e03acab2505ac6403abaa1205ab2503aa1203a98a
+4105a9fa03a8fe03a7fe03a6fe03a51203a4fe03a3a20e05a33203a20e03a16403a08a4105a0
+96039ffe039e9d0c059efe039d0c039c9b19059c64039b9a10059b19039a1003990a0398fe03
+97960d0597fe03960d03958a410595960394930e05942803930e0392fa039190bb0591fe0390
+8f5d0590bb039080048f8e25058f5d038f40048e25038dfe038c8b2e058cfe038b2e038a8625
+058a410389880b05891403880b03878625058764038685110586250385110384fe0383821105
+83fe0382110381fe0380fe037ffe0340ff7e7d7d057efe037d7d037c64037b5415057b25037a
+fe0379fe03780e03770c03760a0375fe0374fa0373fa0372fa0371fa0370fe036ffe036efe03
+6c21036bfe036a1142056a530369fe03687d036711420566fe0365fe0364fe0363fe0362fe03
+613a0360fa035e0c035dfe035bfe035afe0359580a0559fa03580a035716190557320356fe03
+5554150555420354150353011005531803521403514a130551fe03500b034ffe034e4d10054e
+fe034d10034cfe034b4a13054bfe034a4910054a1303491d0d05491003480d0347fe03469603
+45960344fe0343022d0543fa0342bb03414b0340fe033ffe033e3d12053e14033d3c0f053d12
+033c3b0d053c40ff0f033b0d033afe0339fe033837140538fa033736100537140336350b0536
+1003350b03341e03330d0332310b0532fe03310b03302f0b05300d032f0b032e2d09052e1003
+2d09032c32032b2a25052b64032a2912052a25032912032827250528410327250326250b0526
+0f03250b0324fe0323fe03220f03210110052112032064031ffa031e1d0d051e64031d0d031c
+1142051cfe031bfa031a42031911420519fe031864031716190517fe031601100516190315fe
+0314fe0313fe031211420512fe0311022d05114203107d030f64030efe030d0c16050dfe030c
+0110050c16030bfe030a100309fe0308022d0508fe030714030664030401100504fe03401503
+022d0503fe0302011005022d0301100300fe0301b80164858d012b2b2b2b2b2b2b2b2b2b2b2b
+2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b
+2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b
+2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b
+2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b
+2b002b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b
+2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b
+2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b
+2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b
+2b2b2b2b2b2b2b1d00>
+] def
+/f-1-0 currentdict end definefont pop
+%%EndResource
+%%BeginResource: font SimSun
+11 dict begin
+/FontType 42 def
+/FontName /SimSun def
+/PaintType 0 def
+/FontMatrix [ 1 0 0 1 0 0 ] def
+/FontBBox [ 0 0 0 0 ] def
+/Encoding 256 array def
+0 1 255 { Encoding exch /.notdef put } for
+Encoding 1 /uni0394 put
+/CharStrings 2 dict dup begin
+/.notdef 0 def
+/uni0394 1 def
+end readonly def
+/sfnts [
+<00010000000900800003001063767420072903f0000000c0000002be6670676d4aa192e80000
+03800000000d676c79663237249f0000009c0000002468656164bc68cb380000039000000036
+68686561020100df000003c800000024686d74780200003d000003ec000000086c6f63610000
+0024000003f40000000c6d61787001ce036f00000400000000207072657005dc4fcc00000420
+000000b20002003d001600c200b20002000500003737172727073d4045163330169c9c077777
+0000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffff00ab0002007000020004fffeffdfffff0006
+0008000a000c000e00100012001400160018001a001c001e000e0010ffff00060008000a000c
+000e00100012001400160018001a001a001cffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffff001e001e00c90000001c001c0002ffea00550033003800c1
+000a00400037003d0032003c00dcffdd0057004d000b001f000b001f00920037007a0070006c
+006f00200020001a00160006000800060008000f0000b0282c4b525845441b2121592d000000
+000100000002000064a607025f0f3cf5000b010000000000a9ed000000000000b25c8c7f0000
+ffdc00ff00db0000000c00020001000000000001000000dcffdc002401000000000000ff0001
+00000000000000000000000000000002010000000100003d0000000000000000000000240001
+00000002016d00310000000000020010002f00290000016101d100000000411a011101100032
+00280110010e00280028010f010e00280028010c010d00460028010d010e00280028010e010d
+00180028010c010db346285001b801ff858d001db0324b5258b0801d59b801064568b8010623
+44b801044568b801042344b801054568b801044560b801052344b801024568b801044560b801
+022344b801034568b801024560b801032344b801004568b801044560b801002344b801014568
+b801004560b801012344012b2b2b2b2b2b2b000000>
+] def
+/f-2-1 currentdict end definefont pop
+%%EndResource
+%%EndSetup
+%%Page: 1 1
+%%BeginPageSetup
+%%PageBoundingBox: 0 0 565 423
+%%EndPageSetup
+q 0 0 565 423 rectclip q
+Q q
+q
+0 423 565 -423 re W n
+  q
+1 g
+0.801 423.145 564.398 -422.289 re f
+39.219 415.945 504.68 -177.023 re f
+  Q
+Q
+Q q
+39.219 415.953 504.699 -177 re W n
+q
+39 416 505 -178 re W n
+  q
+0 g
+1 w
+2 J
+1 j
+[] 0.0 d
+10 M q 1 0 0 1 0 423 cm
+39.219 -104.023 m 39.848 -104.355 l 40.48 -104.578 l 41.742 -104.695 l 
+43.004 -104.41 l 44.266 -103.785 l 46.156 -102.445 l 53.098 -97.035 l 55.621
+ -95.219 l 56.883 -94.492 l 58.145 -94.062 l 58.773 -94.016 l 59.406 -94.109
+ l 60.035 -94.355 l 60.668 -94.77 l 61.297 -95.363 l 62.559 -97.066 l 63.82
+ -99.355 l 66.977 -105.824 l 68.238 -107.711 l 68.867 -108.316 l 69.5 -108.652
+ l 70.129 -108.695 l 70.762 -108.434 l 71.391 -107.875 l 72.023 -107.027
+ l 73.285 -104.594 l 74.547 -101.469 l 77.07 -94.973 l 78.332 -92.531 l 
+78.961 -91.668 l 79.594 -91.082 l 80.223 -90.785 l 80.855 -90.785 l 81.484
+ -91.062 l 82.117 -91.605 l 82.746 -92.387 l 84.008 -94.508 l 86.531 -99.773
+ l 87.793 -102.234 l 89.055 -104.211 l 89.688 -104.961 l 90.316 -105.531
+ l 90.949 -105.918 l 91.578 -106.125 l 92.211 -106.148 l 92.84 -106.004 
+l 93.473 -105.699 l 94.734 -104.68 l 95.996 -103.242 l 100.41 -97.492 l 
+101.672 -96.348 l 102.934 -95.652 l 103.566 -95.488 l 104.195 -95.445 l 
+105.457 -95.699 l 106.719 -96.32 l 108.613 -97.641 l 111.137 -99.387 l 112.398
+ -100.031 l 114.289 -100.684 l 121.23 -102.359 l 122.492 -102.434 l 123.754
+ -102.215 l 125.016 -101.645 l 126.277 -100.738 l 128.168 -98.988 l 130.062
+ -97.312 l 131.324 -96.559 l 131.953 -96.344 l 132.586 -96.254 l 133.215
+ -96.289 l 134.477 -96.711 l 135.738 -97.508 l 139.523 -100.348 l 140.785
+ -100.871 l 142.047 -101.02 l 143.309 -100.809 l 144.57 -100.336 l 147.094
+ -99.195 l 148.355 -98.883 l 149.617 -98.941 l 150.879 -99.453 l 152.141
+ -100.406 l 154.031 -102.363 l 155.297 -103.664 l 156.559 -104.594 l 157.188
+ -104.816 l 157.82 -104.84 l 158.449 -104.633 l 159.078 -104.188 l 159.711
+ -103.492 l 160.344 -102.566 l 161.605 -100.125 l 165.391 -91.785 l 166.02
+ -90.898 l 166.648 -90.301 l 167.281 -90.02 l 167.91 -90.07 l 168.543 -90.453
+ l 169.176 -91.152 l 169.805 -92.133 l 171.066 -94.773 l 175.48 -105.371
+ l 176.742 -107.379 l 178.008 -108.695 l 178.637 -109.105 l 179.266 -109.367
+ l 179.898 -109.477 l 180.527 -109.445 l 181.16 -109.266 l 181.789 -108.938
+ l 182.422 -108.445 l 183.055 -107.781 l 183.684 -106.926 l 184.945 -104.609
+ l 186.207 -101.477 l 187.469 -97.664 l 189.992 -89.52 l 191.254 -86.305
+ l 191.883 -85.18 l 192.516 -84.453 l 193.145 -84.18 l 193.777 -84.387 l
+ 194.406 -85.078 l 195.039 -86.246 l 195.672 -87.855 l 196.93 -92.184 l 
+198.824 -100.219 l 200.086 -105.508 l 201.348 -109.91 l 201.977 -111.605
+ l 202.609 -112.898 l 203.238 -113.766 l 203.871 -114.195 l 204.5 -114.199
+ l 205.133 -113.801 l 205.762 -113.027 l 206.395 -111.934 l 207.656 -108.996
+ l 212.07 -97.02 l 213.332 -94.68 l 213.965 -93.82 l 214.594 -93.172 l 215.227
+ -92.727 l 215.855 -92.465 l 216.488 -92.375 l 217.117 -92.426 l 218.379
+ -92.855 l 220.273 -93.902 l 222.797 -95.258 l 227.211 -97.258 l 228.473
+ -98.098 l 229.734 -99.16 l 230.996 -100.461 l 232.891 -102.828 l 234.781
+ -105.645 l 237.938 -110.629 l 239.199 -112.133 l 239.828 -112.605 l 240.461
+ -112.824 l 241.09 -112.734 l 241.723 -112.289 l 242.352 -111.457 l 242.984
+ -110.207 l 243.613 -108.531 l 244.875 -103.973 l 246.137 -98.102 l 249.293
+ -82.316 l 250.555 -77.781 l 251.184 -76.258 l 251.816 -75.301 l 252.445
+ -74.934 l 253.078 -75.156 l 253.707 -75.961 l 254.34 -77.305 l 254.969 
+-79.141 l 256.23 -84.086 l 257.492 -90.336 l 259.387 -101.316 l 263.801 
+-128.727 l 265.062 -134.68 l 265.695 -136.809 l 266.324 -138.195 l 266.957
+ -138.719 l 267.586 -138.273 l 268.219 -136.777 l 268.848 -134.18 l 269.48
+ -130.48 l 270.109 -125.715 l 271.371 -113.352 l 273.266 -90.234 l 275.156
+ -66.98 l 276.418 -54.469 l 277.051 -49.676 l 277.68 -46.035 l 278.312 -43.637
+ l 278.941 -42.523 l 279.574 -42.727 l 280.203 -44.23 l 280.836 -47.016 
+l 281.465 -51.035 l 282.098 -56.234 l 283.359 -69.895 l 284.617 -87.316 
+l 286.512 -118.289 l 288.406 -150.242 l 289.664 -168.246 l 290.297 -175.223
+ l 290.93 -180.387 l 291.559 -183.426 l 292.191 -184.078 l 292.82 -182.164
+ l 293.449 -177.59 l 294.082 -170.359 l 294.715 -160.609 l 295.977 -134.629
+ l 297.867 -86.207 l 299.129 -54.363 l 300.391 -28.41 l 301.023 -18.848 
+l 301.652 -12.008 l 302.281 -8.062 l 302.914 -7.055 l 303.547 -8.898 l 304.176
+ -13.387 l 304.809 -20.219 l 306.066 -39.348 l 307.961 -75.188 l 309.852
+ -110.453 l 311.113 -130.469 l 312.379 -146.902 l 313.641 -159.703 l 314.27
+ -164.738 l 314.898 -168.816 l 315.531 -171.863 l 316.16 -173.773 l 316.793
+ -174.41 l 317.426 -173.629 l 318.055 -171.277 l 318.684 -167.23 l 319.316
+ -161.395 l 319.945 -153.746 l 321.211 -133.273 l 322.469 -107.238 l 324.992
+ -50.754 l 326.258 -28.203 l 326.887 -19.992 l 327.516 -14.281 l 328.148
+ -11.281 l 328.777 -11.086 l 329.41 -13.664 l 330.039 -18.875 l 330.672 
+-26.465 l 331.934 -47.324 l 333.824 -86.141 l 335.719 -123.227 l 336.98 
+-142.418 l 337.609 -149.773 l 338.242 -155.531 l 338.871 -159.688 l 339.504
+ -162.281 l 340.133 -163.383 l 340.766 -163.086 l 341.395 -161.488 l 342.027
+ -158.703 l 342.656 -154.836 l 343.289 -149.988 l 344.551 -137.781 l 345.812
+ -122.949 l 350.227 -67.027 l 351.488 -55.898 l 352.121 -52.02 l 352.75 
+-49.422 l 353.383 -48.176 l 354.012 -48.297 l 354.645 -49.762 l 355.273 
+-52.508 l 355.906 -56.422 l 357.168 -67.137 l 359.059 -87.578 l 360.953 
+-108.383 l 362.215 -120.066 l 363.477 -128.809 l 364.105 -131.867 l 364.738
+ -133.992 l 365.367 -135.164 l 366 -135.391 l 366.629 -134.684 l 367.262
+ -133.102 l 367.891 -130.699 l 368.523 -127.57 l 369.785 -119.57 l 373.57
+ -91.957 l 374.199 -88.43 l 374.832 -85.547 l 375.461 -83.391 l 376.094 
+-81.992 l 376.723 -81.363 l 377.355 -81.469 l 377.984 -82.242 l 378.617 
+-83.594 l 379.879 -87.516 l 382.402 -96.379 l 383.031 -98.082 l 383.664 
+-99.414 l 384.293 -100.34 l 384.926 -100.855 l 385.555 -100.988 l 386.188
+ -100.781 l 386.816 -100.305 l 388.078 -98.863 l 389.34 -97.316 l 389.973
+ -96.684 l 390.602 -96.215 l 391.234 -95.945 l 391.863 -95.887 l 392.496
+ -96.039 l 393.125 -96.395 l 393.758 -96.926 l 395.02 -98.406 l 396.91 -101.281
+ l 399.434 -105.648 l 402.59 -111.172 l 403.852 -112.77 l 404.48 -113.246
+ l 405.113 -113.422 l 405.742 -113.246 l 406.371 -112.668 l 407.004 -111.648
+ l 407.637 -110.164 l 408.266 -108.223 l 409.527 -103.055 l 410.789 -96.598
+ l 413.312 -83.078 l 414.574 -77.992 l 415.203 -76.27 l 415.836 -75.199 
+l 416.469 -74.84 l 417.098 -75.219 l 417.73 -76.328 l 418.359 -78.148 l 
+418.988 -80.617 l 420.254 -87.184 l 422.145 -99.434 l 424.035 -111.562 l
+ 425.301 -118.047 l 425.93 -120.551 l 426.562 -122.484 l 427.191 -123.816
+ l 427.82 -124.535 l 428.453 -124.648 l 429.086 -124.172 l 429.715 -123.141
+ l 430.348 -121.605 l 430.977 -119.617 l 432.238 -114.539 l 434.133 -105.152
+ l 437.285 -88.953 l 438.547 -83.539 l 439.809 -79.289 l 440.438 -77.711
+ l 441.07 -76.551 l 441.699 -75.844 l 442.332 -75.617 l 442.965 -75.902 
+l 443.594 -76.715 l 444.223 -78.059 l 444.855 -79.926 l 445.484 -82.297 
+l 446.746 -88.395 l 448.012 -95.891 l 451.164 -115.863 l 452.426 -122.059
+ l 453.055 -124.363 l 453.688 -126.039 l 454.316 -127.027 l 454.949 -127.293
+ l 455.578 -126.82 l 456.211 -125.613 l 456.84 -123.703 l 457.473 -121.137
+ l 458.734 -114.324 l 459.996 -105.898 l 463.148 -84.012 l 464.41 -77.5 
+l 465.043 -75.152 l 465.672 -73.512 l 466.305 -72.621 l 466.934 -72.52 l
+ 467.566 -73.211 l 468.195 -74.664 l 468.828 -76.844 l 469.457 -79.68 l 
+470.719 -86.93 l 474.504 -112.047 l 475.766 -117.992 l 476.398 -120.047 
+l 477.027 -121.414 l 477.66 -122.078 l 478.289 -122.043 l 478.922 -121.34
+ l 479.551 -120.012 l 480.184 -118.137 l 481.445 -113.07 l 483.336 -103.66
+ l 485.23 -94.391 l 486.492 -89.363 l 487.121 -87.379 l 487.754 -85.793 
+l 488.383 -84.641 l 489.016 -83.941 l 489.645 -83.703 l 490.277 -83.918 
+l 490.906 -84.582 l 491.539 -85.672 l 492.168 -87.152 l 493.43 -91.105 l
+ 495.324 -98.543 l 497.215 -105.871 l 498.477 -109.57 l 499.109 -110.852
+ l 499.738 -111.691 l 500.371 -112.062 l 501 -111.965 l 501.633 -111.406
+ l 502.262 -110.426 l 502.895 -109.074 l 504.156 -105.535 l 507.309 -95.73
+ l 508.57 -93.012 l 509.203 -92.105 l 509.832 -91.523 l 510.465 -91.266 
+l 511.094 -91.32 l 511.727 -91.664 l 512.355 -92.27 l 512.988 -93.098 l 
+514.25 -95.281 l 516.141 -99.305 l 518.035 -103.352 l 519.297 -105.59 l 
+519.926 -106.461 l 520.559 -107.113 l 521.188 -107.516 l 521.82 -107.641
+ l 522.449 -107.461 l 523.082 -106.965 l 523.711 -106.148 l 524.344 -105.031
+ l 525.605 -102.004 l 529.391 -91.371 l 530.02 -90.246 l 530.652 -89.512
+ l 531.281 -89.211 l 531.914 -89.367 l 532.543 -89.98 l 533.176 -91.031 
+l 533.805 -92.469 l 535.066 -96.227 l 537.59 -104.68 l 538.852 -107.883 
+l 539.484 -108.984 l 540.113 -109.707 l 540.746 -110.047 l 541.375 -110.008
+ l 542.008 -109.621 l 542.637 -108.926 l 543.27 -107.969 l 543.898 -106.816
+ l S Q
+  Q
+Q
+Q q
+q
+0 423 565 -423 re W n
+  q
+0 g
+0.5 w
+0 J
+1 j
+[] 0.0 d
+10 M q 1 0 0 1 0 423 cm
+39.219 -184.078 m 39.219 -180.078 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -7.055 m 39.219 -11.055 l S Q
+BT
+12 0 0 12 28.7422 226.014 Tm
+/f-0-0 1 Tf
+[(5)-80(2)-80(5)]TJ
+ET
+q 1 0 0 1 0 423 cm
+165.391 -184.078 m 165.391 -180.078 l S Q
+q 1 0 0 1 0 423 cm
+165.391 -7.055 m 165.391 -11.055 l S Q
+BT
+12 0 0 12 154.787 226.014 Tm
+/f-0-0 1 Tf
+[(5)-80(3)-80(0)]TJ
+ET
+q 1 0 0 1 0 423 cm
+291.559 -184.078 m 291.559 -180.078 l S Q
+q 1 0 0 1 0 423 cm
+291.559 -7.055 m 291.559 -11.055 l S Q
+BT
+12 0 0 12 281.082 226.014 Tm
+/f-0-0 1 Tf
+[(5)-80(3)-80(5)]TJ
+ET
+q 1 0 0 1 0 423 cm
+417.73 -184.078 m 417.73 -180.078 l S Q
+q 1 0 0 1 0 423 cm
+417.73 -7.055 m 417.73 -11.055 l S Q
+BT
+12 0 0 12 407.127 226.014 Tm
+/f-0-0 1 Tf
+[(5)-80(4)-80(0)]TJ
+ET
+q 1 0 0 1 0 423 cm
+543.898 -184.078 m 543.898 -180.078 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -7.055 m 543.898 -11.055 l S Q
+BT
+12 0 0 12 533.422 226.17 Tm
+/f-0-0 1 Tf
+[(5)-80(4)-80(5)]TJ
+ET
+q 1 0 0 1 0 423 cm
+64.453 -184.078 m 64.453 -182.078 l S Q
+q 1 0 0 1 0 423 cm
+64.453 -7.055 m 64.453 -9.055 l S Q
+q 1 0 0 1 0 423 cm
+89.688 -184.078 m 89.688 -182.078 l S Q
+q 1 0 0 1 0 423 cm
+89.688 -7.055 m 89.688 -9.055 l S Q
+q 1 0 0 1 0 423 cm
+114.922 -184.078 m 114.922 -182.078 l S Q
+q 1 0 0 1 0 423 cm
+114.922 -7.055 m 114.922 -9.055 l S Q
+q 1 0 0 1 0 423 cm
+140.156 -184.078 m 140.156 -182.078 l S Q
+q 1 0 0 1 0 423 cm
+140.156 -7.055 m 140.156 -9.055 l S Q
+q 1 0 0 1 0 423 cm
+190.621 -184.078 m 190.621 -182.078 l S Q
+q 1 0 0 1 0 423 cm
+190.621 -7.055 m 190.621 -9.055 l S Q
+q 1 0 0 1 0 423 cm
+215.855 -184.078 m 215.855 -182.078 l S Q
+q 1 0 0 1 0 423 cm
+215.855 -7.055 m 215.855 -9.055 l S Q
+q 1 0 0 1 0 423 cm
+241.09 -184.078 m 241.09 -182.078 l S Q
+q 1 0 0 1 0 423 cm
+241.09 -7.055 m 241.09 -9.055 l S Q
+q 1 0 0 1 0 423 cm
+266.324 -184.078 m 266.324 -182.078 l S Q
+q 1 0 0 1 0 423 cm
+266.324 -7.055 m 266.324 -9.055 l S Q
+q 1 0 0 1 0 423 cm
+316.793 -184.078 m 316.793 -182.078 l S Q
+q 1 0 0 1 0 423 cm
+316.793 -7.055 m 316.793 -9.055 l S Q
+q 1 0 0 1 0 423 cm
+342.027 -184.078 m 342.027 -182.078 l S Q
+q 1 0 0 1 0 423 cm
+342.027 -7.055 m 342.027 -9.055 l S Q
+q 1 0 0 1 0 423 cm
+367.262 -184.078 m 367.262 -182.078 l S Q
+q 1 0 0 1 0 423 cm
+367.262 -7.055 m 367.262 -9.055 l S Q
+q 1 0 0 1 0 423 cm
+392.496 -184.078 m 392.496 -182.078 l S Q
+q 1 0 0 1 0 423 cm
+392.496 -7.055 m 392.496 -9.055 l S Q
+q 1 0 0 1 0 423 cm
+442.965 -184.078 m 442.965 -182.078 l S Q
+q 1 0 0 1 0 423 cm
+442.965 -7.055 m 442.965 -9.055 l S Q
+q 1 0 0 1 0 423 cm
+468.195 -184.078 m 468.195 -182.078 l S Q
+q 1 0 0 1 0 423 cm
+468.195 -7.055 m 468.195 -9.055 l S Q
+q 1 0 0 1 0 423 cm
+493.43 -184.078 m 493.43 -182.078 l S Q
+q 1 0 0 1 0 423 cm
+493.43 -7.055 m 493.43 -9.055 l S Q
+q 1 0 0 1 0 423 cm
+518.664 -184.078 m 518.664 -182.078 l S Q
+q 1 0 0 1 0 423 cm
+518.664 -7.055 m 518.664 -9.055 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -165.039 m 43.219 -165.039 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -165.039 m 539.898 -165.039 l S Q
+BT
+12 0 0 12 19.4531 253.585 Tm
+/f-0-1 1 Tf
+<01>Tj
+/f-0-0 1 Tf
+[()-254(4)]TJ
+ET
+q 1 0 0 1 0 423 cm
+39.219 -132.359 m 43.219 -132.359 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -132.359 m 539.898 -132.359 l S Q
+BT
+12 0 0 12 19.9844 286.187 Tm
+/f-0-1 1 Tf
+<01>Tj
+/f-0-0 1 Tf
+[()-254(2)]TJ
+ET
+q 1 0 0 1 0 423 cm
+39.219 -99.68 m 43.219 -99.68 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -99.68 m 539.898 -99.68 l S Q
+BT
+12 0 0 12 29.1719 318.953 Tm
+/f-0-0 1 Tf
+(0)Tj
+ET
+q 1 0 0 1 0 423 cm
+39.219 -67 m 43.219 -67 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -67 m 539.898 -67 l S Q
+BT
+12 0 0 12 29.6563 351.547 Tm
+/f-0-0 1 Tf
+(2)Tj
+ET
+q 1 0 0 1 0 423 cm
+39.219 -34.32 m 43.219 -34.32 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -34.32 m 539.898 -34.32 l S Q
+BT
+12 0 0 12 28.8438 384.305 Tm
+/f-0-0 1 Tf
+(4)Tj
+ET
+q 1 0 0 1 0 423 cm
+39.219 -181.379 m 41.219 -181.379 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -181.379 m 541.898 -181.379 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -173.211 m 41.219 -173.211 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -173.211 m 541.898 -173.211 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -156.871 m 41.219 -156.871 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -156.871 m 541.898 -156.871 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -148.699 m 41.219 -148.699 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -148.699 m 541.898 -148.699 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -140.531 m 41.219 -140.531 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -140.531 m 541.898 -140.531 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -124.191 m 41.219 -124.191 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -124.191 m 541.898 -124.191 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -116.02 m 41.219 -116.02 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -116.02 m 541.898 -116.02 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -107.852 m 41.219 -107.852 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -107.852 m 541.898 -107.852 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -91.512 m 41.219 -91.512 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -91.512 m 541.898 -91.512 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -83.34 m 41.219 -83.34 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -83.34 m 541.898 -83.34 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -75.172 m 41.219 -75.172 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -75.172 m 541.898 -75.172 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -58.828 m 41.219 -58.828 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -58.828 m 541.898 -58.828 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -50.66 m 41.219 -50.66 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -50.66 m 541.898 -50.66 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -42.488 m 41.219 -42.488 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -42.488 m 541.898 -42.488 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -26.148 m 41.219 -26.148 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -26.148 m 541.898 -26.148 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -17.98 m 41.219 -17.98 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -17.98 m 541.898 -17.98 l S Q
+1 w
+2 J
+q 1 0 0 1 0 423 cm
+39.219 -7.055 m 543.898 -7.055 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -184.078 m 543.898 -7.055 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -184.078 m 543.898 -184.078 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -184.078 m 39.219 -7.055 l S Q
+1 g
+39.219 213.859 504.68 -177.023 re f
+  Q
+Q
+Q q
+39.219 213.836 504.699 -177 re W n
+q
+39 214 505 -178 re W n
+  q
+0 g
+1 w
+2 J
+1 j
+[] 0.0 d
+10 M q 1 0 0 1 0 423 cm
+39.219 -329.129 m 39.848 -327.676 l 41.109 -323.605 l 42.371 -318.516 l
+ 45.527 -305.145 l 46.785 -300.703 l 48.047 -297.176 l 49.309 -294.652 l
+ 49.941 -293.77 l 50.57 -293.133 l 51.203 -292.719 l 51.832 -292.523 l 52.465
+ -292.527 l 53.094 -292.719 l 53.723 -293.086 l 54.355 -293.613 l 55.617
+ -295.133 l 56.879 -297.258 l 58.141 -299.996 l 59.402 -303.332 l 61.293
+ -309.191 l 63.184 -315.152 l 64.445 -318.383 l 65.078 -319.566 l 65.707
+ -320.379 l 66.34 -320.773 l 66.969 -320.719 l 67.602 -320.199 l 68.23 -319.234
+ l 68.859 -317.855 l 70.121 -314.105 l 73.277 -303.434 l 73.906 -301.887
+ l 74.539 -300.715 l 75.168 -299.941 l 75.797 -299.57 l 76.43 -299.574 l
+ 77.059 -299.898 l 77.691 -300.461 l 80.215 -303.246 l 80.844 -303.621 l
+ 81.477 -303.738 l 82.105 -303.582 l 82.738 -303.16 l 83.996 -301.699 l 
+85.258 -299.973 l 85.891 -299.258 l 86.52 -298.777 l 87.152 -298.621 l 87.781
+ -298.852 l 88.414 -299.5 l 89.043 -300.574 l 89.676 -302.043 l 90.934 -305.863
+ l 92.828 -312.148 l 93.457 -313.895 l 94.09 -315.277 l 94.719 -316.219 
+l 95.352 -316.68 l 95.98 -316.652 l 96.613 -316.16 l 97.242 -315.27 l 98.504
+ -312.676 l 100.395 -308.547 l 101.027 -307.555 l 101.656 -306.887 l 102.289
+ -306.57 l 102.918 -306.602 l 103.551 -306.938 l 104.812 -308.207 l 106.07
+ -309.523 l 106.703 -309.902 l 107.336 -309.949 l 107.965 -309.59 l 108.594
+ -308.773 l 109.227 -307.496 l 109.855 -305.789 l 111.117 -301.391 l 113.012
+ -294.184 l 113.641 -292.195 l 114.27 -290.637 l 114.902 -289.621 l 115.531
+ -289.211 l 116.164 -289.449 l 116.793 -290.336 l 117.426 -291.832 l 118.055
+ -293.871 l 119.316 -299.18 l 122.469 -314.254 l 123.73 -319.027 l 124.992
+ -322.547 l 125.625 -323.828 l 126.254 -324.809 l 126.887 -325.492 l 127.516
+ -325.883 l 128.148 -325.973 l 128.777 -325.75 l 129.406 -325.188 l 130.039
+ -324.242 l 130.668 -322.883 l 131.301 -321.066 l 131.93 -318.766 l 133.191
+ -312.68 l 134.453 -304.82 l 137.605 -282.859 l 138.238 -279.359 l 138.867
+ -276.574 l 139.5 -274.645 l 140.129 -273.699 l 140.762 -273.805 l 141.391
+ -275.004 l 142.023 -277.273 l 142.652 -280.547 l 143.281 -284.715 l 144.547
+ -295.098 l 147.699 -323.578 l 148.961 -331.953 l 149.59 -334.957 l 150.223
+ -337.09 l 150.852 -338.332 l 151.48 -338.703 l 152.113 -338.234 l 152.742
+ -336.984 l 153.375 -335.027 l 154.004 -332.441 l 155.266 -325.703 l 156.527
+ -317.438 l 160.941 -286.176 l 162.203 -279.668 l 162.836 -277.328 l 163.465
+ -275.715 l 164.098 -274.902 l 164.727 -274.938 l 165.359 -275.844 l 165.988
+ -277.609 l 166.617 -280.188 l 167.25 -283.508 l 168.512 -291.914 l 172.297
+ -320.137 l 173.559 -326.562 l 174.188 -328.785 l 174.816 -330.32 l 175.449
+ -331.18 l 176.078 -331.414 l 176.711 -331.078 l 177.34 -330.246 l 177.973
+ -328.996 l 179.234 -325.562 l 180.492 -321.285 l 182.387 -313.914 l 184.277
+ -305.559 l 188.691 -284.816 l 189.324 -282.637 l 189.953 -280.953 l 190.586
+ -279.867 l 191.215 -279.465 l 191.848 -279.809 l 192.477 -280.938 l 193.109
+ -282.855 l 193.738 -285.531 l 195 -292.867 l 196.891 -306.953 l 198.785
+ -320.746 l 200.047 -327.57 l 200.676 -329.895 l 201.309 -331.398 l 201.938
+ -332.051 l 202.57 -331.867 l 203.199 -330.891 l 203.828 -329.203 l 204.461
+ -326.91 l 205.723 -321.02 l 208.246 -308.016 l 209.508 -302.875 l 210.137
+ -300.918 l 210.77 -299.402 l 211.398 -298.316 l 212.027 -297.625 l 212.66
+ -297.27 l 213.289 -297.176 l 214.551 -297.426 l 215.812 -297.688 l 216.445
+ -297.637 l 217.074 -297.41 l 217.703 -296.984 l 218.336 -296.367 l 219.598
+ -294.719 l 220.859 -293 l 221.488 -292.352 l 222.121 -291.98 l 222.75 -291.988
+ l 223.383 -292.457 l 224.012 -293.453 l 224.645 -295.02 l 225.273 -297.156
+ l 225.902 -299.848 l 227.164 -306.605 l 230.32 -325.82 l 230.949 -328.855
+ l 231.578 -331.289 l 232.211 -333.023 l 232.844 -333.988 l 233.473 -334.148
+ l 234.102 -333.508 l 234.734 -332.094 l 235.363 -329.977 l 235.996 -327.246
+ l 237.258 -320.387 l 241.672 -293.633 l 242.934 -287.73 l 244.195 -282.98
+ l 245.457 -279.387 l 246.086 -278.047 l 246.719 -277.051 l 247.348 -276.434
+ l 247.977 -276.254 l 248.609 -276.57 l 249.238 -277.457 l 249.871 -278.973
+ l 250.5 -281.18 l 251.133 -284.113 l 251.762 -287.801 l 253.023 -297.344
+ l 254.285 -309.324 l 257.438 -341.863 l 258.699 -351.465 l 259.332 -354.684
+ l 259.961 -356.633 l 260.594 -357.199 l 261.223 -356.32 l 261.855 -353.984
+ l 262.484 -350.238 l 263.113 -345.164 l 264.379 -331.664 l 266.27 -306.168
+ l 268.16 -280.266 l 269.422 -265.848 l 270.055 -260.031 l 270.684 -255.305
+ l 271.312 -251.754 l 271.945 -249.426 l 272.574 -248.348 l 273.207 -248.516
+ l 273.836 -249.91 l 274.469 -252.496 l 275.098 -256.227 l 275.73 -261.043
+ l 276.988 -273.68 l 278.254 -289.773 l 280.145 -318.473 l 282.668 -357.945
+ l 283.93 -373.773 l 284.559 -379.688 l 285.188 -383.887 l 285.82 -386.117
+ l 286.449 -386.164 l 287.082 -383.875 l 287.711 -379.176 l 288.344 -372.07
+ l 288.973 -362.656 l 290.234 -337.781 l 292.129 -290.992 l 294.02 -245.191
+ l 294.648 -232.77 l 295.281 -222.605 l 295.91 -215.102 l 296.543 -210.555
+ l 297.172 -209.141 l 297.805 -210.914 l 298.434 -215.805 l 299.066 -223.621
+ l 299.695 -234.047 l 300.957 -261.023 l 304.742 -352.043 l 305.371 -363.223
+ l 306.004 -372.234 l 306.633 -378.898 l 307.266 -383.117 l 307.895 -384.891
+ l 308.523 -384.309 l 309.156 -381.535 l 309.785 -376.789 l 310.418 -370.344
+ l 311.68 -353.594 l 316.094 -286.473 l 317.355 -272.676 l 317.984 -267.363
+ l 318.617 -263.172 l 319.246 -260.117 l 319.879 -258.191 l 320.508 -257.359
+ l 321.141 -257.574 l 321.77 -258.781 l 322.398 -260.895 l 323.031 -263.836
+ l 324.293 -271.809 l 325.555 -281.887 l 328.078 -304.934 l 329.969 -321.523
+ l 331.23 -330.871 l 332.492 -338.109 l 333.121 -340.762 l 333.754 -342.691
+ l 334.383 -343.844 l 335.016 -344.191 l 335.645 -343.699 l 336.277 -342.363
+ l 336.906 -340.191 l 337.535 -337.211 l 338.168 -333.48 l 339.43 -324.078
+ l 341.32 -306.969 l 343.215 -290.078 l 344.477 -281.219 l 345.105 -277.961
+ l 345.734 -275.621 l 346.367 -274.27 l 346.996 -273.934 l 347.629 -274.602
+ l 348.258 -276.227 l 348.891 -278.719 l 349.52 -281.965 l 350.781 -290.117
+ l 353.305 -308.199 l 354.566 -315.488 l 355.195 -318.254 l 355.828 -320.348
+ l 356.457 -321.73 l 357.09 -322.414 l 357.719 -322.43 l 358.352 -321.836
+ l 358.98 -320.719 l 359.609 -319.176 l 360.871 -315.277 l 362.766 -309.156
+ l 364.027 -306.074 l 364.656 -305.039 l 365.289 -304.391 l 365.918 -304.129
+ l 366.551 -304.238 l 367.18 -304.676 l 367.809 -305.391 l 369.07 -307.363
+ l 370.965 -310.426 l 371.594 -311.156 l 372.227 -311.629 l 372.855 -311.805
+ l 373.488 -311.656 l 374.117 -311.176 l 374.746 -310.379 l 375.379 -309.293
+ l 376.641 -306.438 l 379.793 -298.262 l 381.055 -295.824 l 381.688 -294.949
+ l 382.316 -294.324 l 382.945 -293.961 l 383.578 -293.855 l 384.207 -294.008
+ l 384.84 -294.41 l 385.469 -295.062 l 386.102 -295.957 l 386.73 -297.09
+ l 387.992 -300.078 l 389.254 -304.004 l 390.516 -308.75 l 393.668 -321.656
+ l 394.301 -323.742 l 394.93 -325.414 l 395.562 -326.566 l 396.191 -327.113
+ l 396.82 -326.984 l 397.453 -326.133 l 398.086 -324.559 l 398.715 -322.285
+ l 399.344 -319.375 l 400.605 -312.105 l 403.129 -296.188 l 403.762 -292.945
+ l 404.391 -290.305 l 405.02 -288.359 l 405.652 -287.18 l 406.281 -286.781
+ l 406.914 -287.133 l 407.543 -288.168 l 408.176 -289.781 l 409.438 -294.203
+ l 411.328 -301.574 l 412.59 -305.492 l 413.219 -306.934 l 413.852 -308.008
+ l 414.48 -308.738 l 415.113 -309.188 l 416.375 -309.559 l 417.637 -309.82
+ l 418.266 -310.105 l 418.898 -310.566 l 419.527 -311.223 l 420.789 -313.051
+ l 422.68 -316.215 l 423.312 -317.043 l 423.941 -317.605 l 424.574 -317.828
+ l 425.203 -317.656 l 425.836 -317.059 l 426.465 -316.031 l 427.098 -314.605
+ l 428.355 -310.781 l 431.512 -299.762 l 432.141 -298.055 l 432.773 -296.672
+ l 433.402 -295.648 l 434.031 -294.984 l 434.664 -294.68 l 435.297 -294.703
+ l 435.926 -295.02 l 436.555 -295.578 l 437.816 -297.266 l 439.078 -299.422
+ l 441.602 -304.359 l 445.387 -311.934 l 446.648 -313.867 l 447.277 -314.562
+ l 447.91 -315.031 l 448.539 -315.242 l 449.172 -315.176 l 449.801 -314.832
+ l 450.43 -314.219 l 451.062 -313.355 l 452.324 -311.051 l 455.477 -304.586
+ l 456.109 -303.629 l 456.738 -302.875 l 457.367 -302.336 l 458 -302.012
+ l 458.629 -301.883 l 459.262 -301.93 l 460.523 -302.398 l 464.938 -304.785
+ l 467.461 -305.898 l 469.352 -307.027 l 471.242 -308.172 l 471.875 -308.426
+ l 472.508 -308.551 l 473.137 -308.52 l 473.766 -308.305 l 474.398 -307.895
+ l 475.027 -307.277 l 476.289 -305.523 l 479.441 -300.383 l 480.074 -299.805
+ l 480.703 -299.547 l 481.336 -299.672 l 481.965 -300.219 l 482.598 -301.203
+ l 483.227 -302.625 l 483.859 -304.449 l 485.117 -309.066 l 487.641 -319.164
+ l 488.273 -321.094 l 488.902 -322.516 l 489.535 -323.305 l 490.164 -323.375
+ l 490.797 -322.656 l 491.426 -321.121 l 492.059 -318.785 l 492.688 -315.703
+ l 493.949 -307.711 l 496.473 -289.352 l 497.102 -285.531 l 497.734 -282.465
+ l 498.363 -280.328 l 498.996 -279.266 l 499.625 -279.379 l 500.258 -280.695
+ l 500.887 -283.195 l 501.52 -286.785 l 502.777 -296.594 l 505.934 -324.551
+ l 506.562 -328.492 l 507.195 -331.34 l 507.824 -332.961 l 508.453 -333.297
+ l 509.086 -332.363 l 509.719 -330.246 l 510.348 -327.094 l 511.609 -318.559
+ l 513.5 -304.227 l 514.762 -296.715 l 515.395 -294.16 l 516.023 -292.527
+ l 516.652 -291.84 l 517.285 -292.043 l 517.914 -293.027 l 518.547 -294.641
+ l 519.809 -298.961 l 521.07 -303.367 l 521.699 -305.145 l 522.328 -306.461
+ l 522.961 -307.242 l 523.594 -307.469 l 524.223 -307.172 l 524.852 -306.434
+ l 526.113 -304.145 l 527.375 -301.785 l 528.008 -300.965 l 528.637 -300.547
+ l 529.27 -300.613 l 529.898 -301.195 l 530.527 -302.281 l 531.16 -303.824
+ l 532.422 -307.848 l 534.312 -314.117 l 534.945 -315.684 l 535.574 -316.785
+ l 536.207 -317.352 l 536.836 -317.359 l 537.469 -316.809 l 538.098 -315.762
+ l 538.727 -314.297 l 539.988 -310.598 l 541.25 -306.766 l 542.512 -303.777
+ l 543.145 -302.809 l 543.773 -302.238 l S Q
+  Q
+Q
+Q q
+q
+0 423 565 -423 re W n
+  q
+0 g
+0.5 w
+0 J
+1 j
+[] 0.0 d
+10 M q 1 0 0 1 0 423 cm
+39.344 -386.164 m 39.344 -382.164 l S Q
+q 1 0 0 1 0 423 cm
+39.344 -209.141 m 39.344 -213.141 l S Q
+BT
+12 0 0 12 28.7809 23.9301 Tm
+/f-0-0 1 Tf
+[(9)-80(8)-80(5)]TJ
+ET
+q 1 0 0 1 0 423 cm
+165.48 -386.164 m 165.48 -382.164 l S Q
+q 1 0 0 1 0 423 cm
+165.48 -209.141 m 165.48 -213.141 l S Q
+BT
+12 0 0 12 154.795 23.9301 Tm
+/f-0-0 1 Tf
+[(9)-80(9)-80(0)]TJ
+ET
+q 1 0 0 1 0 423 cm
+291.621 -386.164 m 291.621 -382.164 l S Q
+q 1 0 0 1 0 423 cm
+291.621 -209.141 m 291.621 -213.141 l S Q
+BT
+12 0 0 12 281.059 23.9301 Tm
+/f-0-0 1 Tf
+[(9)-80(9)-80(5)]TJ
+ET
+q 1 0 0 1 0 423 cm
+417.762 -386.164 m 417.762 -382.164 l S Q
+q 1 0 0 1 0 423 cm
+417.762 -209.141 m 417.762 -213.141 l S Q
+BT
+12 0 0 12 403.533 23.9301 Tm
+/f-0-0 1 Tf
+[(1)-80(0)-80(0)-80(0)]TJ
+ET
+q 1 0 0 1 0 423 cm
+543.898 -386.164 m 543.898 -382.164 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -209.141 m 543.898 -213.141 l S Q
+BT
+12 0 0 12 529.797 23.9301 Tm
+/f-0-0 1 Tf
+[(1)-80(0)-80(0)-80(5)]TJ
+ET
+q 1 0 0 1 0 423 cm
+64.57 -386.164 m 64.57 -384.164 l S Q
+q 1 0 0 1 0 423 cm
+64.57 -209.141 m 64.57 -211.141 l S Q
+q 1 0 0 1 0 423 cm
+89.797 -386.164 m 89.797 -384.164 l S Q
+q 1 0 0 1 0 423 cm
+89.797 -209.141 m 89.797 -211.141 l S Q
+q 1 0 0 1 0 423 cm
+115.027 -386.164 m 115.027 -384.164 l S Q
+q 1 0 0 1 0 423 cm
+115.027 -209.141 m 115.027 -211.141 l S Q
+q 1 0 0 1 0 423 cm
+140.254 -386.164 m 140.254 -384.164 l S Q
+q 1 0 0 1 0 423 cm
+140.254 -209.141 m 140.254 -211.141 l S Q
+q 1 0 0 1 0 423 cm
+190.711 -386.164 m 190.711 -384.164 l S Q
+q 1 0 0 1 0 423 cm
+190.711 -209.141 m 190.711 -211.141 l S Q
+q 1 0 0 1 0 423 cm
+215.938 -386.164 m 215.938 -384.164 l S Q
+q 1 0 0 1 0 423 cm
+215.938 -209.141 m 215.938 -211.141 l S Q
+q 1 0 0 1 0 423 cm
+241.164 -386.164 m 241.164 -384.164 l S Q
+q 1 0 0 1 0 423 cm
+241.164 -209.141 m 241.164 -211.141 l S Q
+q 1 0 0 1 0 423 cm
+266.395 -386.164 m 266.395 -384.164 l S Q
+q 1 0 0 1 0 423 cm
+266.395 -209.141 m 266.395 -211.141 l S Q
+q 1 0 0 1 0 423 cm
+316.848 -386.164 m 316.848 -384.164 l S Q
+q 1 0 0 1 0 423 cm
+316.848 -209.141 m 316.848 -211.141 l S Q
+q 1 0 0 1 0 423 cm
+342.078 -386.164 m 342.078 -384.164 l S Q
+q 1 0 0 1 0 423 cm
+342.078 -209.141 m 342.078 -211.141 l S Q
+q 1 0 0 1 0 423 cm
+367.305 -386.164 m 367.305 -384.164 l S Q
+q 1 0 0 1 0 423 cm
+367.305 -209.141 m 367.305 -211.141 l S Q
+q 1 0 0 1 0 423 cm
+392.531 -386.164 m 392.531 -384.164 l S Q
+q 1 0 0 1 0 423 cm
+392.531 -209.141 m 392.531 -211.141 l S Q
+q 1 0 0 1 0 423 cm
+442.988 -386.164 m 442.988 -384.164 l S Q
+q 1 0 0 1 0 423 cm
+442.988 -209.141 m 442.988 -211.141 l S Q
+q 1 0 0 1 0 423 cm
+468.215 -386.164 m 468.215 -384.164 l S Q
+q 1 0 0 1 0 423 cm
+468.215 -209.141 m 468.215 -211.141 l S Q
+q 1 0 0 1 0 423 cm
+493.441 -386.164 m 493.441 -384.164 l S Q
+q 1 0 0 1 0 423 cm
+493.441 -209.141 m 493.441 -211.141 l S Q
+q 1 0 0 1 0 423 cm
+518.672 -386.164 m 518.672 -384.164 l S Q
+q 1 0 0 1 0 423 cm
+518.672 -209.141 m 518.672 -211.141 l S Q
+BT
+12 0 0 12 269.566 9.6332 Tm
+/f-0-0 1 Tf
+[(T)31(i)-55(m)-142(e)-59([)-112(s)-21(])]TJ
+ET
+q 1 0 0 1 0 423 cm
+39.219 -381.488 m 43.219 -381.488 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -381.488 m 539.898 -381.488 l S Q
+BT
+12 0 0 12 8.09375 37.1461 Tm
+/f-0-1 1 Tf
+<01>Tj
+/f-0-0 1 Tf
+[()-254(0)-80(.)-40(6)]TJ
+ET
+q 1 0 0 1 0 423 cm
+39.219 -356.414 m 43.219 -356.414 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -356.414 m 539.898 -356.414 l S Q
+BT
+12 0 0 12 8 62.2203 Tm
+/f-0-1 1 Tf
+<01>Tj
+/f-0-0 1 Tf
+[()-254(0)-80(.)-40(4)]TJ
+ET
+q 1 0 0 1 0 423 cm
+39.219 -331.34 m 43.219 -331.34 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -331.34 m 539.898 -331.34 l S Q
+BT
+12 0 0 12 8.53125 87.2945 Tm
+/f-0-1 1 Tf
+<01>Tj
+/f-0-0 1 Tf
+[()-254(0)-80(.)-40(2)]TJ
+ET
+q 1 0 0 1 0 423 cm
+39.219 -306.266 m 43.219 -306.266 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -306.266 m 539.898 -306.266 l S Q
+BT
+12 0 0 12 17.7188 112.369 Tm
+/f-0-0 1 Tf
+[(0)-80(.)-40(0)]TJ
+ET
+q 1 0 0 1 0 423 cm
+39.219 -281.191 m 43.219 -281.191 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -281.191 m 539.898 -281.191 l S Q
+BT
+12 0 0 12 18.125 137.443 Tm
+/f-0-0 1 Tf
+[(0)-80(.)-40(2)]TJ
+ET
+q 1 0 0 1 0 423 cm
+39.219 -256.113 m 43.219 -256.113 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -256.113 m 539.898 -256.113 l S Q
+BT
+12 0 0 12 17.5938 162.518 Tm
+/f-0-0 1 Tf
+[(0)-80(.)-40(4)]TJ
+ET
+q 1 0 0 1 0 423 cm
+39.219 -231.039 m 43.219 -231.039 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -231.039 m 539.898 -231.039 l S Q
+BT
+12 0 0 12 17.6875 187.592 Tm
+/f-0-0 1 Tf
+[(0)-80(.)-40(6)]TJ
+ET
+q 1 0 0 1 0 423 cm
+39.219 -375.219 m 41.219 -375.219 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -375.219 m 541.898 -375.219 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -368.949 m 41.219 -368.949 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -368.949 m 541.898 -368.949 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -362.68 m 41.219 -362.68 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -362.68 m 541.898 -362.68 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -350.145 m 41.219 -350.145 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -350.145 m 541.898 -350.145 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -343.875 m 41.219 -343.875 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -343.875 m 541.898 -343.875 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -337.605 m 41.219 -337.605 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -337.605 m 541.898 -337.605 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -325.07 m 41.219 -325.07 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -325.07 m 541.898 -325.07 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -318.801 m 41.219 -318.801 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -318.801 m 541.898 -318.801 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -312.531 m 41.219 -312.531 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -312.531 m 541.898 -312.531 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -299.996 m 41.219 -299.996 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -299.996 m 541.898 -299.996 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -293.727 m 41.219 -293.727 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -293.727 m 541.898 -293.727 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -287.457 m 41.219 -287.457 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -287.457 m 541.898 -287.457 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -274.922 m 41.219 -274.922 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -274.922 m 541.898 -274.922 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -268.652 m 41.219 -268.652 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -268.652 m 541.898 -268.652 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -262.383 m 41.219 -262.383 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -262.383 m 541.898 -262.383 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -249.848 m 41.219 -249.848 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -249.848 m 541.898 -249.848 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -243.578 m 41.219 -243.578 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -243.578 m 541.898 -243.578 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -237.309 m 41.219 -237.309 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -237.309 m 541.898 -237.309 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -224.773 m 41.219 -224.773 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -224.773 m 541.898 -224.773 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -218.504 m 41.219 -218.504 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -218.504 m 541.898 -218.504 l S Q
+1 w
+2 J
+q 1 0 0 1 0 423 cm
+39.219 -209.141 m 543.898 -209.141 l S Q
+q 1 0 0 1 0 423 cm
+543.898 -386.164 m 543.898 -209.141 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -386.164 m 543.898 -386.164 l S Q
+q 1 0 0 1 0 423 cm
+39.219 -386.164 m 39.219 -209.141 l S Q
+  Q
+Q
+0 g
+BT
+20 0 0 20 367.237854 372.455597 Tm
+/f-1-0 1 Tf
+(PcP)Tj
+/f-2-1 1 Tf
+3.450185 -0.0065918 Td
+<01>Tj
+/f-1-0 1 Tf
+[(=)-318(25.5\260)]TJ
+-3.970692 -10.239951 Td
+(PKiKP)Tj
+ET
+Q Q
 showpage
+%%Trailer
+end restore
+%%EOF
