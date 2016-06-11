@@ -9,3 +9,6 @@
 *.nlo
 *.out
 *.synctex
+.DS_Store
+*.synctex.gz
+*.pdf
