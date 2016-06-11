@@ -4,7 +4,7 @@
 \usepackage[utf8]{inputenc}
 \setcounter{secnumdepth}{3}
 \synctex=-1
-\usepackage{color}
+\usepackage{xcolor}
 \usepackage{bm}
 \usepackage{array}
 \usepackage{longtable}
@@ -12,6 +12,8 @@
 \usepackage{amssymb}
 \usepackage{mathrsfs}
 \usepackage{makeidx}
+\usepackage{indentfirst}
+\usepackage{diagbox}
 \makeindex
 \PassOptionsToPackage{normalem}{ulem}
 \usepackage{ulem}
@@ -23,7 +25,7 @@
 \providecommand{\makenomenclature}{\makeglossary}
 \makenomenclature
 \usepackage[unicode=true,pdfusetitle,bookmarks=true,bookmarksnumbered=true,bookmarksopen=true,bookmarksopenlevel=2,
- breaklinks=false,pdfborder={0 0 0},backref=false,colorlinks=false] {hyperref}
+ breaklinks=true,pdfborder={0 0 0},backref=false,colorlinks=false]{hyperref}
 
 \makeatletter
 
@@ -48,14 +50,17 @@
  \PassOptionsToPackage{caption=false}{subfig}}
 \usepackage{subfig}
 \makeatother
-
+\usepackage{etoolbox} % for \robustify
+\robustify{\subref}
+%\graphicspath{{figures/}}
+%\renewcommand\thesubfigure{\alph{subfigure}}
+\xeCJKsetup { underline/format = \color{black} }
 \begin{document}
 
 \confidential{}
 
 
-\title{Global observation of PKiKP and its coda, implying heterogeneous\\ %
-structure of the inner core}
+\title{利用PcP和PKiKP震相组合研究CMB结构变化}
 
 
 %\subtitle{——基于Xe\LaTeX{}、\LyX{}与JabRef}
@@ -63,12 +68,12 @@ structure of the inner core}
 
 \author{龙鑫}
 
-
+%\author{XXX}
 \thesistype{硕士学位论文}
 
 
 \tutor{艾印双\quad{}研究员}
-
+%\tutor{XXX\quad{}研究员}
 
 %\tutorinstitute{中国科学院地质与地球物理研究所}
 
@@ -85,18 +90,17 @@ structure of the inner core}
 \date{2016年6月}
 
 
-\etitle{\uline{Global observation of PKiKP and its coda, implying heterogeneous
-structure of the inner core}}
+\etitle{\uline{Revealing the Variation of CMB Structure by Analysis Combining PcP and PKiKP}}
 
 
 %\esubtitle{\uline{---Case studies of elevated soil warming}}
 
 
 \eauthor{Long Xin}
-
+%\eauthor{XXX}
 
 \etutor{Ai Yinshuang}
-
+%\etutor{XXX}
 
 \emajor{Solid Geophysics}
 
@@ -120,32 +124,51 @@ structure of the inner core}}
 \frontmatter
 
 \begin{abstract}
-从实际的稠密台阵中抽取各种几何形态和台间距不同的子台阵，运用PWS等标准台阵叠加技术，比较不同类型的子台阵对与内核相关的一系列弱震相(如前临界PKiKP、PKIIKP和PKJKP等)提取的效果；然后通过理论模拟各种不同台阵的情形，进行叠加，将理论模拟的最佳结果和使用实际资料叠加的结果进行比较。若能找到最优的配置方法，则对今后以关测与内核相关的弱相位为目的的地震台阵布设具有一定的指导作用。
+作为外核与地幔之间物质交换的场所，地球的核幔边界(CMB)在地球的核幔对流等动力学过程中扮演了关键的角色，其物理化学性质对我们了解地球内部的演化有重要的作用. 然而CMB可能存在复杂的结构变化，这就为我们的研究带来了困难. 以往的研究通常使用PcP和PKiKP震相组合来约束内外核边界(ICB)的性质，比如P波波速和内外核的密度跃变. 然而，很多研究并没有对CMB可能存在的小尺度变化引起足够重视，特别是CMB
+界面起伏和小尺度的超低速结构，CMB的这些特性对PcP存在巨大影响已经被很多研究所揭示. 如果这些效应不能被排除，将很难获得真实的ICB结构信息. 本研究主要使用来自北美和澳大利亚的IMS~(International Miscellaneous Stations)小口径台阵记录到的PcP和PKiKP数据并辅以国家测震台网的观测来识别和检验CMB各种效应对PcP的影响，包括其界面起伏和其上方的低速结构. 
+
+首先，通过分析小口径台阵的PcP和PKiKP信号的振幅比、相对走时残差和波形，尝试对CMB小尺度界面起伏和速度异常进行约束. 研究比较了位于北美的NVAR和PDAR对同一地震事件的PcP和PKiKP记录,并结合之前波形模拟结果,推断出墨西哥北部下方CMB上可能存在局部的上凸,造成采样到不同区域的短周期PcP振幅和波形的变化；由观测到阿拉斯加Kenai半岛下方PKiKP/PcP振幅比的剧烈变化，进一步验证了前人研究的结果,即Kenai半岛下方存在局部CMB凹陷；结合PcP和PKiKP检验了澳大利亚太平洋东岸下方CMB超低速带结构的，观测显示出其具有很薄的厚度，且该区域CMB较为平坦.其次，利用来自国家测震台网的数据，分析和讨论了东亚下方CMB的结构，观测到的PcP和PKiKP的振幅比和走时残差存在正相关，暗示东亚下方CMB存在中型尺度的界面起伏变化. 同时，利用重复地震观测，评估和讨论了单台站观测的不确定性因素. 这些观测都暗示了可能存在的复杂的核幔动力学过程.
 \end{abstract}
 
-\keywords{台阵;叠加;PWS;弱震相;内核}
+\keywords{PKiKP；PcP；核幔边界；内外核边界；界面起伏；超低速带；小口径台阵}
 
 \begin{eabstract}
- I collect global data set from short period IMS arrays, from which waveform quality of each station is relatively high and records last several decades for their nuclear detection purpose, and Hi-net which is extremely dense. I attempt to use those data and apply array stacking technique like PWS to detect and identify the inner core relevant weak phases. I also plan to figure out a best array configuration for the signal extraction, which is mainly affected by geometrical distribution of stations and slowness of a given phase using real data and theoretical stimulation, and consider to determine a proper array size that would be sufficient to provide a good SNR for the phase extraction. The result of this research would be a guidance for future devise of seismic array aimed to study the inner core properties using weak inner core phases.
+The core mantle boundary (CMB) of the earth is 
+vital to understand the evolution of %
+our planet due to its close connection to the core-mantle%
+dynamic process, and it is the place of material exchange of the core-mantle. Previous study often use PKiKP and PcP to constrain the %
+properties of the inner-outer core boundary (ICB), such as velocity and density jump. However, many of %
+them do not pay enough attention on CMB variation at small scale, especially %
+the CMB topography which has been proved has strong effects on PcP and if such %
+effect could not be ruled out, the true ICB properties could never be %
+revealed. This study mainly uses PcP and PKiKP data from IMS (International Miscellaneous Stations) array and CNDS (China National Digital Seismic) network to detect and identify the CMB effects on PcP. 
+
+First, by comparing PcP and PKiKP recorded by IMS array and analyzing amplitude ratios and differential travel time residuals of the two phases, this study try to constrain small-scale topography and velocity anomaly of CMB. By comparing PcP and PKiKP records from NVAR and PDAR in North America, it is found that PcP that reflect from two region at CMB beneath North Mexico show distinctive behavior, which indicates a local convex at CMB; Anomalously low PKiKP/PcP ratio beneath Kenai peninsula, Alaska are observed, which further confirm a CMB concave reported by previous study; ULVZ beneath west boundary of ``Pacific Anomaly" at CMB reported by previous studies would be thin if it really exists, and the sampled CMB region is flat, which is suggested by PcP and PKiKP data. Then, CNDS data are used to analyzing CMB structure beneath East Asia, and observed amplitude ratios and travel time residuals of PcP and PKiKP show positive correlation beneath East Asia, which may suggest intermediate-scale CMB topography variation.To further evaluate uncertainties of single station record, PKiKP and PcP data for repeated events are analyzed. All the observation in this study may imply a complex core-mantle dynamic process.
 \end{eabstract}
 
-\ekeywords{Array;Stack;PWS;Weak Phases;Inner Core}
+\ekeywords{~PKiKP;~PcP;~CMB;~ICB;~Topography;~ULVZ;~Small Aperture Array}
 
 \tableofcontents{}
 
 \mainmatter
 
-%\include{introduction}
+\include{introduction}
 
-%\include{theory}
+\include{data_method}
 
-%\include{observation}
+\include{ims}
 
-\include{amplitude}
-%\include{forward}
+\include{cnds_hinet}
+
+\include{conclusion}
+
+\include{acknowledgment}
+
 \backmatter
 
+
 \bibliographystyle{apalike}
-%\bibliography{innercore,noise,array,method,cmb}
 \bibliography{seis}
+
+\include{publish_list}
 \end{document}

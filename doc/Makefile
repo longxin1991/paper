@@ -8,9 +8,9 @@ Reader = evince
 Target = Thesis.pdf
 Source = Thesis.tex
 Class = CAS.cls
-Chapter = theory.tex observation.tex amplitude.tex
+Chapter = introduction.tex data_method.tex ims.tex conclusion.tex acknowledgment.tex cnds_hinet.tex publish_list.tex
 BibSource = Thesis.aux
-TmpFile = *.out *.log *.aux *.nav *.snm *.toc
+TmpFile = *.out *.log *.aux *.nav *.snm *.toc *.bbl *.blg
 
 $(Target): $(Source) $(Class) $(Chapter)
 	$(Compiler) $(Source)
