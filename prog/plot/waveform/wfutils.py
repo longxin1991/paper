@@ -2,7 +2,7 @@
 
 import numpy as np
 
-def get_max_amp(trace,tmark,pre=0.5,post=0.5):
+def get_max_amp(trace,tmark,pre=0.25,post=0.25):
 
     ttime = trace.stats.sac[tmark]
     delta = trace.stats.delta
@@ -15,6 +15,7 @@ def get_max_amp(trace,tmark,pre=0.5,post=0.5):
     b = int(tloc - pre/delta)
     e = int(tloc + post/delta)
     seg = trace.data[b:e]
+    seg = np.abs(seg)
     ind = seg.argmax()
 
     mind = b + ind

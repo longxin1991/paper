@@ -22,6 +22,7 @@ class MultiWindow(object):
         self.tr_delta = np.empty(self.tr_num)
         self.tr_b = np.empty(self.tr_num)
         self.tr_normfac = np.empty(self.tr_num)
+        self.tr_sta = ['']*self.tr_num
         
         for i,tr in enumerate(self.stream):
 
@@ -29,6 +30,7 @@ class MultiWindow(object):
             self.tr_npts[i] = tr.stats.npts
             self.tr_delta[i] = tr.stats.delta
             self.tr_b[i] = tr.stats.sac.b
+            self.tr_sta[i] = tr.stats.station
 
         self.InitTime()
     
@@ -60,9 +62,9 @@ class MultiWindow(object):
         ax.plot([ttime,ttime],[ylim[0],ylim[1]],'r--')
 
     def InitPlot(self):
-        fig = pl.gcf()
-        fig.set_size_inches(6,4)
-        #fig.set_size_inches(8,4)
+        fig = pl.figure(figsize=(6,10))
+        #fig.set_size_inches(6,8)
+        #fig.set_size_inches(4,8)
         self.axs = []
         gs = gridspec.GridSpec(self.tr_num,1,wspace=0,hspace=0)
         
@@ -79,11 +81,15 @@ class MultiWindow(object):
                     ax.plot(self.tr_times[i],self.tr_data[i]/self.tr_normfac[i],'k')
             else:
                 ax.plot(self.tr_times[i],self.tr_data[i],'k')
+                #ax.text((7*self.time_max + self.time_min)/8,-240,self.tr_sta[i])
+                ax.text((7*self.time_max + self.time_min)/8,-33,self.tr_sta[i])
 
             #if self.tr_num is 1:
             #    self.PlotInfo(ax,self.stream[0])
             self.PlotTtime(ax,self.stream[i],'t4')
             ax.set_xlim(self.time_min,self.time_max)
+            #ax.set_ylim(-250,250)
+            ax.set_ylim(-35,35)
             
             #ax.set_ylim(-20000,20000)
             ax.ticklabel_format(axis='y',style='sci',scilimits=(-1,1));

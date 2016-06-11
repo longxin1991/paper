@@ -14,12 +14,12 @@ class PlotSection(object):
         self.kwargs = kwargs
         self.stream = kwargs.get('stream')
         self.stream = self.stream.copy()
-        self.label = kwargs.get('text',True)
+        self.label = kwargs.get('text',False)
         self.sect_plot_dx = kwargs.get('plot_dx')
         self.marker = kwargs.get('marker','t2')
         self.smallaperture = kwargs.get('sa',False)
         self.margin_shrink_fac = kwargs.get('msf',3)
-        self.fig = pl.figure(1,figsize=(4,8))
+        self.fig = pl.figure(1,figsize=(6,8))
         self.cut = kwargs.get('tlim',())
         # Background, face and grid color.
         self.background_color = kwargs.get('bgcolor', 'w')
@@ -117,24 +117,28 @@ class PlotSection(object):
     def InitPlot(self):
         ax = self.fig.gca()
         self.NormalizeTraces()
+                    
+        tl = self.time_max -self.time_min
         
         if self.smallaperture :
 
             for tr in range(self.tr_num):
                 self.tr_data[tr] = self.tr_data[tr]/self.tr_normfac[tr]
-            temp = zip(self.stalst,self.tr_data)
+                #print len(self.tr_data[tr])
+                #continue
+            temp = zip(self.stalst,self.tr_times,self.tr_data)
             temp.sort(key=lambda x:x[0])
             
-            stalst,data=zip(*temp)
+            stalst,times,data=zip(*temp)
             
-            tl = self.time_max -self.time_min
+
             for tr in range(self.tr_num):
-                #print len(self.tr_times[tr]),len(data[tr])
-                #exit(0)
-                ax.plot(self.tr_times[tr],data[tr]+tr*1.5)
+                #print len(times[tr]),len(data[tr])
+                #continue
+                ax.plot(times[tr],data[tr]+tr*1.5)
                 strlen=len(stalst[tr])
                 if self.label is True:
-                    ax.text(self.time_min-tl/(strlen*1.5),tr*1.5,stalst[tr],
+                    ax.text(self.time_min-tl/(strlen*3.9),tr*1.5,stalst[tr],
                             horizontalalignment='left',
                             verticalalignment='center')
 
@@ -148,6 +152,9 @@ class PlotSection(object):
                 ax.plot(self.tr_times[tr],self.tr_data[tr]/self.tr_normfac[tr]*
                         (self.sect_scale) +
                         self.tr_offsets_norm[tr])
+                if self.label is True:
+                    ax.text(self.time_max+tl/80.0,self.tr_offsets_norm[tr],self.stalst[tr],horizontalalignment='left',verticalalignment='center')
+
         return ax
 
     def PlotSectionSA(self,*args,**kwargs):
@@ -159,16 +166,21 @@ class PlotSection(object):
         # Setting up line properties
         for line in ax.lines:
             line.set_linewidth(0.5)
-            line.set_color('darkblue')
+            #line.set_color('darkblue')
+            line.set_color('black')
 
         if self.ttime is True:
             self.PlotTtimeLine(ax)
     
         ax.set_xlabel('Time [s]')
 
-        ax.set_ylim(-1.5,(self.tr_num)*1.5)
+        ax.set_ylim(-1,(self.tr_num)*1.5)
         ax.set_xlim(self.time_min,self.time_max)
         #ax.figure.set_size_inches(12,8)
+        #pl.axis('off')
+        #ax.set_axis_off()
+        #ax.get_xaxis().set_visible(False)
+        #ax.get_yaxis().set_visible(False)
         pl.savefig('sec.eps',bbox_inches='tight')
         #pl.show()
 
@@ -212,8 +224,8 @@ class PlotSection(object):
         #        color=self.grid_color,
         #        linestyle=self.grid_linestyle,
         #        linewidth=self.grid_linewidth)
-        #pl.savefig('sec.pdf',bbox_inches='tight')
-        pl.show()
+        pl.savefig('sec.eps',bbox_inches='tight')
+        #pl.show()
 
     def OffsetToFraction(self, offset):
         return offset / self.tr_offsets.max()
@@ -313,8 +325,10 @@ if __name__ == '__main__':
     st = GetStream(path)
     mks = 'a t1 t2 t3 t4 t5 t6'
     #mks = 't1 t2 t3 t5 t6'
-    #section = PlotSection(stream=st,scale=4,plot_dx=0.5,msf=3,ttime=False,marker=mks)
-    section = PlotSection(stream=st,sa=True,ttime=True,text=False,marker='t4',tlim=(1885,1895))
-    #section = PlotSection(stream=st,sa=True,ttime=False,marker='t2',tlim=(990,1020))
+    #section = PlotSection(stream=st,scale=4,plot_dx=2,msf=2,ttime=True,marker='t2')
+    #section = PlotSection(stream=st,scale=0.8,plot_dx=0.2,msf=0.8,ttime=True,marker='t1',tlim=(535,565),text=True)
+    #section = PlotSection(stream=st,scale=5,plot_dx=2,msf=1.8,ttime=True,marker='t1',tlim=(440,550))
+    #section = PlotSection(stream=st,sa=True,ttime=True,text=False,marker='t2')
+    section = PlotSection(stream=st,sa=True,ttime=False,marker='t3',text=True,tlim=(535,555))
     #section.PlotSection()
     section.PlotSectionSA()
